@@ -784,13 +784,11 @@ input[type='number'] {
 
 #header {
 	text-align: center;
-	display: flex;
-	justify-content: space-between;
 	position: fixed;
 	left: 0;
 	top: 0;
 	padding: 12px 22px;
-	background: transparent;
+	background: #fff;
 	z-index: 50;
 	width: 100%;
 	height: 94px;
@@ -812,7 +810,9 @@ input[type='number'] {
 }
 
 #header h1 {
-	position: relative;
+	position: absolute;
+	left: 22px;
+	top: 12px;
 	width: 163px
 }
 
@@ -861,17 +861,16 @@ input[type='number'] {
 }
 
 #header .global-menu ul li {
-	display: inline-block;
-	color: #fff;
+	display: inline-block
 }
 
 #header .global-menu ul li+li {
-	margin-left: 60px
+	margin-left: 160px
 }
 
 #header .global-menu ul li button {
 	padding: 20px 0;
-	font-weight: 300;
+	font-weight: bold;
 	font-size: 22px
 }
 
@@ -1291,8 +1290,7 @@ html.js-scroll-blocking body {
 }
 
 #cardSection01 {
-	position: relative;
-	height: 100vh;
+	position: relative
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1314,14 +1312,11 @@ html.js-scroll-blocking body {
 }
 
 #cardSection01 .bg {
-	position: relative;
-	height: 100%;
+	position: relative
 }
 
 #cardSection01 .bg img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	width: 100%
 }
 
 #cardSection01 .flex {
@@ -1335,7 +1330,7 @@ html.js-scroll-blocking body {
 	top: 0;
 	-webkit-box-align: end;
 	-ms-flex-align: end;
-	align-items: center;
+	align-items: flex-end;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
@@ -1367,7 +1362,7 @@ html.js-scroll-blocking body {
 	width: 278px
 }
 
-#cardSection01 .btn-join button span {
+#cardSection01 .btn-join button p {
 	position: absolute;
 	line-height: 1.4;
 	left: 50%;
@@ -1444,12 +1439,10 @@ html.js-scroll-blocking body {
 
 #cardSection01 .title-area {
 	position: relative;
+	padding: 0 118px 76px;
 	width: 1280px;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	display: flex;
-	align-items: flex-end;
-	flex-direction: column;
+	box-sizing: border-box
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1464,6 +1457,9 @@ html.js-scroll-blocking body {
 	}
 }
 
+#cardSection01 .title-area br {
+	display: none
+}
 
 @media only screen and (max-width: 640px) {
 	#cardSection01 .title-area br {
@@ -1473,9 +1469,8 @@ html.js-scroll-blocking body {
 
 #cardSection01 .title-area h2 {
 	color: #fff;
-	font-size: 68px;
-	font-weight: 500;
-	width: 50%;
+	text-shadow: 0 2px 6px #171819;
+	font-size: 72px
 }
 
 #cardSection01 .title-area h2 .pc-block {
@@ -1484,16 +1479,10 @@ html.js-scroll-blocking body {
 
 #cardSection01 .title-area h2 span {
 	display: inline-block;
-	line-height: 1.4;
-}
-#cardSection01 .title-area h2 span:after {
-	content: '';
-	width: 100%; 
-	height: 20px; 
-	display: block;
-	background: #01B9FF;
-	margin-top: -40px;
-	border-radius: 5px;
+	font-size: 32px;
+	text-shadow: 0 2px 6px #171819;
+	margin-bottom: 4px;
+	color: #1cabe2
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1530,10 +1519,11 @@ html.js-scroll-blocking body {
 
 #cardSection01 .title-area p {
 	color: #fcfcfc;
+	padding-top: 24px;
 	margin-top: 24px;
+	border-top: 3px solid #fff;
 	font-size: 18px;
-	font-weight: 300;
-	width: 50%;
+	font-weight: 300
 }
 
 #cardSection01 .title-area p br {
@@ -1609,7 +1599,7 @@ html.js-scroll-blocking body {
 
 #cardSection02 {
 	padding: 196px 0;
-	/* background: #fff url(../images/bg_contents_pattern_01.png) repeat center center; */
+	background: #fff url(../images/bg_contents_pattern_01.png) repeat center center
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1629,15 +1619,13 @@ html.js-scroll-blocking body {
 }
 
 #cardSection02 .title-area {
-	font-size: 0;
-	border: 2px solid blue;
+	font-size: 0
 }
 
 #cardSection02 .title-area h4 {
 	position: relative;
 	font-size: 48px;
     line-height: 1.5;
-	border: 2px solid red;
 }
 
 #cardSection02 .title-area h4::before,

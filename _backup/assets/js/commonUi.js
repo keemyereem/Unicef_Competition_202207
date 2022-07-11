@@ -1,83 +1,3 @@
-
-function fpActive(){
-    $('#fullpage').fullpage({
-        //이동
-        // menu: '#menu',
-        // lockAnchors: false,
-        // anchors:['firstPage', 'secondPage'],
-        // navigation: false,
-        // navigationPosition: 'right',
-        // navigationTooltips: ['firstSlide', 'secondSlide'],
-        // showActiveTooltip: false,
-        // slidesNavigation: false,
-        // slidesNavPosition: 'bottom',
-
-        // //스크롤
-        // css3: true,
-        scrollingSpeed: 700,
-        autoScrolling: true,
-        // fitToSection: true,
-        // fitToSectionDelay: 1000,
-        // scrollBar: false,
-        // easing: 'easeInOutCubic',
-        // easingcss3: 'ease',
-        // loopBottom: false,
-        // loopTop: false,
-        // loopHorizontal: true,
-        // continuousVertical: false,
-        // continuousHorizontal: false,
-        // scrollHorizontally: false,
-        // interlockedSlides: false,
-        // dragAndMove: false,
-        // offsetSections: false,
-        // resetSliders: false,
-        // fadingEffect: false,
-        // normalScrollElements: '#element1, .element2',
-        scrollOverflow: true,
-        // scrollOverflowReset: false,
-        // scrollOverflowOptions: null,
-        touchSensitivity: 15,
-        // bigSectionsDestination: null,
-
-        // //접근성
-        // keyboardScrolling: true,
-        // animateAnchor: true,
-        // recordHistory: true,
-
-        // //디자인
-        // controlArrows: true,
-        // verticalCentered: true,
-        // sectionsColor : ['#ccc', '#fff'],
-        // paddingTop: '3em',
-        // paddingBottom: '10px',
-        // fixedElements: '#header, .footer',
-        // responsiveWidth: 0,
-        // responsiveHeight: 0,
-        // responsiveSlides: false,
-        // parallax: false,
-        // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-        // cards: false,
-        // cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
-
-        // //맞춤 선택자
-        sectionSelector: 'section',
-        // slideSelector: '.slide',
-        // lazyLoading: true,
-
-        // //사건(이벤트)
-        // onLeave: function(origin, destination, direction){},
-        // afterLoad: function(origin, destination, direction){},
-        // afterRender: function(){},
-        // afterResize: function(width, height){},
-        // afterReBuild: function(){},
-        // afterResponsive: function(isResponsive){},
-        // afterSlideLoad: function(section, origin, destination, direction){},
-        // onSlideLeave: function(section, origin, destination, direction){}
-    });
-}
-// fpActive(); <- 풀페이지 구현 시 주석 풀 것
-
-
 function uiAccordion(){
     var $accordion = $('.js-ui-accordion-list');
     var $item = $('.ui-accordion-item');
@@ -139,16 +59,16 @@ $('.subject-content .btn-primary-arrow').on('click', function(){
 function gnbClick(){
     var headerHeight = $('#header').outerHeight();
     $('.global-menu li.menu-00 button').on('click', function(){
-        $('html, body').stop().animate({scrollTop: $('#cardGallery').offset().top }, 500);
+        $('html, body').stop().animate({scrollTop: $('#cardGallery').offset().top - headerHeight }, 500);
     })
     $('.global-menu li.menu-01 button').on('click', function(){
-        $('html, body').stop().animate({scrollTop: $('#cardSection02').offset().top }, 500);
+        $('html, body').stop().animate({scrollTop: $('#cardSection02').offset().top - headerHeight }, 500);
     })
     $('.global-menu li.menu-02 button').on('click', function(){
-        $('html, body').stop().animate({scrollTop: $('#cardSection0202').offset().top }, 500);
+        $('html, body').stop().animate({scrollTop: $('#cardSection0202').offset().top - headerHeight }, 500);
     })
     $('.global-menu li.menu-03 button').on('click', function(){
-        $('html, body').stop().animate({scrollTop: $('#cardSection04').offset().top }, 500);
+        $('html, body').stop().animate({scrollTop: $('#cardSection04').offset().top - headerHeight }, 500);
     })
 }
 gnbClick();
@@ -209,7 +129,3 @@ $tabButton.on('click', function(){
     $tabParent.find('.tab-contents').hide();
     $tabParent.find('.tab-contents[data-tab='+tabName+']').show();
 })
-
-
-
-
