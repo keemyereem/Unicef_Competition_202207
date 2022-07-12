@@ -1,25 +1,75 @@
 @charset "utf-8";
 
 @font-face {
-	font-family: 'GmarketSans';
-	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
-	font-weight: 400;
-	font-style: normal
+    font-family: 'nexon';
+    font-weight: 100;
+    src: local(※),
+    url(../font/NEXONLv1GothicOTFLight.eot?#iefix) format('embedded-opentype'),
+    url(../font/NEXONLv1GothicLight.ttf) format('truetype'),
+	url(../font/NEXONLv1GothicOTFLight.otf) format('truetype'),
+	url(../font/NEXONLv1GothicOTFLight.woff) format('truetype');
+}
+@font-face {
+    font-family: 'nexon';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 200;
+    src: local(※),
+    url(../font/NEXONLv1GothicOTF.eot?#iefix) format('embedded-opentype'),
+    url(../font/NEXONLv1GothicRegular.ttf) format('truetype'),
+	url(../font/NEXONLv1GothicOTF.otf) format('truetype'),
+	url(../font/NEXONLv1GothicOTF.woff) format('truetype');
+}
+@font-face {
+    font-family: 'nexon';
+    font-weight: 400;
+    src: local(※),
+    url(../font/NEXONLv1GothicOTFBold.eot?#iefix) format('embedded-opentype'),
+    url(../font/NEXONLv1GothicBold.ttf) format('truetype'),
+	url(../font/NEXONLv1GothicOTFBold.otf) format('truetype'),
+	url(../font/NEXONLv1GothicOTFBold.woff) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'NS';
+    font-weight: 100;
+    src: local(※),
+    url(../font/NotoSansCJKkr-Light.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansCJKkr-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NS';
+    font-weight: 150;
+    src: local(※),
+    url(../font/NotoSansCJKkr-DemiLight.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansCJKkr-DemiLight.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NS';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 200;
+    src: local(※),
+    url(../font/NotoSansCJKkr-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansCJKkr-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NS';
+    font-weight: 300;
+    src: local(※),
+    url(../font/NotoSansCJKkr-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansCJKkr-Medium.ttf) format('truetype');
 }
 
 @font-face {
-	font-family: 'GmarketSans';
-	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal
+    font-family: 'NS';
+    font-weight: 400;
+    src: local(※),
+    url(../font/NotoSansCJKkr-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansCJKkr-Bold.ttf) format('truetype');
 }
 
-@font-face {
-	font-family: 'GmarketSans';
-	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
-	font-weight: 300;
-	font-style: normal
-}
 
 .emphasis {
 	color: #1cabe2
@@ -45,7 +95,7 @@
 }
 
 .detail-title {
-	font-weight: bold;
+	font-weight: 700;
 	margin-bottom: 24px
 }
 
@@ -60,30 +110,13 @@
 	display: block;
 	width: 140%;
 	height: 22px;
-	background: url(../images/bg_emphasis_title_yellow@2x.png) no-repeat left center;
-	background-size: 100%;
+	background: url(../images/bg_emphasis_title_yellow@2x.png) left center/100% no-repeat;
 	position: absolute;
 	left: -24px;
 	bottom: 0;
 	z-index: -1
 }
 
-@media only screen and (max-width: 1280px) {
-	.detail-title {
-		font-size: 24px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	.detail-title {
-		font-size: 20px
-	}
-
-	.detail-title span::before {
-		width: 120%;
-		left: -8px
-	}
-}
 
 .txt-gray {
 	color: #969797
@@ -93,77 +126,62 @@
 	color: #b7b8ba
 }
 
-html,
+address,
+article,
+aside,
+blockquote,
 body,
+button,
+caption,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-div,
-p,
-blockquote,
-pre,
-code,
-address,
-ul,
-ol,
+hr,
+html,
+input,
+label,
+legend,
 li,
 menu,
 nav,
-section,
-article,
-aside,
-dl,
-dt,
-dd,
-table,
-thead,
-tbody,
-tfoot,
-label,
-caption,
-th,
-td,
-form,
-fieldset,
-legend,
-hr,
-input,
-button,
-textarea,
 object,
-figure,
-figcaption {
+ol,
+p,
+pre,
+section,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+ul {
 	margin: 0;
 	padding: 0;
-	letter-spacing: -0.7px
+	letter-spacing: -.7px
 }
 
-html,
-body {
+body,
+html {
 	width: 100%;
 	height: 100%;
 	color: #40474b;
-	font-family: "GmarketSans";
+	font-family: 'nexon';
+	font-weight: 200;
 	font-size: 24px
-}
-
-@media only screen and (max-width: 1280px) {
-
-	html,
-	body {
-		font-size: 16px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-
-	html,
-	body {
-		font-size: 14px
-	}
 }
 
 html {
@@ -180,38 +198,28 @@ body {
 	word-break: break-all
 }
 
+button,
 input,
 select,
-textarea,
-button {
+textarea {
 	border: none;
 	font-size: 24px;
-	font-family: "GmarketSans"
+	font-family: 'nexon'
 }
 
-@media only screen and (max-width: 1280px) {
-
-	input,
-	select,
-	textarea,
-	button {
-		font-size: 16px
-	}
-}
 
 button {
 	cursor: pointer;
-	background: transparent
+	background: 0 0
 }
 
-ul,
+li,
 ol,
-li {
+ul {
 	list-style: none
 }
 
 table {
-	width: 100%;
 	border-spacing: 0;
 	border-collapse: collapse;
 	table-layout: fixed
@@ -222,12 +230,11 @@ p {
 }
 
 img {
-	vertical-align: top;
 	max-width: 100%
 }
 
-img,
-fieldset {
+fieldset,
+img {
 	border: 0
 }
 
@@ -236,15 +243,15 @@ cite,
 code,
 em {
 	font-style: normal;
-	font-weight: normal
+	font-weight: 400
 }
 
-label,
+button,
 img,
 input,
+label,
 select,
-textarea,
-button {
+textarea {
 	vertical-align: middle
 }
 
@@ -260,14 +267,14 @@ hr {
 	display: none
 }
 
-main,
-header,
-section,
-nav,
-footer,
-aside,
 article,
-figure {
+aside,
+figure,
+footer,
+header,
+main,
+nav,
+section {
 	display: block
 }
 
@@ -279,7 +286,7 @@ button {
 
 a:focus,
 button:focus {
-	outline: none
+	outline: 0
 }
 
 .for-a11y {
@@ -294,7 +301,7 @@ button:focus {
 	padding: 0;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	background: none;
+	background: 0 0;
 	position: absolute;
 	width: 1px;
 	margin: 0
@@ -355,27 +362,27 @@ input .label-chk.active::before {
 	border-color: #d9d9d9
 }
 
-input[type='tel'],
-input[type='time'],
-input[type='text'],
-input[type='password'],
-input[type='search'],
-input[type='email'],
-input[type='file'],
-input[type='url'],
-input[type='number'],
-input[type='date'] {
+input[type=date],
+input[type=email],
+input[type=file],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url] {
 	padding: 0 12px;
 	outline: 0
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0
 }
 
-input[type='number'] {
+input[type=number] {
 	-moz-appearance: textfield
 }
 
@@ -479,13 +486,13 @@ input[type='number'] {
 	right: 10px;
 	font-size: 12px;
 	color: #fff;
-	background: rgba(0, 0, 0, 0.51);
+	background: rgba(0, 0, 0, .51);
 	text-align: center;
 	padding: 2px 4px;
 	border-radius: 5px;
 	font-family: 'Droid Sans', sans-serif;
-	-webkit-animation: fade 0.1s infinite alternate;
-	animation: fade 0.1s infinite alternate
+	-webkit-animation: fade .1s infinite alternate;
+	animation: fade .1s infinite alternate
 }
 
 .YTPFullscreen,
@@ -496,7 +503,7 @@ input[type='number'] {
 
 @-webkit-keyframes fade {
 	0% {
-		opacity: 0.5
+		opacity: .5
 	}
 
 	100% {
@@ -506,7 +513,7 @@ input[type='number'] {
 
 @keyframes fade {
 	0% {
-		opacity: 0.5
+		opacity: .5
 	}
 
 	100% {
@@ -533,7 +540,7 @@ input[type='number'] {
 	color: #fff;
 	text-align: center;
 	border-radius: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, .4);
 	position: absolute;
 	width: 80px;
 	height: 80px;
@@ -544,9 +551,9 @@ input[type='number'] {
 	right: 0;
 	margin: auto;
 	cursor: pointer;
-	opacity: 0.8;
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s;
+	opacity: .8;
+	-webkit-transition: all .4s;
+	transition: all .4s;
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3)
 }
@@ -579,9 +586,9 @@ input[type='number'] {
 	left: 0;
 	overflow: hidden;
 	border-radius: 4px;
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-	background: rgba(0, 0, 0, 0.5)
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+	background: rgba(0, 0, 0, .5)
 }
 
 .inline_YTPlayer img {
@@ -609,8 +616,8 @@ input[type='number'] {
 }
 
 .mb_YTPBar {
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
 	display: block;
 	height: 10px;
 	background: #333;
@@ -620,7 +627,7 @@ input[type='number'] {
 	z-index: 1000;
 	font: 14px/16px sans-serif;
 	color: #fff;
-	opacity: 0.1
+	opacity: .1
 }
 
 .mb_YTPBar.visible,
@@ -629,8 +636,8 @@ input[type='number'] {
 }
 
 .mb_YTPBar .buttonBar {
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 	background: 0 0;
 	font: 12px/14px san-serif;
 	position: absolute;
@@ -639,7 +646,7 @@ input[type='number'] {
 }
 
 .mb_YTPBar:hover .buttonBar {
-	background: rgba(0, 0, 0, 0.4)
+	background: rgba(0, 0, 0, .4)
 }
 
 .mb_YTPBar span {
@@ -709,15 +716,13 @@ input[type='number'] {
 	background: #bb110e;
 	bottom: 0;
 	left: 0;
-	-webkit-box-shadow: rgba(82, 82, 82, 0.47) 1px 1px 3px;
-	box-shadow: rgba(82, 82, 82, 0.47) 1px 1px 3px
+	-webkit-box-shadow: rgba(82, 82, 82, .47) 1px 1px 3px;
+	box-shadow: rgba(82, 82, 82, .47) 1px 1px 3px
 }
 
 .mb_YTPBar .YTPOverlay {
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
-    /* transform-style: 'flat';
-	-webkit-transform-style: 'flat'; */
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box
 }
@@ -760,7 +765,7 @@ input[type='number'] {
 }
 
 .mb_YTPBar .simpleSlider.muted {
-	opacity: 0.3
+	opacity: .3
 }
 
 .mb_YTPBar .level {
@@ -783,151 +788,67 @@ input[type='number'] {
 }
 
 #header {
+	max-width: 1400px;
 	text-align: center;
 	display: flex;
-	justify-content: space-between;
 	position: fixed;
 	left: 0;
 	top: 0;
-	padding: 12px 22px;
-	background: transparent;
+	background: 0 0;
 	z-index: 50;
 	width: 100%;
-	height: 94px;
+	left: 0;
+	right: 0;
+	margin: auto;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box
 }
 
-@media only screen and (max-width: 1024px) {
-	#header {
-		height: 76px;
-		padding: 0 16px
-	}
-}
 
-@media only screen and (max-width: 640px) {
-	#header {
-		height: 49px
-	}
-}
 
 #header h1 {
 	position: relative;
-	width: 163px
 }
 
-@media only screen and (max-width: 1024px) {
-	#header h1 {
-		width: 120px;
-		top: 12px;
-		left: 16px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#header h1 {
-		width: 84px;
-		top: 7px
-	}
-}
 
 #header .btn-mobile-menu {
 	display: none
 }
 
-@media only screen and (max-width: 1024px) {
-	#header .btn-mobile-menu {
-		display: block;
-		position: absolute;
-		right: 16px;
-		top: 50%;
-		width: 40px;
-		height: 40px;
-		margin-top: -20px
-	}
-}
 
-@media only screen and (max-width: 640px) {
-	#header .btn-mobile-menu {
-		width: 24px;
-		height: 24px;
-		margin-top: -12px
-	}
-}
 
 #header .global-menu ul {
 	font-size: 0;
-	text-align: center
+	text-align: center;
+	padding-left: 50px;
 }
 
 #header .global-menu ul li {
 	display: inline-block;
-	color: #fff;
+	color: #fff
 }
 
 #header .global-menu ul li+li {
-	margin-left: 60px
+	margin-left: 100px
 }
 
 #header .global-menu ul li button {
-	padding: 20px 0;
-	font-weight: 300;
-	font-size: 22px
+	padding: 62px 0;
+	font-weight: 200;
+	font-size: 26px
 }
 
 #header .global-menu ul li button.is-active {
-	color: #1cabe2
+	color: #1cabe2;
+	font-weight: 400;
 }
 
-@media only screen and (max-width: 1280px) {
-	#header .global-menu ul li+li {
-		margin-left: 70px
-	}
-}
 
-@media only screen and (max-width: 1024px) {
-	#header .global-menu {
-		display: none;
-		position: absolute;
-		width: 100%;
-		top: 76px;
-		left: 0;
-		background: #fff;
-		-webkit-box-shadow: 0 0 14px 0 rgba(221, 221, 221, 0.5);
-		box-shadow: 0 0 14px 0 rgba(221, 221, 221, 0.5);
-		border-top: 1px solid #f6f6f6
-	}
 
-	#header .global-menu ul li {
-		float: none;
-		display: block
-	}
-
-	#header .global-menu ul li+li {
-		margin: 0
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#header .global-menu {
-		top: 49px;
-		padding: 66px 0
-	}
-
-	#header .global-menu ul li button {
-		font-size: 20px
-	}
-}
 
 html.js-scroll-blocking body {
 	overflow: hidden;
 	height: 100%
-}
-
-@media only screen and (max-width: 640px) {
-	.m-hide {
-		display: none
-	}
 }
 
 #wrap {
@@ -936,17 +857,10 @@ html.js-scroll-blocking body {
 }
 
 #wrap .inner {
-	width: 1260px;
+	width: 1400px;
 	margin: 0 auto;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box
-}
-
-@media only screen and (max-width: 1280px) {
-	#wrap .inner {
-		width: 100%;
-		padding: 0 16px
-	}
 }
 
 #wrap.is-active {
@@ -957,7 +871,7 @@ html.js-scroll-blocking body {
 
 .contents-section .title-area {
 	text-align: center;
-	margin-bottom: 48px
+	margin-bottom: 100px
 }
 
 .contents-section .title-area .label-title img {
@@ -968,54 +882,25 @@ html.js-scroll-blocking body {
 	margin-top: 40px
 }
 
-@media only screen and (max-width: 1280px) {
-	.contents-section .title-area .label-title img {
-		height: 60px
-	}
-}
 
 .contents-section .title-area h4 {
 	font-size: 56px
 }
 
-@media only screen and (max-width: 1280px) {
-	.contents-section .title-area h4 {
-		font-size: 36px
-	}
-}
 
-@media only screen and (max-width: 640px) {
-	.contents-section .title-area h4 {
-		font-size: 26px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	.contents-section .title-area {
-		margin-bottom: 40px
-	}
-}
 
 .contents-section .flex {
 	padding: 0 24px 74px
 }
 
-@media only screen and (max-width: 640px) {
-	.contents-section .flex {
-		padding: 48px 0
-	}
-}
+
 
 .contents-section .flex+.flex {
 	border-top: 1px dashed #a3a4a5;
 	padding: 74px 24px
 }
 
-@media only screen and (max-width: 640px) {
-	.contents-section .flex+.flex {
-		padding: 48px 0
-	}
-}
+
 
 .contents-section .flex-contents {
 	display: -webkit-box;
@@ -1047,47 +932,12 @@ html.js-scroll-blocking body {
 	padding-left: 22px
 }
 
-@media only screen and (max-width: 1280px) {
-	.contents-section .detail-list li {
-		font-size: 18px
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	.contents-section .detail-list li p {
-		display: block;
-		padding-left: 0;
-		margin-top: 16px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	.contents-section .detail-list li {
-		font-size: 14px
-	}
-
-	.contents-section .detail-list li+li {
-		margin-top: 8px
-	}
-
-	.contents-section .detail-list li p {
-		margin-top: 12px;
-		line-height: 1.6;
-		font-size: 16px
-	}
-}
 
 .contents-section .detail-list.type-dots li {
 	position: relative;
 	padding-left: 24px
 }
 
-@media only screen and (max-width: 640px) {
-	.contents-section .detail-list.type-dots li {
-		padding-left: 16px;
-		font-size: 16px
-	}
-}
 
 .contents-section .detail-list.type-dots li::before {
 	content: '';
@@ -1101,23 +951,11 @@ html.js-scroll-blocking body {
 	top: 7px
 }
 
-@media only screen and (max-width: 640px) {
-	.contents-section .detail-list.type-dots li::before {
-		width: 6px;
-		height: 6px;
-		top: 5px
-	}
-}
 
 .contents-section .list-dotted {
 	padding: 0 72px
 }
 
-@media only screen and (max-width: 1024px) {
-	.contents-section .list-dotted {
-		padding: 0
-	}
-}
 
 .contents-section .list-dotted li {
 	display: -webkit-box;
@@ -1161,102 +999,55 @@ html.js-scroll-blocking body {
 	overflow: hidden
 }
 
-@media only screen and (max-width: 640px) {
-	.contents-section .round-table {
-		width: 100%;
-		margin-left: 0
-	}
-}
-
 .contents-section .round-table table {
 	width: 100%
 }
 
-@media only screen and (max-width: 640px) {
-	.contents-section .round-table table .mobile-col {
-		width: 33% !important
-	}
+
+.contents-section .round-table table thead th:nth-of-type(1) {
+	background: #3162af
+}
+
+.contents-section .round-table table thead th:nth-of-type(2) {
+	background: #2589c9
+}
+
+.contents-section .round-table table thead th:nth-of-type(3) {
+	background: #1cabe2
 }
 
 .contents-section .round-table table th {
-	color: #fff;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 24px
 }
 
-@media only screen and (max-width: 640px) {
-	.contents-section .round-table table th {
-		font-size: 18px
-	}
+.contents-section .round-table table .row:nth-child(2n) {
+	background: #caf0ff
 }
+
 
 .contents-section .round-table table td {
 	font-size: 20px
 }
 
-@media only screen and (max-width: 1024px) {
-	.contents-section .round-table table td {
-		font-size: 20px
-	}
-}
 
-@media only screen and (max-width: 640px) {
-	.contents-section .round-table table td {
-		font-size: 16px
-	}
 
-	.contents-section .round-table table td .list-dotted li {
-		font-size: 16px
-	}
-}
-
-.contents-section .round-table table th,
-.contents-section .round-table table td {
+.contents-section .round-table table td,
+.contents-section .round-table table th {
 	border-color: #e3e3e3;
-	border-left: 1px solid #e3e3e3;
-	padding: 36px 16px
+	border-left: 1px solid #e3e3e3
 }
 
-@media only screen and (max-width: 640px) {
 
-	.contents-section .round-table table th,
-	.contents-section .round-table table td {
-		padding: 24px 12px
-	}
-}
-
-.contents-section .round-table table tr th:first-child,
-.contents-section .round-table table tr td:first-child {
+.contents-section .round-table table tr td:first-child,
+.contents-section .round-table table tr th:first-child {
 	border-left: none
-}
-
-.contents-section .round-table table .row1 th {
-	background: #3162af
-}
-
-.contents-section .round-table table .row2 th {
-	background: #2589c9
-}
-
-.contents-section .round-table table .row3 th {
-	background: #1cabe2
 }
 
 #wrapper_mainVideo {
 	margin-top: 94px
 }
 
-@media only screen and (max-width: 1024px) {
-	#wrapper_mainVideo {
-		margin-top: 76px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#wrapper_mainVideo {
-		margin-top: 49px
-	}
-}
 
 .button-mute {
 	position: absolute !important;
@@ -1268,60 +1059,29 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 96px;
 	height: 96px;
-	background: url("../images/ico_mute@2x.png") no-repeat center center;
-	background-size: 100%
+	background: url(../images/ico_mute@2x.png) center center/100% no-repeat
 }
 
-@media only screen and (max-width: 1024px) {
-	.button-mute {
-		top: 100px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	.button-mute {
-		top: 73px;
-		width: 48px;
-		height: 48px
-	}
-}
 
 .button-mute.is-unmute {
-	background-image: url("../images/ico_unmute@2x.png")
+	background-image: url(../images/ico_unmute@2x.png)
 }
 
 #cardSection01 {
 	position: relative;
-	height: 100vh;
+	height: 100vh
 }
 
-@media only screen and (max-width: 1280px) {
-	#cardSection01 {
-		padding-top: 94px
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection01 {
-		padding-top: 76px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection01 {
-		padding-top: 49px
-	}
-}
 
 #cardSection01 .bg {
 	position: relative;
-	height: 100%;
+	height: 100%
 }
 
 #cardSection01 .bg img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: cover
 }
 
 #cardSection01 .flex {
@@ -1330,152 +1090,102 @@ html.js-scroll-blocking body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-direction: column;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: -10px;
 	-webkit-box-align: end;
 	-ms-flex-align: end;
 	align-items: center;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	background: url(../../assets/images/bg_main_card_gradient.png) repeat-x center bottom
 }
 
-@media only screen and (max-width: 1280px) {
-	#cardSection01 .flex {
-		width: 100%
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection01 .flex {
-		position: static;
-		background: #fff
-	}
-}
 
 #cardSection01 .btn-join {
 	position: fixed;
-	right: 16px;
-	bottom: 40px;
+	right: 10px;
 	z-index: 10;
 	text-align: right
 }
 
-#cardSection01 .btn-join button {
-	width: 278px
-}
-
 #cardSection01 .btn-join button span {
 	position: absolute;
+	font-size: 38px;
 	line-height: 1.4;
-	left: 50%;
-	top: 60%;
+	left: 44%;
+	top: 47%;
 	z-index: 1;
 	transform: translate(-50%, -50%);
+	color:#000;
 }
 
 #cardSection01 .btn-join button img:last-child {
 	position: absolute;
-	right:55%;
-	bottom: 30%;
+	right: 20%;
+	bottom: 25%;
 	transform: translateX(50%);
 	transition: right ease-in-out .5s;
 	z-index: 1;
-	opacity: 0;
+	opacity: 1;
 }
 
 #cardSection01 .btn-join button:after {
 	content: '';
-	width: 0%;
-	height: 20px;
-	background: url(/assets/images/obj_yellow_crayon@2x.png) 0% 50% no-repeat;
-	background-size: cover;
+	width: 0;
+	height: 24px;
+	background: url(/assets/images/join_pencil_yellow.png) 0 50%/cover no-repeat;
 	display: block;
 	position: absolute;
-	bottom: 40%;
-	left: 35%;
-	transition: width ease-in-out .5s;
+	bottom: 55%;
+	left: 26%;
+	transition: width ease-in-out .4s
 }
 
 #cardSection01 .btn-join button:hover img:last-child {
-	right: 25%;
-	opacity: 1;
+	animation: pencil .8s alternate;
+	right: 20%;
+	opacity: 1
 }
+
 #cardSection01 .btn-join button:hover:after {
-	width: 30%;
+	width:115px
 }
 
-@media only screen and (max-width: 1440px) {
-	#cardSection01 .btn-join {
-		width: 100%;
-		left: inherit;
-		margin-left: 0;
-		right: 20px
+@keyframes pencil {
+	0% {
+		right:60%;
+		bottom:15%; 
+	}
+	80% {
+		right:20%; 
+		bottom:15%;
+	}
+	100% {
+		right:20%; 
 	}
 
-	#cardSection01 .btn-join button {
-		right: 0
-	}
 }
 
-@media only screen and (max-width: 1280px) {
-	#cardSection01 .btn-join {
-		right: 0px
-	}
-
-	#cardSection01 .btn-join button {
-		width: 220px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection01 .btn-join button {
-		width: 150px;
-		position: fixed;
-		right: 16px;
-		bottom: 16px
-
-	}
-
-	
-}
 
 #cardSection01 .title-area {
 	position: relative;
-	width: 1280px;
+	width: 1400px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: column;
+	padding-bottom: 120px;
 }
 
-@media only screen and (max-width: 1280px) {
-	#cardSection01 .title-area {
-		padding: 40px 16px
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection01 .title-area {
-		padding: 40px 0
-	}
-}
-
-
-@media only screen and (max-width: 640px) {
-	#cardSection01 .title-area br {
-		display: block
-	}
-}
 
 #cardSection01 .title-area h2 {
 	color: #fff;
-	font-size: 68px;
+	font-size: 82px;
 	font-weight: 500;
-	width: 50%;
+	width: 50%
 }
 
 #cardSection01 .title-area h2 .pc-block {
@@ -1484,82 +1194,25 @@ html.js-scroll-blocking body {
 
 #cardSection01 .title-area h2 span {
 	display: inline-block;
-	line-height: 1.4;
-}
-#cardSection01 .title-area h2 span:after {
-	content: '';
-	width: 100%; 
-	height: 20px; 
-	display: block;
 	background: #01B9FF;
-	margin-top: -40px;
-	border-radius: 5px;
+	font-weight: 400;
+	padding: 15px 25px 10px;
+	line-height: 1;
 }
 
-@media only screen and (max-width: 1280px) {
-	#cardSection01 .title-area h2 {
-		font-size: 48px
-	}
 
-	#cardSection01 .title-area h2 span {
-		font-size: 24px
-	}
-}
 
-@media only screen and (max-width: 1024px) {
-	#cardSection01 .title-area h2 {
-		color: #1cabe2;
-		text-shadow: none
-	}
-
-	#cardSection01 .title-area h2 span {
-		color: #212325;
-		text-shadow: none
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection01 .title-area h2 {
-		font-size: 32px
-	}
-
-	#cardSection01 .title-area h2 span {
-		font-size: 16px
-	}
-}
 
 #cardSection01 .title-area p {
 	color: #fcfcfc;
-	margin-top: 24px;
-	font-size: 18px;
+	margin-top: 10px;
+	font-size: 32px;
 	font-weight: 300;
-	width: 50%;
+	width: 50%
 }
 
 #cardSection01 .title-area p br {
 	display: block
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection01 .title-area p {
-		font-size: 16px
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection01 .title-area p {
-		color: #212325;
-		font-weight: 400;
-		border-top: 1px solid #4f585d;
-		padding-top: 16px;
-		margin-top: 32px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection01 .title-area p {
-		font-size: 13px
-	}
 }
 
 #cardSection01 .title-area .share-sns-list {
@@ -1573,349 +1226,125 @@ html.js-scroll-blocking body {
 
 #cardSection01 .title-area .share-sns-list ul li {
 	display: inline-block;
-	width: 36px
+	background: rgba(255, 255, 255, .4);
+	width: 57px;
+	height: 57px;
+	text-align: center;
+	line-height: 62px;
+	border-radius: 20px;
+}
+
+#cardSection01 .title-area .share-sns-list ul li img {
+	margin-left: 3px;
 }
 
 #cardSection01 .title-area .share-sns-list ul li+li {
-	margin-left: 24px
+	margin-left: 21px
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection01 .title-area .share-sns-list ul li {
-		width: 24px
-	}
 
-	#cardSection01 .title-area .share-sns-list ul li+li {
-		margin-left: 20px
+
+#cardSection01 .arrow {
+	position: absolute;
+	bottom: 60px;
+	animation: main_arrow 3s infinite;
+}
+@keyframes main_arrow {
+	0% {
+		bottom: 60px;
+	}
+	50% {
+		bottom: 40px;
+	}
+	100% {
+		bottom: 60px;
 	}
 }
 
-@media only screen and (max-width: 1280px) {
-	#cardSection01 .title-area .share-sns-list {
-		right: 16px
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection01 .title-area .share-sns-list {
-		background: #1cabe2;
-		border-radius: 8px;
-		padding: 8px 16px;
-		position: static;
-		display: inline-block;
-		margin-top: 24px
-	}
-}
 
 #cardSection02 {
-	padding: 196px 0;
-	/* background: #fff url(../images/bg_contents_pattern_01.png) repeat center center; */
+	padding: 196px 0
 }
 
-@media only screen and (max-width: 1024px) {
-	#cardSection02 {
-		padding: 80px 0
-	}
-}
 
 #cardSection02 .inner+.inner {
 	margin-top: 219px
 }
 
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .inner+.inner {
-		margin-top: 160px
-	}
-}
-
-#cardSection02 .title-area {
-	font-size: 0;
-	border: 2px solid blue;
-}
 
 #cardSection02 .title-area h4 {
 	position: relative;
-	font-size: 48px;
-    line-height: 1.5;
-	border: 2px solid red;
+	font-size: 72px;
+	line-height: 1;
+	color: #000;
 }
 
-#cardSection02 .title-area h4::before,
-#cardSection02 .title-area h4::after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 30px;
-	width: 164px;
-	height: 7px;
-	background: url(../../assets/images/bg_subject_title@2x.png) no-repeat center center;
-	background-size: auto 100%
-}
-
-@media only screen and (max-width: 1280px) {
-
-	#cardSection02 .title-area h4::before,
-	#cardSection02 .title-area h4::after {
-		position: static;
-		display: inline-block;
-		vertical-align: middle;
-		margin: -4px 16px 0
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-
-	#cardSection02 .title-area h4::before,
-	#cardSection02 .title-area h4::after {
-		display: block;
-		margin: 12px auto
-	}
-}
-
-@media only screen and (max-width: 640px) {
-
-	#cardSection02 .title-area h4::before,
-	#cardSection02 .title-area h4::after {
-		width: 128px;
-		background-size: auto 100%
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .title-area h4 {
-		font-size: 32px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .title-area h4 {
-		font-size: 24px
-	}
-
-	#cardSection02 .title-area h4 span>div.emphasis {
-		display: inline
-	}
-}
-
-#cardSection02 .title-area h4::before {
-	left: 0
-}
-
-#cardSection02 .title-area h4::after {
-	right: 0
-}
-
-#cardSection02 .subject-content {
-	background: #fff;
-	border-radius: 8px;
-	-webkit-box-shadow: 4px 4px 14px 0 rgba(221, 221, 221, 0.5);
-	box-shadow: 4px 4px 14px 0 rgba(221, 221, 221, 0.5);
-	padding: 74px 100px;
-	text-align: center;
-	position: relative
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection02 .subject-content {
-		padding: 60px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .subject-content {
-		padding: 48px 12px;
-		font-size: 16px
-	}
-}
-
-#cardSection02 .subject-content::before {
-	content: '';
-	display: block;
-	width: 156px;
-	height: 199px;
-	background: url(../images/obj_brush@2x.png) no-repeat center center;
-	background-size: 100%;
-	position: absolute;
-	left: -78px;
-	top: 10px
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection02 .subject-content::before {
-		left: 0;
-		top: -60px
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .subject-content::before {
-		width: 80px;
-		height: 104px
-	}
-}
-
-#cardSection02 .subject-content::after {
-	content: '';
-	display: block;
-	width: 201px;
-	height: 162px;
-	background: url(../images/obj_palette@2x.png) no-repeat center center;
-	background-size: 100%;
-	position: absolute;
-	right: -66px;
-	top: 365px
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection02 .subject-content::after {
-		right: 0;
-		top: inherit;
-		bottom: -60px;
-		width: 160px;
-		height: 135px
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .subject-content::after {
-		width: 90px;
-		height: 78px;
-		bottom: -30px
-	}
-}
-
-#cardSection02 .subject-content h5 {
+#cardSection02 .subject-content > p {
 	font-size: 32px;
-	position: relative;
-	margin-bottom: 100px
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection02 .subject-content h5 {
-		font-size: 24px;
-		margin-bottom: 40px;
-		display: inline-block
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .subject-content h5 {
-		font-size: 18px
-	}
+	color: #000;
+	line-height: 1;
 }
 
 #cardSection02 .subject-content .btn-group {
-	margin: 72px 0 49px 0
+	margin: 72px 0 49px
 }
 
 #cardSection02 .subject-content .txt-emphasis {
-	margin-top: 60px;
-	font-size: 32px;
+	margin-top: 40px;
+	font-size: 70px;
+	color: #000;
+	line-height: 1.3;
 	position: relative;
 	display: inline-block
 }
-
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .subject-content .txt-emphasis {
-		font-size: 24px
-	}
+#cardSection02 .subject-content .txt-emphasis b {
+	position: relative;	
 }
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .subject-content .txt-emphasis {
-		margin-top: 24px;
-		font-size: 18px
-	}
-
-	#cardSection02 .subject-content .txt-emphasis br {
-		display: none
-	}
-}
-
-#cardSection02 .subject-content .txt-emphasis::before,
-#cardSection02 .subject-content .txt-emphasis::after {
+#cardSection02 .subject-content .txt-emphasis b:after {
 	content: '';
-	display: block;
-	width: 33px;
+	width: 100%;
 	height: 24px;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center center;
+	display: inline-block;
+	background-color: #fee300;
 	position: absolute;
-	top: -24px
+	left: 1%;
+	bottom: 15px;
+	z-index: -1;
+	border-radius: 5px;
 }
 
-@media only screen and (max-width: 1024px) {
-
-	#cardSection02 .subject-content .txt-emphasis::before,
-	#cardSection02 .subject-content .txt-emphasis::after {
-		position: static;
-		display: block;
-		margin: 16px auto
-	}
+#cardSection02 .subject-content .txt-empsub {
+	color: #565656;
+	font-family: 'NS';
+	font-size: 26px;
+	letter-spacing: -.06em;
+	line-height: 1.7;
+	margin-top: 70px;
 }
 
-#cardSection02 .subject-content .txt-emphasis::before {
-	background-image: url(../images/ico_quotes_left@2x.png);
-	left: -72px
+#cardSection02 .subject-content .txt-empsub b { 
+	color: #000;
 }
 
-#cardSection02 .subject-content .txt-emphasis::after {
-	background-image: url(../images/ico_quotes_right@2x.png);
-	right: -72px
+#cardSection02 .subject-content .txt-empsub p {
+	margin-top: 35px;
+	line-height: 1.6;
+	font-size: 30px;
+	color: #000;
+	font-family: 'nexon';
 }
 
-#cardSection02 .subject-content .txt-emphasis em.emphasis {
-	font-size: inherit
-}
-
-#cardSection02 .subject-content .txt-emphasis .emphasis {
-	margin-top: 16px;
-	font-size: 24px;
-	font-weight: bold
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .subject-content .txt-emphasis {
-		font-size: 20px
-	}
-
-	#cardSection02 .subject-content .txt-emphasis .emphasis {
-		font-size: 16px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .subject-content .txt-emphasis {
-		font-size: 18px
-	}
-
-	#cardSection02 .subject-content .txt-emphasis .emphasis {
-		font-size: 14px
-	}
-}
-
-#cardSection02 .subject-content .terms-layer {
-	text-align: left;
-	padding: 48px 48px 32px 48px;
-	background: #f6f6f6;
-	font-size: 20px
-}
-
-#cardSection02 .subject-content .terms-layer .btn-group {
+#cardSection02 .subject-content .button a {
+	position: relative;
+	font-size: 30px;
+	color: #fff;
+	font-weight: 400;
+	background: #00b9ff;
+	padding: 32px 0;
 	text-align: center;
-	margin: 45px 0 0 0
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .subject-content .terms-layer {
-		font-size: inherit;
-		padding: 20px 12px 42px 12px
-	}
-
-	#cardSection02 .subject-content .terms-layer .btn-group {
-		margin: 32px 0 0 0
-	}
+	width: 502px;
+	display: block;
+	
 }
 
 #cardSection02 .about-content .about-cover {
@@ -1927,47 +1356,15 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 262px;
 	height: 65px;
-	background: url(../images/obj_yellow_crayon@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/obj_yellow_crayon@2x.png) center center/100% no-repeat;
 	position: absolute;
 	right: -131px;
 	bottom: 60px
 }
 
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .about-content .about-cover::after {
-		right: -16px;
-		bottom: 16px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .about-cover::after {
-		width: 100px;
-		height: 30px
-	}
-}
 
 #cardSection02 .about-content .campaign-detail {
 	margin-top: 80px
-}
-
-@media only screen and (max-width: 800px) {
-	#cardSection02 .about-content .campaign-detail .flex-contents {
-		display: block
-	}
-
-	#cardSection02 .about-content .campaign-detail .flex-contents>div+div {
-		margin-top: 40px;
-		padding-top: 48px;
-		border-top: 1px dashed #a3a4a5
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .campaign-detail {
-		margin-top: 0
-	}
 }
 
 #cardSection02 .about-content .join-process {
@@ -1976,61 +1373,15 @@ html.js-scroll-blocking body {
 	margin-left: -13px
 }
 
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .about-content .join-process {
-		width: 100%;
-		margin: 30px 0 0 0
-	}
-}
-
 #cardSection02 .about-content .join-process ul::after {
 	content: '';
 	display: table;
 	clear: both
 }
 
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .about-content .join-process ul {
-		font-size: 0;
-		text-align: center
-	}
-}
-
 #cardSection02 .about-content .join-process ul li {
 	float: left;
 	position: relative
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection02 .about-content .join-process ul li {
-		font-size: 18px
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .about-content .join-process ul li {
-		width: 30%;
-		float: none;
-		display: inline-block;
-		vertical-align: top;
-		margin-bottom: 40px
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	#cardSection02 .about-content .join-process ul li {
-		width: 48%;
-		margin-bottom: 20px
-	}
-
-	#cardSection02 .about-content .join-process ul li:nth-child(odd) {
-		clear: both;
-		float: left
-	}
-
-	#cardSection02 .about-content .join-process ul li:nth-child(even) {
-		float: right
-	}
 }
 
 #cardSection02 .about-content .join-process ul li .box {
@@ -2042,20 +1393,8 @@ html.js-scroll-blocking body {
 	border-radius: 12px;
 	padding: 16px 12px;
 	text-align: center;
-	-webkit-box-shadow: 0 2px 12px 0 rgba(238, 238, 238, 0.5);
-	box-shadow: 0 2px 12px 0 rgba(238, 238, 238, 0.5)
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection02 .about-content .join-process ul li .box {
-		width: 100%
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .join-process ul li .box {
-		padding: 12px 8px
-	}
+	-webkit-box-shadow: 0 2px 12px 0 rgba(238, 238, 238, .5);
+	box-shadow: 0 2px 12px 0 rgba(238, 238, 238, .5)
 }
 
 #cardSection02 .about-content .join-process ul li+li {
@@ -2067,29 +1406,10 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 22px;
 	height: 43px;
-	background: url(../images/ico_arr_step@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/ico_arr_step@2x.png) center center/100% no-repeat;
 	position: absolute;
 	left: -35px;
 	top: 130px
-}
-
-@media only screen and (max-width: 800px) {
-	#cardSection02 .about-content .join-process ul li+li::before {
-		display: none
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .about-content .join-process ul li+li {
-		margin-left: 5%
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	#cardSection02 .about-content .join-process ul li+li {
-		margin-left: 0
-	}
 }
 
 #cardSection02 .about-content .join-process ul li .txt-step {
@@ -2106,99 +1426,29 @@ html.js-scroll-blocking body {
 	margin: 0 auto 16px
 }
 
-@media only screen and (max-width: 1024px) {
-	#cardSection02 .about-content .join-process ul li .ico-process {
-		width: 100%;
-		height: auto
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	#cardSection02 .about-content .join-process ul li .ico-process {
-		width: auto;
-		height: 180px
-	}
-
-	#cardSection02 .about-content .join-process ul li .ico-process img {
-		max-height: 100%
-	}
-}
-
 #cardSection02 .about-content .join-process ul li p {
 	line-height: 1.5;
 	min-height: 51px;
 	font-size: 18px
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .join-process ul li p {
-		font-size: 14px;
-		min-height: auto
-	}
-}
-
-#cardSection02 .about-content .join-process ul li .txt-gray {
-	display: block;
-	font-size: 16px
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .join-process ul li .txt-gray {
-		font-size: 12px
-	}
-}
-
-#cardSection02 .about-content .join-process ul li .btn-group {
-	margin-top: 16px
-}
-
-#cardSection02 .about-content .join-process ul li .btn-group .btn-secondary {
-	font-size: 16px
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .join-process ul li .btn-group {
-		margin-top: 8px
-	}
-}
-
 #cardSection02 .about-content .gift-list {
 	width: calc(100% + 48px);
 	margin: 60px 0 0 -24px;
 	border-radius: 12px;
-	-webkit-box-shadow: 0 2px 12px 0 rgba(238, 238, 238, 0.5);
-	box-shadow: 0 2px 12px 0 rgba(238, 238, 238, 0.5);
-	border: solid 2px #b2def1;
+	-webkit-box-shadow: 0 2px 12px 0 rgba(238, 238, 238, .5);
+	box-shadow: 0 2px 12px 0 rgba(238, 238, 238, .5);
+	border: 2px solid #b2def1;
 	background-color: #fff;
 	text-align: center;
-	padding: 43px 0 31px 0;
+	padding: 43px 0 31px;
 	font-size: 20px;
-	font-weight: bold
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection02 .about-content .gift-list {
-		width: 100%;
-		margin-left: 0
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .gift-list {
-		font-size: 16px;
-		margin-top: 22px
-	}
+	font-weight: 700
 }
 
 #cardSection02 .about-content .gift-list .gift-item {
 	display: inline-block;
 	position: relative
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .gift-list .gift-item {
-		display: block
-	}
 }
 
 #cardSection02 .about-content .gift-list .gift-item+.gift-item {
@@ -2209,21 +1459,11 @@ html.js-scroll-blocking body {
 	content: '+';
 	display: block;
 	color: #1cabe2;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 60px;
 	position: absolute;
 	left: 52px;
 	top: 62px
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .gift-list .gift-item+.gift-item {
-		padding-left: 0
-	}
-
-	#cardSection02 .about-content .gift-list .gift-item+.gift-item::before {
-		position: static
-	}
 }
 
 #cardSection02 .about-content .gift-list .img {
@@ -2236,106 +1476,45 @@ html.js-scroll-blocking body {
 	vertical-align: bottom
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .gift-list .img span {
-		display: block;
-		margin: 0 auto
-	}
-}
 
 #cardSection02 .about-content .gift-list .item-1-1 {
 	width: 269px
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .gift-list .item-1-1 {
-		width: 200px
-	}
-}
 
 #cardSection02 .about-content .gift-list .item-2-1 {
 	width: 174px
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .gift-list .item-2-1 {
-		width: 117px
-	}
-}
+
 
 #cardSection02 .about-content .gift-list .item-2-2 {
 	width: 154px
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .gift-list .item-2-2 {
-		width: 103px
-	}
-}
+
 
 #cardSection02 .about-content .gift-list .item-2-3 {
 	width: 243px
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection02 .about-content .gift-list .item-2-3 {
-		width: 171px
-	}
-}
 
 #cardSection03 {
-	padding: 97px 0 226px 0;
-	background: url(../images/bg_standard_section.png) repeat 0 0
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection03 {
-		padding: 80px 0
-	}
+	padding: 97px 0 226px;
+	background: url(../images/bg_standard_section.png)
 }
 
 #cardSection03 .inner-wrap {
 	width: 1600px;
 	background: #fff;
-	padding: 114px 0 120px 0;
+	padding: 114px 0 120px;
 	margin: 0 auto;
 	border-radius: 40px
-}
-
-@media only screen and (max-width: 1600px) {
-	#cardSection03 .inner-wrap {
-		width: calc(100% - 32px);
-		padding: 48px 0
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection03 .inner-wrap {
-		width: calc(100% - 16px)
-	}
-
-	#cardSection03 .inner-wrap .inner {
-		padding: 0 8px
-	}
 }
 
 #cardSection03 .score-info {
 	width: calc(100% + 48px);
 	margin: 56px 0 0 -24px
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection03 .score-info {
-		width: 100%;
-		margin-left: 0
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection03 .score-info {
-		display: block;
-		margin-top: 24px
-	}
 }
 
 #cardSection03 .score-info .score-background {
@@ -2348,45 +1527,10 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 233px;
 	height: 58px;
-	background: url(../images/obj_orange_crayon@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/obj_orange_crayon@2x.png) center center/100% no-repeat;
 	position: absolute;
 	left: -72px;
 	bottom: 40px
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection03 .score-info .score-background::before {
-		left: -8px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection03 .score-info .score-background::before {
-		width: 108px;
-		height: 30px;
-		bottom: 16px
-	}
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection03 .score-info .score-background {
-		width: 48%
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection03 .score-info .score-background {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 40px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection03 .score-info .score-background {
-		margin-bottom: 24px
-	}
 }
 
 #cardSection03 .score-info .score-list {
@@ -2396,9 +1540,9 @@ html.js-scroll-blocking body {
 #cardSection03 .score-info .score-list li {
 	padding: 22px 27px 21px 88px;
 	border-radius: 10px;
-	-webkit-box-shadow: 0 2px 12px 0 rgba(238, 238, 238, 0.5);
-	box-shadow: 0 2px 12px 0 rgba(238, 238, 238, 0.5);
-	border: solid 2px #b2def1;
+	-webkit-box-shadow: 0 2px 12px 0 rgba(238, 238, 238, .5);
+	box-shadow: 0 2px 12px 0 rgba(238, 238, 238, .5);
+	border: 2px solid #b2def1;
 	background-color: #fff;
 	position: relative;
 	display: -webkit-box;
@@ -2409,20 +1553,8 @@ html.js-scroll-blocking body {
 	align-items: center
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection03 .score-info .score-list li {
-		padding: 19px 24px 16px 72px
-	}
-}
-
 #cardSection03 .score-info .score-list li+li {
 	margin-top: 32px
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection03 .score-info .score-list li+li {
-		margin-top: 3%
-	}
 }
 
 #cardSection03 .score-info .score-list li .ico {
@@ -2433,23 +1565,9 @@ html.js-scroll-blocking body {
 	width: 52px
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection03 .score-info .score-list li .ico {
-		width: 42px;
-		top: 50%;
-		margin-top: -21px
-	}
-}
-
 #cardSection03 .score-info .score-list li strong {
 	display: block;
 	font-size: 22px
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection03 .score-info .score-list li strong {
-		font-size: 18px
-	}
 }
 
 #cardSection03 .score-info .score-list li p {
@@ -2457,19 +1575,12 @@ html.js-scroll-blocking body {
 	margin-top: 4px
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection03 .score-info .score-list li p {
-		width: 60%;
-		font-size: 14px
-	}
-}
-
 #cardSection03 .score-info .score-list li .score-num {
 	position: absolute;
 	right: 26px;
 	top: 33px;
 	color: #1cabe2;
-	font-weight: bold;
+	font-weight: 700;
 	padding-left: 32px
 }
 
@@ -2478,31 +1589,10 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 23px;
 	height: 22px;
-	background: url(../images/ico_score_check@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/ico_score_check@2x.png) center center/100% no-repeat;
 	position: absolute;
 	left: 0;
 	top: 0
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection03 .score-info .score-list li .score-num {
-		font-size: 20px;
-		right: 16px;
-		top: 42px
-	}
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardSection03 .score-info .score-list {
-		width: 50%
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection03 .score-info .score-list {
-		width: 100%
-	}
 }
 
 #cardSection03 .txt-lgray {
@@ -2510,28 +1600,11 @@ html.js-scroll-blocking body {
 	margin-top: 32px
 }
 
-@media only screen and (max-width: 1024px) {
-	#cardSection03 .txt-lgray {
-		font-size: inherit
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardSection03 .standard-content .flex:first-child {
-		padding-top: 0
-	}
-}
-
 #cardSection04 {
-	background: #1cabe2;
-	padding: 100px 0 188px 0;
+	background: #fff url(../images/faq_bg.png) no-repeat 50% 50%;
+	background-size: cover;
+	padding: 277px 0 365px;
 	position: relative
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection04 {
-		padding: 64px 0 116px 0
-	}
 }
 
 #cardSection04 .inner {
@@ -2544,17 +1617,10 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 233px;
 	height: 319px;
-	background: url(../images/obj_yellow_rain@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/obj_yellow_rain@2x.png) center center/100% no-repeat;
 	position: absolute;
 	left: 0;
 	top: 600px
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardSection04::before {
-		display: none
-	}
 }
 
 #cardSection04::after {
@@ -2562,38 +1628,41 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 460px;
 	height: 230px;
-	background: url(../images/obj_skyblue_paints@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/obj_skyblue_paints@2x.png) center center/100% no-repeat;
 	position: absolute;
 	right: 60px;
 	top: 1250px;
 	z-index: 0
 }
 
-@media only screen and (max-width: 1024px) {
-	#cardSection04::after {
-		display: none
-	}
-}
-
 #cardSection04 .title-area {
 	margin-bottom: 100px
+
 }
 
-#cardSection04 .title-area h4 {
-	color: #fff
+.title-area h4 {
+	position: relative;
+	display: inline-block
 }
 
-@media only screen and (max-width: 1280px) {
-	#cardSection04 .title-area {
-		margin-bottom: 40px
-	}
+.title-area h4:before, .title-area h4:after {
+	content:'';
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute
 }
 
-@media only screen and (max-width: 640px) {
-	#cardSection04 .title-area {
-		margin-bottom: 32px
-	}
+.title-area h4:before {
+	background: url(../images/bracket_l.png);
+	top: -27px;
+	left: -36px;
+}
+
+.title-area h4:after {
+	background: url(../images/bracket_r.png);
+	bottom: -28px;
+	right: -28px;
 }
 
 #cardGallery {
@@ -2619,8 +1688,7 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 1920px;
 	height: 861px;
-	background: url(../images/bg_firecracker.png) no-repeat center top;
-	background-size: 100%;
+	background: url(../images/bg_firecracker.png) center top/100% no-repeat;
 	position: absolute;
 	left: 50%;
 	margin-left: -960px;
@@ -2630,8 +1698,7 @@ html.js-scroll-blocking body {
 
 #cardGallery .title-area {
 	color: #fff;
-	background: url(../images/obj_five_stars@2x.png) no-repeat center bottom;
-	background-size: 212px;
+	background: url(../images/obj_five_stars@2x.png) center bottom/212px no-repeat;
 	padding-bottom: 52px;
 	margin-bottom: 108px
 }
@@ -2641,8 +1708,8 @@ html.js-scroll-blocking body {
 	position: relative
 }
 
-#cardGallery .title-area h4::before,
-#cardGallery .title-area h4::after {
+#cardGallery .title-area h4::after,
+#cardGallery .title-area h4::before {
 	content: '';
 	display: block;
 	width: 158px;
@@ -2672,7 +1739,7 @@ html.js-scroll-blocking body {
 
 #cardGallery .gallery-content {
 	background: #fff;
-	padding: 45px 0 138px 0;
+	padding: 45px 0 138px;
 	text-align: center;
 	border: 3px solid #f5cb4f;
 	border-radius: 17px;
@@ -2683,8 +1750,7 @@ html.js-scroll-blocking body {
 	content: '';
 	width: 145px;
 	height: 321px;
-	background: url(../images/obj_balloon_left@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/obj_balloon_left@2x.png) center center/100% no-repeat;
 	position: absolute;
 	left: 0;
 	top: -321px
@@ -2694,15 +1760,14 @@ html.js-scroll-blocking body {
 	content: '';
 	width: 301px;
 	height: 421px;
-	background: url(../images/obj_balloon_right@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/obj_balloon_right@2x.png) center center/100% no-repeat;
 	position: absolute;
 	right: 0;
 	top: -421px
 }
 
 #cardGallery .gallery-content .celebration-message {
-	font-weight: bold;
+	font-weight: 700;
 	color: #f5cb4f;
 	font-size: 37px
 }
@@ -2754,15 +1819,15 @@ html.js-scroll-blocking body {
 }
 
 #cardGallery .gallery-content .medal-title.type-gold {
-	background: url(../images/bg_gold_medal_line.png) no-repeat center center
+	background: url(../images/bg_gold_medal_line.png) center center no-repeat
 }
 
 #cardGallery .gallery-content .medal-title.type-silver {
-	background: url(../images/bg_silver_medal_line.png) no-repeat center center
+	background: url(../images/bg_silver_medal_line.png) center center no-repeat
 }
 
 #cardGallery .gallery-content .medal-title.type-bronze {
-	background: url(../images/bg_bronze_medal_line.png) no-repeat center center
+	background: url(../images/bg_bronze_medal_line.png) center center no-repeat
 }
 
 #cardGallery .gallery-content .medal-list+.medal-list {
@@ -2851,8 +1916,7 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 605px;
 	height: 449px;
-	background: url(../images/bg_frame@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/bg_frame@2x.png) center center/100% no-repeat;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -2865,236 +1929,6 @@ html.js-scroll-blocking body {
 	padding: 100px 0
 }
 
-@media only screen and (max-width: 1600px) {
-	#cardGallery .inner {
-		width: 100%;
-		padding: 0 12px
-	}
-}
-
-@media only screen and (max-width: 1280px) {
-	#cardGallery .title-area h4 {
-		font-size: 40px
-	}
-
-	#cardGallery .title-area h4 span {
-		font-size: 32px
-	}
-
-	#cardGallery .title-area h4::before,
-	#cardGallery .title-area h4::after {
-		width: 100px;
-		height: 190px;
-		top: -30px
-	}
-
-	#cardGallery .gallery-content.obj-balloon::before {
-		width: 100px;
-		height: 216px;
-		top: -216px
-	}
-
-	#cardGallery .gallery-content.obj-balloon::after {
-		width: 200px;
-		height: 279px;
-		top: -279px
-	}
-
-	#cardGallery .gallery-content .tab-list {
-		padding: 0 40px
-	}
-
-	#cardGallery .gallery-content .medal-list ul {
-		padding: 0 40px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li {
-		width: 48%
-	}
-
-	#cardGallery .gallery-content .medal-list ul li:nth-child(even) {
-		margin-left: 4%
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .gallery-image {
-		width: 100%
-	}
-
-	#cardGallery .gallery-content .medal-list.type-frame ul li .gallery-image {
-		height: 32vw;
-		overflow: hidden
-	}
-
-	#cardGallery .gallery-content .medal-list.type-frame ul li .gallery-image::before {
-		width: 100%
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	#cardGallery .gallery-content .tab-list ul li button {
-		font-size: 24px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description .gallery-category {
-		font-weight: bold;
-		font-size: 16px;
-		height: 32px;
-		line-height: 36px;
-		padding: 0 20px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description .gallery-subject {
-		font-size: 26px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description .gallery-name {
-		font-size: 20px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description .gallery-text {
-		font-size: 16px
-	}
-
-	#cardGallery .gallery-content .medal-list.type-frame ul li .description {
-		padding: 48px 0
-	}
-
-	#cardGallery .gallery-content .medal-list.type-frame ul li .gallery-image {
-		height: 31.5vw
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#cardGallery {
-		padding: 80px 0
-	}
-
-	#cardGallery .inner+.inner {
-		margin-top: 60px
-	}
-
-	#cardGallery .inner.obj-firecracker::after {
-		width: 100%;
-		height: 258px;
-		background-size: 100%;
-		left: 0;
-		top: -50px;
-		margin-left: 0
-	}
-
-	#cardGallery .title-area {
-		background-size: 120px;
-		padding-bottom: 32px;
-		margin-bottom: 50px
-	}
-
-	#cardGallery .title-area h4 {
-		font-size: 40px
-	}
-
-	#cardGallery .title-area h4::before,
-	#cardGallery .title-area h4::after {
-		width: 50px;
-		height: 95px;
-		top: -10px
-	}
-
-	#cardGallery .title-area h4::before {
-		left: -50px
-	}
-
-	#cardGallery .title-area h4::after {
-		right: -50px
-	}
-
-	#cardGallery .title-area h4 span {
-		font-size: 16px
-	}
-
-	#cardGallery .gallery-content {
-		padding: 32px 0 80px 0
-	}
-
-	#cardGallery .gallery-content.obj-balloon::before {
-		width: 32px;
-		height: 100px;
-		top: -88px
-	}
-
-	#cardGallery .gallery-content.obj-balloon::after {
-		width: 40px;
-		height: 95px;
-		top: -78px
-	}
-
-	#cardGallery .gallery-content .celebration-message {
-		font-size: 22px
-	}
-
-	#cardGallery .gallery-content .tab-list {
-		margin-bottom: 56px;
-		padding: 0 12px
-	}
-
-	#cardGallery .gallery-content .tab-list ul li button {
-		width: 62px;
-		font-size: 16px;
-		height: 32px;
-		line-height: 32px;
-		padding: 0
-	}
-
-	#cardGallery .gallery-content .medal-title.type-gold {
-		background-size: auto 6px
-	}
-
-	#cardGallery .gallery-content .medal-title span {
-		width: 95px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li {
-		width: 100%;
-		margin-bottom: 48px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .gallery-image {
-		height: 48.5vw
-	}
-
-	#cardGallery .gallery-content .medal-list ul li:nth-child(even) {
-		margin-left: 0
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description {
-		padding: 32px 0 0 0
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description .gallery-category {
-		margin-bottom: 16px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description .gallery-subject {
-		font-size: 20px;
-		margin-bottom: 4px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description .gallery-name {
-		font-size: 16px;
-		margin-bottom: 16px
-	}
-
-	#cardGallery .gallery-content .medal-list ul li .description .gallery-text {
-		font-size: 14px
-	}
-
-	#cardGallery .gallery-content .medal-list.type-frame ul li .description {
-		padding: 32px 0
-	}
-
-	#cardGallery .gallery-content .medal-list.type-frame ul li .gallery-image {
-		height: 52.5vw
-	}
-}
 
 .btn-group {
 	font-size: 0
@@ -3116,60 +1950,30 @@ html.js-scroll-blocking body {
 	position: relative
 }
 
-@media only screen and (max-width: 640px) {
-	.btn-primary-arrow {
-		padding: 16px 64px 16px 36px
-	}
-}
 
 .btn-primary-arrow::before {
 	content: '';
 	display: block;
 	width: 30px;
 	height: 16px;
-	background: url(../images/ico_arr_accordion@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/ico_arr_accordion@2x.png) center center/100% no-repeat;
 	position: absolute;
 	right: 34px;
 	top: 23px;
-	-webkit-transition: 0.3s;
-	transition: 0.3s
+	-webkit-transition: .3s;
+	transition: .3s
 }
 
-@media only screen and (max-width: 640px) {
-	.btn-primary-arrow::before {
-		width: 16px;
-		height: 8px;
-		right: 24px;
-		top: 26px
-	}
-}
 
 .btn-primary-arrow.is-active::before {
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg)
 }
 
-@media only screen and (max-width: 1280px) {
-	.btn-primary-arrow {
-		font-size: 20px
-	}
-
-	.btn-primary-arrow::before {
-		top: 20px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	.btn-primary-arrow {
-		font-size: 16px
-	}
-}
-
 .btn-download-white {
 	background: #fff;
 	text-align: left;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 20px;
 	border: 1px solid #979797;
 	border-radius: 8px;
@@ -3182,36 +1986,12 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 22px;
 	height: 23px;
-	background: url(../images/ico_download@2x.png) no-repeat center center;
-	background-size: 100%;
+	background: url(../images/ico_download@2x.png) center center/100% no-repeat;
 	position: absolute;
 	left: 26px;
 	top: 20px
 }
 
-@media only screen and (max-width: 1024px) {
-	.btn-download-white {
-		padding: 16px 28px 16px 60px;
-		font-size: 16px
-	}
-
-	.btn-download-white::before {
-		width: 16px;
-		height: 17px;
-		top: 16px
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	.btn-download-white {
-		font-size: 14px;
-		padding: 16px 22px 16px 40px
-	}
-
-	.btn-download-white::before {
-		left: 16px
-	}
-}
 
 .ico-skyblue {
 	display: inline-block;
@@ -3220,20 +2000,11 @@ html.js-scroll-blocking body {
 	height: 32px;
 	line-height: 34px;
 	color: #fff;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 16px;
 	background: #1cabe2;
 	border-radius: 16px;
 	text-align: center
-}
-
-@media only screen and (max-width: 640px) {
-	.ico-skyblue {
-		font-size: 14px;
-		min-width: 58px;
-		height: 28px;
-		line-height: 30px
-	}
 }
 
 .ico-blue {
@@ -3243,21 +2014,13 @@ html.js-scroll-blocking body {
 	height: 32px;
 	line-height: 34px;
 	color: #fff;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 16px;
 	background: #2589c9;
 	border-radius: 16px;
 	text-align: center
 }
 
-@media only screen and (max-width: 640px) {
-	.ico-blue {
-		font-size: 14px;
-		min-width: 58px;
-		height: 28px;
-		line-height: 30px
-	}
-}
 
 .btn-primary {
 	font-size: 20px;
@@ -3269,12 +2032,6 @@ html.js-scroll-blocking body {
 	width: 100%
 }
 
-@media only screen and (max-width: 640px) {
-	.btn-primary {
-		height: 44px;
-		font-size: 14px
-	}
-}
 
 .btn-secondary {
 	font-size: 20px;
@@ -3286,12 +2043,6 @@ html.js-scroll-blocking body {
 	width: 100%
 }
 
-@media only screen and (max-width: 640px) {
-	.btn-secondary {
-		height: 44px;
-		font-size: 14px
-	}
-}
 
 .btn-gray {
 	font-size: 20px;
@@ -3301,13 +2052,6 @@ html.js-scroll-blocking body {
 	border-radius: 8px;
 	text-align: center;
 	width: 100%
-}
-
-@media only screen and (max-width: 640px) {
-	.btn-gray {
-		height: 44px;
-		font-size: 14px
-	}
 }
 
 .form-item+.form-item {
@@ -3323,14 +2067,6 @@ html.js-scroll-blocking body {
 .form-label .ui-checkbox-text,
 .form-label .ui-radio-text {
 	font-size: 20px
-}
-
-@media only screen and (max-width: 640px) {
-
-	.form-label .ui-checkbox-text,
-	.form-label .ui-radio-text {
-		font-size: 16px
-	}
 }
 
 .form-label+.form-group {
@@ -3355,45 +2091,19 @@ html.js-scroll-blocking body {
 	display: block;
 	width: 18px;
 	height: 18px;
-	background: url("../images/ico_accordion_arrow@2x.png") no-repeat center center;
-	background-size: 100%;
+	background: url(../images/ico_accordion_arrow@2x.png) center center/100% no-repeat;
 	position: absolute;
 	right: 16px;
 	top: 50%;
 	margin-top: -8px;
 	-webkit-transform: rotate(-180deg);
 	transform: rotate(-180deg);
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-	transition: transform 0.3s, -webkit-transform 0.3s
+	-webkit-transition: -webkit-transform .3s;
+	transition: -webkit-transform .3s;
+	transition: transform .3s;
+	transition: transform .3s, -webkit-transform .3s
 }
 
-@media only screen and (max-width: 640px) {
-	.form-label {
-		font-size: 16px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center
-	}
-
-	.form-label .ui-checkbox-block {
-		margin: 0
-	}
-
-	.form-label .accordion-opener {
-		position: static;
-		min-width: 96px;
-		font-size: 14px;
-		font-weight: 700
-	}
-}
 
 .js-accordion-opened .form-label .accordion-opener::before {
 	-webkit-transform: rotate(0);
@@ -3416,12 +2126,6 @@ html.js-scroll-blocking body {
 	display: inline-block
 }
 
-@media only screen and (max-width: 640px) {
-	.form-tip {
-		font-size: 14px;
-		margin-top: 24px
-	}
-}
 
 .form-table {
 	background: #f8f9fa;
@@ -3429,11 +2133,6 @@ html.js-scroll-blocking body {
 	margin-top: 32px
 }
 
-@media only screen and (max-width: 640px) {
-	.form-table {
-		padding: 24px
-	}
-}
 
 .ui-input-block+.ui-input-block {
 	margin-top: 8px
@@ -3475,11 +2174,6 @@ html.js-scroll-blocking body {
 	color: #8d8d8d
 }
 
-@media only screen and (max-width: 640px) {
-	.ui-input {
-		font-size: 14px
-	}
-}
 
 .ui-checkbox-block,
 .ui-radio-block {
@@ -3520,7 +2214,7 @@ html.js-scroll-blocking body {
 	border: 0;
 	padding: 0;
 	opacity: 0;
-	background: none;
+	background: 0 0;
 	position: absolute;
 	width: 1px;
 	margin: 0;
@@ -3563,13 +2257,6 @@ html.js-scroll-blocking body {
 	line-height: 24px
 }
 
-@media only screen and (max-width: 640px) {
-
-	.ui-checkbox-text,
-	.ui-radio-text {
-		font-size: 14px
-	}
-}
 
 .ui-checkbox-object+.ui-checkbox-text,
 .ui-checkbox-text+.ui-checkbox-object,
@@ -3579,7 +2266,6 @@ html.js-scroll-blocking body {
 }
 
 .ui-radio-object {
-	border-radius: 10px;
 	display: inline-block;
 	vertical-align: middle;
 	width: 24px;
@@ -3603,8 +2289,8 @@ html.js-scroll-blocking body {
 	-webkit-transform: scale(0);
 	transform: scale(0);
 	opacity: 0;
-	-webkit-transition: 0.2s;
-	transition: 0.2s
+	-webkit-transition: .2s;
+	transition: .2s
 }
 
 .ui-radio-label.checked .ui-radio-object::before {
@@ -3623,8 +2309,7 @@ html.js-scroll-blocking body {
 }
 
 .ui-checkbox-label.checked .ui-checkbox-object {
-	background: url("../images/ico_check@2x.png") no-repeat center center;
-	background-size: 22px;
+	background: url(../images/ico_check@2x.png) center center/22px no-repeat;
 	border-color: #1cabe2
 }
 
@@ -3641,8 +2326,8 @@ table {
 	width: 100%
 }
 
-table th,
-table td {
+table td,
+table th {
 	border-top: 1px solid #b7b8ba;
 	text-align: center;
 	padding: 16px 0;
@@ -3650,13 +2335,13 @@ table td {
 	line-height: 1.7
 }
 
-table th.a-left,
-table td.a-left {
+table td.a-left,
+table th.a-left {
 	text-align: left
 }
 
-table tr:first-child th,
-table tr:first-child td {
+table tr:first-child td,
+table tr:first-child th {
 	border: none
 }
 
@@ -3665,33 +2350,20 @@ table th {
 }
 
 table td {
-	font-weight: normal
-}
-
-@media only screen and (max-width: 640px) {
-
-	table th,
-	table td {
-		font-size: 14px;
-		word-break: keep-all
-	}
+	font-weight: 400
 }
 
 .faq-accordion {
 	background: #fff;
-	padding: 64px;
-	border-radius: 40px;
-	-webkit-box-shadow: 0 10px 12px 0 rgba(128, 128, 128, 0.5);
-	box-shadow: 0 10px 12px 0 rgba(128, 128, 128, 0.5)
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width:800px) {
 	.faq-accordion {
 		padding: 32px
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	.faq-accordion {
 		padding: 24px
 	}
@@ -3708,20 +2380,20 @@ table td {
 }
 
 .faq-accordion .ui-accordion-subject {
-	font-weight: bold;
+	font-weight: 700;
 	position: relative;
 	padding: 0 48px;
 	line-height: 40px;
 	display: block
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width:1280px) {
 	.faq-accordion .ui-accordion-subject {
 		font-size: 20px
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	.faq-accordion .ui-accordion-subject {
 		font-size: 16px;
 		line-height: 28px;
@@ -3743,7 +2415,7 @@ table td {
 	top: 0
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	.faq-accordion .ui-accordion-subject::before {
 		width: 24px;
 		height: 24px
@@ -3767,15 +2439,14 @@ table td {
 	display: block;
 	width: 32px;
 	height: 18px;
-	background: url(../images/ico_accordion_opener@2x.png) no-repeat right center;
-	background-size: 100%;
+	background: url(../images/ico_accordion_opener@2x.png) right center/100% no-repeat;
 	position: absolute;
 	right: 0;
 	top: 50%;
 	margin-top: -9px
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	.faq-accordion .ui-accordion-opener::before {
 		width: 16px;
 		height: 9px
@@ -3794,11 +2465,12 @@ table td {
 .faq-accordion .ui-accordion-contents {
 	position: relative;
 	padding: 4px 0 40px 48px;
-	font-size: 20px;
-	line-height: 1.6
+	font-size: 26px;
+	line-height: 1.6;
+	background: #fff;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	.faq-accordion .ui-accordion-contents {
 		font-size: 16px;
 		padding-left: 32px
@@ -3819,7 +2491,7 @@ table td {
 	top: 0
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	.faq-accordion .ui-accordion-contents::before {
 		width: 24px;
 		height: 24px
@@ -3851,15 +2523,15 @@ table td {
 }
 
 .slick-list:focus {
-	outline: none
+	outline: 0
 }
 
 .slick-list.dragging {
-	cursor: pointer;
+	cursor: pointer
 }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list {
+.slick-slider .slick-list,
+.slick-slider .slick-track {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0)
 }
@@ -3873,8 +2545,8 @@ table td {
 	margin-right: auto
 }
 
-.slick-track:before,
-.slick-track:after {
+.slick-track:after,
+.slick-track:before {
 	display: table;
 	content: ''
 }
@@ -3894,7 +2566,7 @@ table td {
 	min-height: 1px
 }
 
-[dir='rtl'] .slick-slide {
+[dir=rtl] .slick-slide {
 	float: right
 }
 
@@ -3934,7 +2606,7 @@ table td {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.45);
+	background: rgba(0, 0, 0, .45);
 	z-index: 51;
 	overflow-y: scroll;
 	display: none
@@ -3943,41 +2615,183 @@ table td {
 #modal .layer {
 	position: absolute;
 	left: 50%;
-	top: 40px;
+	top: 120px;
 	-webkit-transform: translate(-50%, 0);
 	transform: translate(-50%, 0);
 	background: #fff;
-	padding: 16px 32px;
+	padding: 60px 50px 140px 50px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin-bottom: 120px
 }
 
+#modal .layer .modal-close {
+	width: 36px;
+	background: 0 0;
+	position: absolute;
+	left: 50%;
+	top: -95px
+}
+
 #modal .modal-header {
-	position: relative;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #1cabe2
+	/* position: relative; */
+	padding-bottom: 54px
 }
 
 #modal .modal-header h2 {
-	font-size: 24px;
-	color: #1cabe2;
-	line-height: 1.7
+	font-size: 40px;
+	text-align: center
 }
 
-#modal .modal-header .modal-close {
-	width: 32px;
-	background: transparent;
+#modal .modal-header h2 > span {
+	color: #ffe400
+}
+
+#modal #application {
+	width: 1000px
+}
+
+#modal #application .round-table {
+	border: 4px solid #07b5ff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#modal #application table th {
+	font-size: 20px;
+	background: #f9f9f9;
+	border-top: 1px solid #e8e8e8
+}
+
+#modal #application table th.blue {
+	background: #07b5ff;
+	color: #fff;
+}
+
+#modal #application table td {
+	font-size: 18px;
+	font-weight: 200;
+	letter-spacing: -0.9px;
+	padding-left: 40px;
+	border-top: 1px solid #e8e8e8
+}
+
+#modal #application table tr:first-child th, 
+#modal #application table tr:first-child td {
+	border-top: 0;
+}
+
+#modal #application table td ul {
+	display: flex;
+}
+
+#modal #application input[type="radio"] {
+	display: none;
+}
+
+#modal #application input[type="radio"] + label {
+	display: inline-block;
+	line-height: 1;
+	vertical-align: middle;
+	position: relative;
+	margin-right: 50px;
+	cursor: pointer
+}
+
+#modal #application input[type="radio"] + label:before {
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	border:2px solid #222;
+	border-radius: 2px;
+	margin-right: 14px
+	
+}
+
+#modal #application input[type="radio"]:checked + label:after {
+	content:''; 
+	display: inline-block;
+	width: 26px;
+	height: 18px;
+	background: url(../images/modal_checked.png) no-repeat;
 	position: absolute;
-	right: 0;
-	top: 3px
+	bottom: 5px;
+	left: 0;
+
+}
+
+#modal #application .row {
+	text-align: left;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#modal #application .row1 {
+	display: flex
+}
+
+#modal #application .row1 > div:nth-of-type(1) {
+	width: calc(50% - 40px);
+	display: table;
+	margin-left: 40px;
+	border-right: 1px solid #e8e8e8
+}
+
+#modal #application .row1 > div:nth-of-type(1) > div {
+	display: table-cell;
+	vertical-align: middle
+}
+
+#modal #application .row1 > div:nth-of-type(2) {
+	width: 50%;
+
+}
+
+#modal #application .row1 > div:nth-of-type(2) .tit {
+	width: 84px;
+	padding: 15px 0 15px 20px
+}
+
+#modal #application .row1 > div:nth-of-type(2) > div:last-of-type {
+	border-top: 1px solid #e8e8e8
+}
+
+#modal #application .row1 ul {
+	display: inline-flex;
+}
+
+#modal #application .row2 {
+	padding: 15px 0 15px 40px;
+}
+
+#modal #application .row .tit, #modal #application .row .td_input {
+	display: inline-block
+}
+
+#modal #application .row .tit {
+	width: 70px
+}
+
+
+#modal #application .row .td_input {
+	font-weight: 400;
+	color: #07b5ff;
+	letter-spacing: -0.9px
+
+}
+
+#modal #application table tr:nth-child(2) td {
+	padding: 0;
+	margin-left: 40px
 }
 
 #modal #modalGuide {
 	width: 880px
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width:800px) {
 	#modal #modalGuide {
 		width: 100%;
 		top: 0
@@ -3985,7 +2799,7 @@ table td {
 }
 
 #modal #modalGuide .modal-body {
-	padding: 60px 0 36px 0
+	padding: 60px 0 36px
 }
 
 #modal #modalGuide .warning-message-text {
@@ -3994,7 +2808,7 @@ table td {
 	margin-top: 24px
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .warning-message-text {
 		font-size: 14px
 	}
@@ -4002,10 +2816,10 @@ table td {
 
 #modal #modalGuide .accept-title {
 	text-align: center;
-	margin: 0 0 32px 0
+	margin: 0 0 32px
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .accept-title {
 		padding: 0 24px
 	}
@@ -4016,8 +2830,8 @@ table td {
 	position: relative
 }
 
-#modal #modalGuide .accept-title span::before,
-#modal #modalGuide .accept-title span::after {
+#modal #modalGuide .accept-title span::after,
+#modal #modalGuide .accept-title span::before {
 	content: '';
 	display: block;
 	width: 33px;
@@ -4034,7 +2848,7 @@ table td {
 	left: -50px
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .accept-title span::before {
 		left: -10px;
 		width: 24px;
@@ -4047,7 +2861,7 @@ table td {
 	right: -50px
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .accept-title span::after {
 		right: -10px;
 		width: 24px;
@@ -4055,13 +2869,13 @@ table td {
 	}
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width:1280px) {
 	#modal #modalGuide .accept-title {
 		font-size: 24px
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .accept-title {
 		font-size: 18px
 	}
@@ -4075,7 +2889,7 @@ table td {
 }
 
 #modal #modalGuide .accept-example-item .type-title {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 20px
 }
 
@@ -4089,7 +2903,7 @@ table td {
 	background-position: center center
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .accept-example-item .type-title {
 		font-size: 16px
 	}
@@ -4106,7 +2920,7 @@ table td {
 	font-size: 18px
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .accept-example-item .type-text {
 		font-size: 14px
 	}
@@ -4126,7 +2940,7 @@ table td {
 	margin: 32px auto 0
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .accept-example-item.type-pass .type-image-item {
 		width: 90%
 	}
@@ -4146,8 +2960,7 @@ table td {
 	top: 0;
 	width: 11px;
 	height: 100%;
-	background: url(../images/ico_vertical_arrow@2x.png) no-repeat center top;
-	background-size: 100% 100%;
+	background: url(../images/ico_vertical_arrow@2x.png) center top/100% 100% no-repeat;
 	text-indent: 10px
 }
 
@@ -4189,7 +3002,7 @@ table td {
 	float: right
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width:800px) {
 	#modal #modalGuide .accept-example-item.type-fail .type-image-item {
 		width: 49%
 	}
@@ -4199,7 +3012,7 @@ table td {
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal #modalGuide .accept-example-item.type-fail .type-image-item {
 		width: 100%
 	}
@@ -4209,7 +3022,7 @@ table td {
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
 	#modal .layer {
 		width: calc(100% - 40px);
 		padding: 16px
@@ -4220,59 +3033,56 @@ table td {
 	}
 }
 
-#cardSection01 .title-area h2 {
-	opacity: 0;
-	position: relative;
-	top: 50px;
-	-webkit-transition: 0.5s;
-	transition: 0.5s
-}
-
+#cardSection01 .title-area h2,
 #cardSection01 .title-area p {
 	opacity: 0;
 	position: relative;
 	top: 50px;
-	-webkit-transition: 0.5s;
-	transition: 0.5s
+	-webkit-transition: .5s;
+	transition: .5s;
+	font-weight: 200;
+	line-height: 1.3;
 }
+
 
 #cardSection01 .title-area .share-sns-list {
 	opacity: 0;
-	top: 100px;
-	-webkit-transition: 0.5s;
-	transition: 0.5s
+	-webkit-transition: .5s;
+	transition: .5s;
+	bottom:0;
+	right:0;
+	width:50%;
 }
 
 #cardSection01 .btn-join {
 	bottom: -40px;
 	opacity: 0;
-	-webkit-transition: 0.5s;
-	transition: 0.5s
+	-webkit-transition: .5s;
+	transition: .5s
 }
 
 #cardSection01.is-active .title-area h2 {
 	opacity: 1;
 	top: 0;
-	-webkit-transition-delay: 0.4s;
-	transition-delay: 0.4s
+	-webkit-transition-delay: .4s;
+	transition-delay: .4s;
 }
 
 #cardSection01.is-active .title-area p {
 	opacity: 1;
 	top: 0;
-	-webkit-transition-delay: 0.6s;
-	transition-delay: 0.6s
+	-webkit-transition-delay: .6s;
+	transition-delay: .6s
 }
 
 #cardSection01.is-active .title-area .share-sns-list {
 	opacity: 1;
-	top: 32px;
-	-webkit-transition-delay: 0.8s;
-	transition-delay: 0.8s
+	-webkit-transition-delay: .8s;
+	transition-delay: .8s
 }
 
 #cardSection01.is-active .btn-join {
-	bottom: 40px;
+	bottom: 15px;
 	opacity: 1;
 	-webkit-transition-delay: 1s;
 	transition-delay: 1s
@@ -4447,8 +3257,8 @@ table td {
 	-webkit-transform: scale(0);
 	transform: scale(0);
 	opacity: 0;
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s
+	-webkit-transition: all .4s;
+	transition: all .4s
 }
 
 #cardSection03 .score-info .score-list li .score-num {
@@ -4457,8 +3267,8 @@ table td {
 	transform: scaleX(-1);
 	-webkit-transition: all 1s;
 	transition: all 1s;
-	-webkit-transition-delay: 0.8s;
-	transition-delay: 0.8s
+	-webkit-transition-delay: .8s;
+	transition-delay: .8s
 }
 
 #cardSection03.is-active .score-info .score-list li .score-num {
@@ -4474,13 +3284,13 @@ table td {
 }
 
 #cardSection03.is-active .score-info .score-list li:nth-child(2) .ico {
-	-webkit-transition-delay: 0.3s;
-	transition-delay: 0.3s
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s
 }
 
 #cardSection03.is-active .score-info .score-list li:nth-child(3) .ico {
-	-webkit-transition-delay: 0.6s;
-	transition-delay: 0.6s
+	-webkit-transition-delay: .6s;
+	transition-delay: .6s
 }
 
 #cardSection04::before {

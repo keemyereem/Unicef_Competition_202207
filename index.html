@@ -13,13 +13,13 @@
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/YTPlayer.js"></script>
 <script src="assets/js/commonUi.js"></script>
-<script src="assets/js/lib/fullpage.js"></script>
-<script src="assets/js/lib/scrolloverflow.min.js"></script>
 <link rel="stylesheet" href="assets/css/base.css">
-<link rel="stylesheet" href="assets/css/lib/fullpage.css">
 <title>‘모든 어린이가 행복한 세상’을 위한 유니세프 달력 그림 그리기 공모전</title>
 </head>
 <body>
+<script>
+
+</script>
 <div id="wrap">
     <header id="header">
         <h1>
@@ -33,10 +33,10 @@
         <div class="global-menu">
             <ul>
                 <li class="menu-01">
-                    <button type="button">유니세프 달력 그림 그리기 공모전</button>
+                    <button type="button">공모전 안내</button>
                 </li>
                 <li class="menu-02">
-                    <button type="button">공모전 안내</button>
+                    <button type="button">공모전 참여</button>
                 </li>
                 <li class="menu-03">
                     <button type="button">시상 및 심사기준</button>
@@ -44,552 +44,593 @@
                 <li class="menu-04">
                     <button type="button">FAQ</button>
                 </li>
+                <li class="menu-05">
+                    <button type="button">수상작 갤러리</button>
+                </li>
             </ul>
         </div>
     </header>
-    <!-- fullpage start -->
-    <!-- <div id="fullpage"> -->
-        <section id="cardSection01" class="main-section">
-            <div class="bg">
-                <img src="assets/images/bg_main_card.png" alt="">
-            </div>
-            <div class="btn-join">
-                <button type="button" onclick="javascript:joinSection()">
-                    <span>공모전<br>출품하기</span>
-                    <img src="assets/images/btn_join_us@2x.png" alt="참여하기">
-                    <img src="assets/images/AA01.png" alt="펜">
-                </button>
-            </div>
-            
-            <div class="inner">
-                <div class="flex">
-                    <div class="title-area">
-                        <h2>
-                            유니세프 <br>
-                            <span>달력 그림 그리기</span><br>
-                            <span>공모전</span>
-                        </h2>
-                        <p>내가 살고 싶은 우리 동네를 그려 주세요!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="cardSection02" class="contents-section">
-            <div class="inner">
+    <section id="cardSection01" class="main-section">
+        <div class="bg">
+            <img src="assets/images/bg_main_card.png" alt="">
+        </div>
+        <div class="btn-join">
+            <button type="button" onclick="javascript:joinSection()">
+                <span>공모전<br>참여하기</span>
+                <img src="assets/images/btn_join_us@2x.png" alt="참여하기">
+                <img src="assets/images/join_pencil.png" alt="펜">
+            </button>
+        </div>
+        
+        <div class="inner">
+            <div class="flex">
                 <div class="title-area">
-                    <h3 class="label-title">
-                        <span>공모주제</span>
-                        <img src="assets/images/txt_campaign_subject@2x.png" alt="공모주제">
-                    </h3>
-                    <h4>
+                    <h2>
                         유니세프 <br>
-                        <span class="emphasis">아동친화사회 만들기</span>
-                    </h4>
-                </div>
-                <div class="content-area subject-content">
-                    <p>
-                        인종, 종교, 국적, 성별을 차별하지 않고 전 세계 어린이를 지키는 유엔기구인 <strong>유니세프</strong>는 지난 75년간 
-                        <br class="m-hide"><strong>유엔아동권리협약</strong>을 바탕으로 모든 어린이의 권리가 지켜지는 행복한 세상을 만들기 위해 노력했습니다.
-                    </p>
-
-                    <div class="txt-emphasis">
-                        <strong>
-                            어린이의 권리가 적힌 <em class="emphasis">유엔아동권리협약</em>을 알아보고, <br>
-                            나의 권리가 지켜지는 행복한 세상을 만들기 위해 <br>
-                            우리가 해야할 일을 그려볼까요?
-                        </strong>
-                        <div class="emphasis">#for every child, every right</div>
+                        <span>달력 그림 그리기</span><br>
+                        <b>공모전</b>
+                    </h2>
+                    <p>내가 살고 싶은 우리 동네를 그려 주세요!</p>
+                    <div class="share-sns-list">
+                        <ul>
+                            <li class="type-link">
+                                <a href="#">
+                                    <img src="assets/images/ico_share_link@2x.png" alt="링크주소로 공유하기">
+                                </a>
+                            </li>
+                            <li class="type-fb">
+                                <a href="#">
+                                    <img src="assets/images/ico_share_fb@2x.png" alt="페이스북으로 공유하기">
+                                </a>
+                            </li>
+                            <li class="type-insta">
+                                <a href="#">
+                                    <img src="assets/images/ico_share_tw@2x.png" alt="트위터로 공유하기">
+                                </a>
+                            </li>
+                            <li class="type-kakao">
+                                <a href="#">
+                                    <img src="assets/images/ico_share_kakao@2x.png" alt="카카오톡으로 공유하기">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                
+                <div class="arrow"><img src="assets/images/main_arrow.png" alt="main_arrow"></div>
             </div>
-            <div class="inner" id="cardSection0202">
-                <div class="title-area">
-                    <h3 class="label-title">
-                        <img src="assets/images/txt_campaign_about@2x.png" alt="공모전 안내">
-                    </h3>
+        </div>
+    </section>
+    <section id="cardSection02" class="contents-section">
+        <div class="inner">
+            <div class="title-area">
+                <h4>공모전 안내</h4>
+            </div>
+            <div class="content-area subject-content">
+                <p>공모주제 : <b>유니세프아동친화사회 만들기</b></p>
+
+                <div class="txt-emphasis">
+                    내가 살고 싶은 <br>
+                    <b>우리 동네를 그려 주세요<i>!</i></b>
                 </div>
-                <div class="content-area about-content">
-                    <div class="about-cover">
-                        <img src="assets/images/img_about_background.png" alt="">
-                    </div>
-                    <div class="campaign-detail">
-                        <div class="flex flex-contents">
-                            <div>
-                                <div class="detail-title">
-                                    <span>공모일정</span>
-                                </div>
-                                <ul class="detail-list">
-                                    <li>
-                                        <span class="ico-skyblue">접수 기간</span>
-                                        <p>
-                                            <strong class="emphasis">2021년 10월 29일(금) ~ 2021년 11월 30일(화)</strong>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <span class="ico-skyblue">작품 심사</span>
-                                        <p>2021년 12월 1일(수) ~ 2021년 12월 15일(수)</p>
-                                    </li>
-                                    <li>
-                                        <span class="ico-skyblue">시상 발표</span>
-                                        <p>2021년 12월 16일(목)</p>
-                                    </li>
-                                </ul>
+
+                <div class="txt-empsub">
+                    <b>*우리동네는</b> 우리 어린이들이 생활하고 있는 우리집, 학교, 공원, 놀이터, 학원 등 모든 공간을 말합니다! <br>
+                    Ex) 내가 다니고 싶은 학교, 내가 놀고 싶은 놀이터, 웃음이 가득한 우리집 ~ 내가 바라는 우리 동네 모습을 마음껏 자유롭게 표현해 주세요!
+
+                    <p>
+                        유니세프한국위원회는 어린이와 부모가 생활하는 공간 모두를 어린이에게 친화적인 환경을 만들기 위해 <br>
+                        아동친화도시, 아동친화기업, 아동친화학교, 아동친화사법 등을 추진하고 있습니다. <br>
+                        유니세프는 우리 모두가 행복한 사회를 만들기 위해 어린이가 행복한 사회를 만듭니다.                        
+                    </p>
+                </div>
+
+                <div class="button"><a href="javascript:;" title="유니세프 아동친화사회 만들기">유니세프 아동친화사회 만들기</a></div>
+            </div>
+        </div>
+        <div class="inner" id="cardSection0202">
+            <div class="title-area">
+                <h3 class="label-title">
+                    <img src="assets/images/txt_campaign_about@2x.png" alt="공모전 안내">
+                </h3>
+            </div>
+            <div class="content-area about-content">
+                <div class="about-cover">
+                    <img src="assets/images/img_about_background.png" alt="">
+                </div>
+                <div class="campaign-detail">
+                    <div class="flex flex-contents">
+                        <div>
+                            <div class="detail-title">
+                                <span>공모일정</span>
                             </div>
-                            <div>
-                                <div class="detail-title">
-                                    <span>참가 대상</span>
-                                </div>
-                                <ul class="detail-list">
+                            <ul class="detail-list">
+                                <li>
+                                    <span class="ico-skyblue">접수 기간</span>
+                                    <p>
+                                        <strong class="emphasis">2021년 10월 29일(금) ~ 2021년 11월 30일(화)</strong>
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="ico-skyblue">작품 심사</span>
+                                    <p>2021년 12월 1일(수) ~ 2021년 12월 15일(수)</p>
+                                </li>
+                                <li>
+                                    <span class="ico-skyblue">시상 발표</span>
+                                    <p>2021년 12월 16일(목)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="detail-title">
+                                <span>참가 대상</span>
+                            </div>
+                            <ul class="detail-list">
+                                <li>
+                                    <span class="ico-blue">개인</span>
+                                    <p>국내외 모든 어린이 (만 18세 미만)</p>
+                                </li>
+                                <li>
+                                    <span class="ico-blue">단체</span>
+                                    <p>국내외 어린이 1인이 포함된 단체 (5인 미만)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex" id="joinSection">
+                        <div>
+                            <div class="detail-title">
+                                <span>접수 방법</span>
+                            </div>
+                            <ul class="detail-list type-dots">
+                                <li>유엔아동권리협약을 읽고 주제를 선정하여 그림을 그려주세요.</li>
+                                <li>그림의 크기는 A5 사이즈 또는 그에 준하는 용지에 그려주세요. (210mm x 148mm)</li>
+                                <li>
+                                    <strong>출품 신청서를 작성하여 그림과 함께 이메일(event@unicef.or.kr)</strong>을 통해 <strong class="emphasis">온라인 접수</strong>해주세요.
+                                </li>
+                            </ul>
+                            <div class="join-process">
+                                <ul>
                                     <li>
-                                        <span class="ico-blue">개인</span>
-                                        <p>국내외 모든 어린이 (만 18세 미만)</p>
+                                        <div class="box">
+                                            <div class="ico-process">
+                                                <img src="assets/images/ico_join_step_01@2x.png" alt="">
+                                            </div>
+                                            <div class="txt-step">
+                                                <img src="assets/images/txt_step1@2x.png" alt="Step1">
+                                            </div>
+                                            <p>
+                                                유엔아동권리협약 읽고, <br>그림 주제 떠올리기
+                                            </p>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary">
+                                                <span>유엔아동권리협약<br>다운받기</span>
+                                            </button>
+                                        </div>
                                     </li>
                                     <li>
-                                        <span class="ico-blue">단체</span>
-                                        <p>국내외 어린이 1인이 포함된 단체 (5인 미만)</p>
+                                        <div class="box">
+                                            <div class="ico-process">
+                                                <img src="assets/images/ico_join_step_02@2x.png" alt="">
+                                            </div>
+                                            <div class="txt-step">
+                                                <img src="assets/images/txt_step2@2x.png" alt="Step2">
+                                            </div>
+                                            <p>
+                                                주제에 맞는 그림 그리기
+                                                <span class="txt-gray">(A5 : 210mm x 148mm)</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="ico-process">
+                                                <img src="assets/images/ico_join_step_03@2x.png" alt="">
+                                            </div>
+                                            <div class="txt-step">
+                                                <img src="assets/images/txt_step3@2x.png" alt="Step3">
+                                            </div>
+                                            <p>
+                                                출품 신청서 작성
+                                            </p>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary">
+                                                <span>출품 신청서 다운받기</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="ico-process">
+                                                <img src="assets/images/ico_join_step_04@2x.png" alt="">
+                                            </div>
+                                            <div class="txt-step">
+                                                <img src="assets/images/txt_step4@2x.png" alt="Step4">
+                                            </div>
+                                            <p>
+                                                그림 사진촬영 또는 스캔
+                                            </p>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-gray" onclick="javascript: acceptModal()">
+                                                <span>작품 접수 가이드</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="ico-process">
+                                                <img src="assets/images/ico_join_step_05@2x.png" alt="">
+                                            </div>
+                                            <div class="txt-step">
+                                                <img src="assets/images/txt_step5@2x.png" alt="Step5">
+                                            </div>
+                                            <p>
+                                                이메일 보내기
+                                                <span class="txt-gray">(그림과 출품 신청서 첨부)</span>
+                                            </p>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-secondary" onclick="javascript:copyEmail('event@unicef.or.kr')">
+                                                <span>
+                                                    event@unicef.or.kr
+                                                    <br>
+                                                    이메일 복사하기
+                                                </span>
+                                            </button>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="flex" id="joinSection">
-                            <div>
-                                <div class="detail-title">
-                                    <span>접수 방법</span>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <div class="detail-title">
+                                <span>참가 기념품</span>
+                            </div>
+                            <ul class="detail-list type-dots">
+                                <li>참여해주시는 분 중 선착순 2,000명에게 소정의 기념품을 보내드립니다.</li>
+                                <li>출품 신청서에 작성해주신 주소로 우편 발송 됩니다.</li>
+                            </ul>
+                            <div class="gift-list">
+                                <div class="gift-item item1">
+                                    <div class="img">
+                                        <span class="item-1-1">
+                                            <img src="assets/images/img_gift_postcard@2x.png" alt="">
+                                        </span>
+                                    </div>
+                                    <p>유니세프 최초의 카드 그림 <span class="emphasis">엽서 1매</span></p>
                                 </div>
-                                <ul class="detail-list type-dots">
-                                    <li>유엔아동권리협약을 읽고 주제를 선정하여 그림을 그려주세요.</li>
-                                    <li>그림의 크기는 A5 사이즈 또는 그에 준하는 용지에 그려주세요. (210mm x 148mm)</li>
-                                    <li>
-                                        <strong>출품 신청서를 작성하여 그림과 함께 이메일(event@unicef.or.kr)</strong>을 통해 <strong class="emphasis">온라인 접수</strong>해주세요.
-                                    </li>
-                                </ul>
-                                <div class="join-process">
+                                <div class="gift-item item2">
+                                    <div class="img">
+                                        <span class="item-2-1">
+                                            <img src="assets/images/img_gift_wappen_01@2x.png" alt="">
+                                        </span>
+                                        <span class="item-2-2">
+                                            <img src="assets/images/img_gift_wappen_02@2x.png" alt="">
+                                        </span>
+                                        <span class="item-2-3">
+                                            <img src="assets/images/img_gift_wappen_03@2x.png" alt="">
+                                        </span>
+                                    </div>
+                                    <p>카드그림그리기 <span class="emphasis">와펜 3종</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cardSection03" class="contents-section">
+        <div class="inner-wrap">
+            <div class="inner">
+                <div class="title-area">
+                    <h3 class="label-title">
+                        <img src="assets/images/txt_campaign_standard@2x.png" alt="시상 및 심사기준">
+                    </h3>
+                </div>
+                <div class="content-area standard-content">
+                    <div class="flex">
+                        <div>
+                            <div class="detail-title">
+                                <span>심사 기준</span>
+                            </div>
+                            <ul class="detail-list type-dots">
+                                <li>심사위원회를 통해 유치부, 초등부, 중등부, 고등부로 구분하여 심사합니다.</li>
+                                <li>공모 주제에 부합하고, 공감을 줄 수 있는 그림을 기준으로 심사합니다.</li>
+                            </ul>
+                            <div class="score-info flex-contents">
+                                <div class="score-background">
+                                    <img src="assets/images/img_score_background@2x.png" alt="">
+                                </div>
+                                <div class="score-list">
                                     <ul>
                                         <li>
-                                            <div class="box">
-                                                <div class="ico-process">
-                                                    <img src="assets/images/ico_join_step_01@2x.png" alt="">
-                                                </div>
-                                                <div class="txt-step">
-                                                    <img src="assets/images/txt_step1@2x.png" alt="Step1">
-                                                </div>
-                                                <p>
-                                                    유엔아동권리협약 읽고, <br>그림 주제 떠올리기
-                                                </p>
-                                            </div>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-primary">
-                                                    <span>유엔아동권리협약<br>다운받기</span>
-                                                </button>
+                                            <div>
+                                                <span class="ico">
+                                                    <img src="assets/images/ico_score_01@2x.png" alt="">
+                                                </span>
+                                                <strong>주제 적합성</strong>
+                                                <p>작품을 주제에 적합하게 잘 구성하였는가?</p>
+                                                <span class="score-num">50점</span>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="box">
-                                                <div class="ico-process">
-                                                    <img src="assets/images/ico_join_step_02@2x.png" alt="">
-                                                </div>
-                                                <div class="txt-step">
-                                                    <img src="assets/images/txt_step2@2x.png" alt="Step2">
-                                                </div>
-                                                <p>
-                                                    주제에 맞는 그림 그리기
-                                                    <span class="txt-gray">(A5 : 210mm x 148mm)</span>
-                                                </p>
+                                            <div>
+                                                <span class="ico">
+                                                    <img src="assets/images/ico_score_02@2x.png" alt="">
+                                                </span>
+                                                <strong>창작성</strong>
+                                                <p>작품을 창의적으로 잘 담아냈는가?</p>
+                                                <span class="score-num">25점</span>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="box">
-                                                <div class="ico-process">
-                                                    <img src="assets/images/ico_join_step_03@2x.png" alt="">
-                                                </div>
-                                                <div class="txt-step">
-                                                    <img src="assets/images/txt_step3@2x.png" alt="Step3">
-                                                </div>
-                                                <p>
-                                                    출품 신청서 작성
-                                                </p>
-                                            </div>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-primary">
-                                                    <span>출품 신청서 다운받기</span>
-                                                </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <div class="ico-process">
-                                                    <img src="assets/images/ico_join_step_04@2x.png" alt="">
-                                                </div>
-                                                <div class="txt-step">
-                                                    <img src="assets/images/txt_step4@2x.png" alt="Step4">
-                                                </div>
-                                                <p>
-                                                    그림 사진촬영 또는 스캔
-                                                </p>
-                                            </div>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-gray" onclick="javascript: acceptModal()">
-                                                    <span>작품 접수 가이드</span>
-                                                </button>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <div class="ico-process">
-                                                    <img src="assets/images/ico_join_step_05@2x.png" alt="">
-                                                </div>
-                                                <div class="txt-step">
-                                                    <img src="assets/images/txt_step5@2x.png" alt="Step5">
-                                                </div>
-                                                <p>
-                                                    이메일 보내기
-                                                    <span class="txt-gray">(그림과 출품 신청서 첨부)</span>
-                                                </p>
-                                            </div>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-secondary" onclick="javascript:copyEmail('event@unicef.or.kr')">
-                                                    <span>
-                                                        event@unicef.or.kr
-                                                        <br>
-                                                        이메일 복사하기
-                                                    </span>
-                                                </button>
+                                            <div>
+                                                <span class="ico">
+                                                    <img src="assets/images/ico_score_03@2x.png" alt="">
+                                                </span>
+                                                <strong>표현성</strong>
+                                                <p>전달하고자하는 이야기를 잘 표현하였는가?</p>
+                                                <span class="score-num">25점</span>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex">
-                            <div>
-                                <div class="detail-title">
-                                    <span>참가 기념품</span>
-                                </div>
-                                <ul class="detail-list type-dots">
-                                    <li>참여해주시는 분 중 선착순 2,000명에게 소정의 기념품을 보내드립니다.</li>
-                                    <li>출품 신청서에 작성해주신 주소로 우편 발송 됩니다.</li>
-                                </ul>
-                                <div class="gift-list">
-                                    <div class="gift-item item1">
-                                        <div class="img">
-                                            <span class="item-1-1">
-                                                <img src="assets/images/img_gift_postcard@2x.png" alt="">
-                                            </span>
-                                        </div>
-                                        <p>유니세프 최초의 카드 그림 <span class="emphasis">엽서 1매</span></p>
-                                    </div>
-                                    <div class="gift-item item2">
-                                        <div class="img">
-                                            <span class="item-2-1">
-                                                <img src="assets/images/img_gift_wappen_01@2x.png" alt="">
-                                            </span>
-                                            <span class="item-2-2">
-                                                <img src="assets/images/img_gift_wappen_02@2x.png" alt="">
-                                            </span>
-                                            <span class="item-2-3">
-                                                <img src="assets/images/img_gift_wappen_03@2x.png" alt="">
-                                            </span>
-                                        </div>
-                                        <p>카드그림그리기 <span class="emphasis">와펜 3종</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="cardSection03" class="contents-section">
-            <div class="inner-wrap">
-                <div class="inner">
-                    <div class="title-area">
-                        <h3 class="label-title">
-                            <img src="assets/images/txt_campaign_standard@2x.png" alt="시상 및 심사기준">
-                        </h3>
-                    </div>
-                    <div class="content-area standard-content">
-                        <div class="flex">
-                            <div>
-                                <div class="detail-title">
-                                    <span>심사 기준</span>
-                                </div>
-                                <ul class="detail-list type-dots">
-                                    <li>심사위원회를 통해 유치부, 초등부, 중등부, 고등부로 구분하여 심사합니다.</li>
-                                    <li>공모 주제에 부합하고, 공감을 줄 수 있는 그림을 기준으로 심사합니다.</li>
-                                </ul>
-                                <div class="score-info flex-contents">
-                                    <div class="score-background">
-                                        <img src="assets/images/img_score_background@2x.png" alt="">
-                                    </div>
-                                    <div class="score-list">
-                                        <ul>
-                                            <li>
-                                                <div>
-                                                    <span class="ico">
-                                                        <img src="assets/images/ico_score_01@2x.png" alt="">
-                                                    </span>
-                                                    <strong>주제 적합성</strong>
-                                                    <p>작품을 주제에 적합하게 잘 구성하였는가?</p>
-                                                    <span class="score-num">50점</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <span class="ico">
-                                                        <img src="assets/images/ico_score_02@2x.png" alt="">
-                                                    </span>
-                                                    <strong>창작성</strong>
-                                                    <p>작품을 창의적으로 잘 담아냈는가?</p>
-                                                    <span class="score-num">25점</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <span class="ico">
-                                                        <img src="assets/images/ico_score_03@2x.png" alt="">
-                                                    </span>
-                                                    <strong>표현성</strong>
-                                                    <p>전달하고자하는 이야기를 잘 표현하였는가?</p>
-                                                    <span class="score-num">25점</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="flex">
+                        <div class="detail-title">
+                            <span>시상 내역</span>
                         </div>
-                        <div class="flex">
-                            <div class="detail-title">
-                                <span>시상 내역</span>
-                            </div>
-                            <div class="round-table">
-                                <table>
-                                    <colgroup>
-                                        <col style="width: 23%;">
-                                        <col>
-                                        <col style="width: 20%;" class="mobile-col">
-                                    </colgroup>
+                        <div class="round-table">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 8%;">
+                                    <col>
+                                    <col>
+                                    <col class="mobile-col">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th colspan="3">부문</th>
+                                        <th>시상</th>
+                                        <th>인원(명)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                                     <tr class="row row1">
-                                        <th>금상</th>
-                                        <td>
-                                            <ul class="list-dotted">
-                                                <li>
-                                                    <span>유치부</span>
-                                                    <span>1명</span>
-                                                </li>
-                                                <li>
-                                                    <span>초등부</span>
-                                                    <span>1명</span>
-                                                </li>
-                                                <li>
-                                                    <span>중등부</span>
-                                                    <span>1명</span>
-                                                </li>
-                                                <li>
-                                                    <span>고등부</span>
-                                                    <span>1명</span>
-                                                </li>
-                                                <li>
-                                                    <span>단체</span>
-                                                    <span>1팀</span>
-                                                </li>
-                                            </ul>
+                                        <th rowspan="4">개인</th>
+                                        <th>유치부</th>
+                                        <td colspan="3">
+                                            <table>
+                                                <tr>
+                                                    <td>금상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>은상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>장려상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                            </table>
                                         </td>
-                                        <td>상장 및 상품 <br>유니세프 사옥에 전시</td>
                                     </tr>
                                     <tr class="row row2">
-                                        <th>은상</th>
-                                        <td>
-                                            <ul class="list-dotted">
-                                                <li>
-                                                    <span>유치부</span>
-                                                    <span>2명</span>
-                                                </li>
-                                                <li>
-                                                    <span>초등부</span>
-                                                    <span>2명</span>
-                                                </li>
-                                                <li>
-                                                    <span>중등부</span>
-                                                    <span>2명</span>
-                                                </li>
-                                                <li>
-                                                    <span>고등부</span>
-                                                    <span>2명</span>
-                                                </li>
-                                                <li>
-                                                    <span>단체</span>
-                                                    <span>2팀</span>
-                                                </li>
-                                            </ul>
+                                        <th>초등부</th>
+                                        <td colspan="3">
+                                            <table>
+                                                <tr>
+                                                    <td>금상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>은상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>장려상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                            </table>
                                         </td>
-                                        <td>상장 및 상품</td>
                                     </tr>
                                     <tr class="row row3">
-                                        <th>장려상</th>
-                                        <td>
-                                            <ul class="list-dotted">
-                                                <li>
-                                                    <span>유치부</span>
-                                                    <span>10명</span>
-                                                </li>
-                                                <li>
-                                                    <span>초등부</span>
-                                                    <span>10명</span>
-                                                </li>
-                                                <li>
-                                                    <span>중등부</span>
-                                                    <span>10명</span>
-                                                </li>
-                                                <li>
-                                                    <span>고등부</span>
-                                                    <span>10명</span>
-                                                </li>
-                                                <li>
-                                                    <span>단체</span>
-                                                    <span>2팀</span>
-                                                </li>
-                                            </ul>
+                                        <th>중등부</th>
+                                        <td colspan="3">
+                                            <table>
+                                                <tr>
+                                                    <td>금상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>은상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>장려상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                            </table>
                                         </td>
-                                        <td>상장 및 상품</td>
                                     </tr>
-                                </table>
+                                    <tr class="row row4">
+                                        <th>고등부</th>
+                                        <td colspan="3">
+                                            <table>
+                                                <tr>
+                                                    <td>금상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>은상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>장려상</td>
+                                                    <td>상장 및 상품</td>
+                                                    <td>1명</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="txt-lgray">※ 출품작 중 심사기준에 부합하는 작품이 없을 경우 수상자가 선정되지 않을 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cardSection04" class="contents-section">
+        <div class="inner">
+            <div class="title-area">
+                <h4>FAQ</h4>
+            </div>
+            <div class="faq-accordion">
+                <div class="js-ui-accordion-list">
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">꼭 만 18세 미만 어린이만 참여 가능한가요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                네. 본 공모전의 참가 대상자는 만 18세 미만의 국내외 모든 어린이입니다.<br>
+                                어린이날 100주년을 기념하여 전세계 모든 어린이의 행복을 위해 일하고 있는 유니세프의 활동을 알리고,<br class="br_pc">
+                                어린이의 참여로 만드는 공모전으로 기획하게 되었습니다.
                             </div>
-                            <p class="txt-lgray">※ 출품작 중 심사기준에 부합하는 작품이 없을 경우 수상자가 선정되지 않을 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">한 명당 작품 제출 수량에 제한이 있나요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                아닙니다. 여러 장 제출하셔도 됩니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">단체 접수를 할 수 있나요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                네. 가능합니다. 자세한 문의는 02-721-5132 로 부탁드립니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">사진을 찍어 접수한 그림은 보관하고 있어야 할까요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                네. 접수하신 그림은 꼭 보관을 부탁드립니다. 추후 선정된 수상작은 별도 공지를 통해 수급될 예정입니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">출품된 작품을 돌려받을 수 없나요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                공모전의 원활한 진행을 위해 접수된 작품은 반환되지 않으며, 유니세프한국위원회 귀속됩니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">직접 유니세프에 방문하여 접수도 가능한가요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                접수는 온라인으로만 진행하고 있습니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">접수가 잘 되었는지 확인하고 싶은데 어떻게 확인하면 될까요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                정상적으로 접수가 되었을 경우, 접수 하신 분의 이메일로 안내 이메일이 발송 됩니다. 만약 이메일을 받지 못하셨을 경우, 전화 02-737-1004 (평일 오전 9:00~오후 6:00)또는 event@unicef.or.kr로 연락주시면 접수가 되었는지 확인해 드리겠습니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">심사기준은 어떻게 되나요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                공모 주제에 부합하고, 공감을 줄 수 있는 그림을 기준으로 심사를 합니다. 
+                                <br><br>
+                                [심사기준] 
+                                <br>
+                                1) 주제 적합성 (50점) 
+                                <br>
+                                2) 창작성 (25점) 표현성 (25점)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">수상 여부는 어떻게 알 수 있나요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                2022년 9월 7일 공모전 웹사이트를 통해 발표됩니다. 수상하신 분들께는 별도로 수상 소식을 전달할 예정입니다. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-accordion-item">
+                        <div class="ui-accordion-header">
+                            <span class="ui-accordion-subject">기념품을 분실했습니다. 다시 받을 수 있을까요?</span>
+                            <button type="button" class="ui-accordion-opener">open</button>
+                        </div>
+                        <div class="ui-accordion-body">
+                            <div class="ui-accordion-contents">
+                                응모해주신 분 중 선착순으로 1000 명에 한해 기념펜을 보내드리고 있습니다. 제작된 수량이 한정되어 있어 추가 발송이 어려운 점 양해 부탁드리겠습니다.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="cardSection04" class="contents-section">
-            <div class="inner">
-                <div class="title-area">
-                    <h4>FAQ</h4>
-                </div>
-                <div class="faq-accordion">
-                    <div class="js-ui-accordion-list">
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">꼭 만 18세 미만 어린이만 참여 가능한가요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    네, 본 공모전은 유니세프 창립 75주년을 기념하여, 전세계 모든어린이의 행복을 위해 일하고 있는 유니세프의 활동을 알리고, 어린이의 참여로 만드는 공모전으로 기획하게 되었습니다. 다만, 단체의 경우 만 18세 미만 어린이 1인이 포함되어 있으면 (2002년 1월 이후 출생자) 성인도 참여 가능합니다. 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">한 명당 작품 제출 수량에 제한이 있나요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    아닙니다. 여러 장 제출하셔도 됩니다.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">단체 접수를 할 수 있나요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    네, 본 행사는 개인, 단체(만 18세 미만 어린이 1명 포함) 5인 미만으로 응모가 가능합니다.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">사진을 찍어 접수한 그림은 보관하고 있어야 할까요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    네. 접수하신 그림은 보관을 부탁드립니다. 추후 선정된 수상작은 별도 공지를 통해 수급될 예정입니다.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">출품된 작품을 돌려받을 수 없나요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    공모전의 원활한 진행을 위해 접수된 작품은 반환되지 않으며, 유니세프한국위원회 귀속됩니다.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">직접 유니세프에 방문하여 접수도 가능한가요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    접수는 온라인 (메일 주소 event@unicef.or.kr)으로만 진행하고 있습니다.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">접수가 잘 되었는지 확인하고 싶은데 어떻게 확인하면 될까요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    정상적으로 접수가 되었을 경우, 접수 하신 분의 이메일로 안내 이메일이 발송 됩니다. 만약 이메일을 받지 못하셨을 경우, 접수하셨던  메일 주소 (event@unicef.or.kr)로 문의주시거나, 전화 02-737-1004 (평일 오전 9:00~오후 6:00)로 연락주시면 접수가 되었는지 확인해 드리겠습니다.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">심사기준은 어떻게 되나요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    공모 주제에 부합하고, 공감을 줄 수 있는 그림을 기준으로 심사를 합니다. 
-                                    <br><br>
-                                    [심사기준] 
-                                    <br>
-                                    1) 주제 적합성 (50점) 
-                                    <br>
-                                    2) 창작성 (25점) 표현성 (25점)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">선정 여부는 어떻게 알 수 있나요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    2021년 12월 11일 공모전 사이트를 통해 발표됩니다. 선정되신 분들께는 별도로 수상 소식을 전달할 예정입니다. 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-accordion-item">
-                            <div class="ui-accordion-header">
-                                <span class="ui-accordion-subject">기념품을 분실했습니다. 다시 받을 수 있을까요?</span>
-                                <button type="button" class="ui-accordion-opener">open</button>
-                            </div>
-                            <div class="ui-accordion-body">
-                                <div class="ui-accordion-contents">
-                                    응모해주신 분 중 선착순으로 2000 명에 한해 75주년 기념 유니세프 와펜을 보내드리고 있습니다. 제작된 수량이 한정되어 있어 추가 발송이 어려운 점 양해 부탁드리겠습니다.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <!-- </div> -->
-    <!-- fullpage end -->
+        </div>
+    </section>
 </div>
 <div id="modal">
     <div class="layer" id="modalGuide">
@@ -672,6 +713,81 @@
                     <p class="warning-message">* 파일 용량은 3MB 이상 10MB 이내﻿로 첨부해 주세요.</p>
                     <p class="warning-message">* 입상 시 원본 파일을 제출해야하니 그림을 잘 보관해 주세요.</p>
                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 신청서 -->
+    <div class="layer" id="application">
+        <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/modal_close.png" alt="모달 닫기"></button>
+        <div class="modal-header">
+            <h2><span>[</span> 유니세프 달력 그림 그리기 공모전 출품 신청서 <span>]</span></h2>
+        </div>
+        <div class="modal-body">
+            <div class="round-table">
+                <table>
+                    <colgroup>
+                        <col style="width: 28%;">
+                        <col>
+                    </colgroup>
+                        <tr>
+                            <th>참가분야</th>
+                            <td>
+                                <ul>
+                                    <li><input type="radio" name="age" id="check1"><label for="check1">유치부</label></li>
+                                    <li><input type="radio" name="age" id="check2"><label for="check2">초등부</label></li>
+                                    <li><input type="radio" name="age" id="check3"><label for="check3">중등부</label></li>
+                                    <li><input type="radio" name="age" id="check4"><label for="check4">고등부</label></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>인적사항</th>
+                            <td>
+                                <!-- <div class="inner_row"> -->
+                                    <div class="row row1">
+                                        <div>
+                                            <div class="tit">성명</div>
+                                            <div class="td_input blue">어린이</div>
+                                        </div>
+                                        <div>
+                                            <div class="tit">생년월일</div>
+                                            <div class="td_input blue">200701</div>
+                                            <div>
+                                                <div class="tit">성별</div>
+                                                <ul>
+                                                    <li><input type="radio" name="gender" id="male"><label for="male">남</label></li>
+                                                    <li><input type="radio" name="gender" id="female"><label for="female">여</label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row2">
+                                        <div class="tit">주소</div>
+                                        <div class="td_input blue"><input type="text" name="adress" id="adress"></div>
+                                    </div>
+                               <!-- </div> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="blue">출품 작품 설명</th>
+                        </tr>
+                        <tr>
+                            <th>작품 제목</th>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>작품에 대한 설명</th>
+                            <td>
+                                <textarea name="" id="" cols="30" rows="10">
+                                    
+                                </textarea>
+                            </td>
+                        </tr>
+                 
+                </table>
             </div>
         </div>
     </div>
