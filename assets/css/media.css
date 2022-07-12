@@ -1,0 +1,12 @@
+@media only screen and (max-width:1000px) {
+    .br_pc { display: none }
+    .br_m { display: block }
+    #modal #application { width: calc(100% - 20px) }
+    #modal #application .round-table { border: 2px solid #07b5ff; border-radius: 20px; margin-bottom: 10px }
+    #modal #application .modal-header { padding-bottom: 23px; }
+    #modal #application .modal-header h2 { font-size: 25px; line-height: 1.52; }
+}
+
+@media only screen and (max-width:640px) {
+
+}

@@ -203,7 +203,7 @@ input,
 select,
 textarea {
 	border: none;
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'nexon'
 }
 
@@ -372,7 +372,7 @@ input[type=tel],
 input[type=text],
 input[type=time],
 input[type=url] {
-	padding: 0 12px;
+	/* padding: 0 12px; */
 	outline: 0
 }
 
@@ -787,6 +787,8 @@ input[type=number] {
 	width: 100%
 }
 
+.br_m {display: none;}
+
 #header {
 	max-width: 1400px;
 	text-align: center;
@@ -860,7 +862,7 @@ html.js-scroll-blocking body {
 	width: 1400px;
 	margin: 0 auto;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 #wrap.is-active {
@@ -1262,129 +1264,111 @@ html.js-scroll-blocking body {
 }
 
 
-#cardSection02 {
-	padding: 196px 0
+#cardSection02 { padding-top: 250px; position:relative; }
+#cardSection02::before { 
+	content: ''; 
+	display: block;
+	width: 84px; 
+	height: 84px; 
+	background: url(../images/sec2_cube_bg.png) no-repeat center center; 
+	background-size: 100%; 
+	position: absolute; 
+	right: 164px; 
+	top: 108px;
+	-webkit-animation: objectBrush 1.5s linear infinite; 
+	animation: objectBrush 1.5s linear infinite; 
 }
 
+#cardSection02 .inner { position: relative; }
+#cardSection02 .inner+.inner { padding-top: 346px }
+#cardSection02 .title-area h4 { position: relative; font-size: 72px; line-height: 1; color: #000; }
+#cardSection02 .subject-content > p { font-size: 32px; color: #000; line-height: 1; }
+#cardSection02 .subject-content .btn-group { margin: 72px 0 49px }
+#cardSection02 .subject-content .txt-emphasis { margin-top: 40px; font-size: 70px; color: #000; line-height: 1.3; position: relative; display: inline-block }
+#cardSection02 .subject-content .txt-emphasis b { position: relative; }
+#cardSection02 .subject-content .txt-emphasis b:after { content: ''; width: 100%; height: 24px; display: inline-block; background-color: #fee300; position: absolute; left: 1%; bottom: 15px; z-index: -1; border-radius: 5px; }
+#cardSection02 .subject-content .txt-empsub { color: #565656; font-family: 'NS'; font-size: 26px; letter-spacing: -.06em; line-height: 1.7; margin-top: 70px; }
+#cardSection02 .subject-content .txt-empsub b { color: #000; }
+#cardSection02 .subject-content .txt-empsub p { margin-top: 35px; line-height: 1.6; font-size: 30px; color: #000; font-family: 'nexon'; }
+#cardSection02 .subject-content .button a { position: relative; font-size: 30px; color: #fff; font-weight: 400; background: #00b9ff; padding: 32px 0; margin-top: 75px; text-align: center; width: 502px; display: block; border-radius: 30px; }
+#cardSection02 .subject-content .button a:after { content: ''; width: 32px; height: 32px; background: #fff url(../images/sec2_button_arrow.png) 50% 50% no-repeat; display: inline-block; border-radius: 100%; margin-left: 25px; vertical-align: text-top; transition: all ease .3s; }
+#cardSection02 .subject-content .button a:hover:after { margin-left: 35px; }
 
-#cardSection02 .inner+.inner {
-	margin-top: 219px
-}
+#cardSection02 .swiper_wrap { position: relative; }
+#cardSection02 .swiper { margin-top:120px; }
+#cardSection02 .swiper_wrap .swiper-buttons { width: 57px; height:57px; border-radius: 100%; border: 2px solid #000; top:47%; }
+#cardSection02 .swiper_wrap .swiper-buttons:after { background-repeat: no-repeat; background-position: center center; height: 90%; }
+#cardSection02 .swiper_wrap .swiper-button-next { right: -79px; }
+#cardSection02 .swiper_wrap .swiper-button-next:after { content: url(../images/swiper-button-next.png); }
+#cardSection02 .swiper_wrap .swiper-button-prev { left: -79px; }
+#cardSection02 .swiper_wrap .swiper-button-prev:after { content: url(../images/swiper-button-prev.png); }
+#cardSection02 .swiper_wrap .swiper-button-next.swiper-button-disabled, 
+#cardSection02 .swiper_wrap .swiper-button-prev.swiper-button-disabled { opacity: .2; }
 
-
-#cardSection02 .title-area h4 {
-	position: relative;
-	font-size: 72px;
-	line-height: 1;
-	color: #000;
+#cardSection02_2 { padding-top: 346px; position:relative; background: linear-gradient(to bottom, #fff 950px, #07b5ff 500px); }
+#cardSection02_2::after { 
+	content: ''; 
+	display: block;
+	width: 401px; 
+	height: 307px; 
+	background: url(../images/sec2_pencil_bg.png) no-repeat center center; 
+	background-size: 100%; 
+	position: absolute; 
+	left: -90px; 
+	top: 140px;
+	-webkit-animation: objectPalette 2s linear infinite; 
+	animation: objectPalette 2s linear infinite; 
 }
-
-#cardSection02 .subject-content > p {
-	font-size: 32px;
-	color: #000;
-	line-height: 1;
-}
-
-#cardSection02 .subject-content .btn-group {
-	margin: 72px 0 49px
-}
-
-#cardSection02 .subject-content .txt-emphasis {
-	margin-top: 40px;
-	font-size: 70px;
-	color: #000;
-	line-height: 1.3;
-	position: relative;
-	display: inline-block
-}
-#cardSection02 .subject-content .txt-emphasis b {
-	position: relative;	
-}
-#cardSection02 .subject-content .txt-emphasis b:after {
+#cardSection02_2::before {
 	content: '';
+	display: block;
 	width: 100%;
-	height: 24px;
-	display: inline-block;
-	background-color: #fee300;
+	height: 60vw;
+	background: url(../images/sec2_wave_bg.png) center top no-repeat;
 	position: absolute;
-	left: 1%;
-	bottom: 15px;
-	z-index: -1;
-	border-radius: 5px;
+	left:0;
+	top: 843px;
 }
-
-#cardSection02 .subject-content .txt-empsub {
-	color: #565656;
-	font-family: 'NS';
-	font-size: 26px;
-	letter-spacing: -.06em;
-	line-height: 1.7;
-	margin-top: 70px;
-}
-
-#cardSection02 .subject-content .txt-empsub b { 
-	color: #000;
-}
-
-#cardSection02 .subject-content .txt-empsub p {
-	margin-top: 35px;
-	line-height: 1.6;
-	font-size: 30px;
-	color: #000;
-	font-family: 'nexon';
-}
-
-#cardSection02 .subject-content .button a {
-	position: relative;
-	font-size: 30px;
-	color: #fff;
-	font-weight: 400;
-	background: #00b9ff;
-	padding: 32px 0;
-	text-align: center;
-	width: 502px;
+#cardSection02_2 .inner::before { 
+	content: ''; 
 	display: block;
-	
+	width: 84px; 
+	height: 84px; 
+	background: url(../images/sec2_cube_bg.png) no-repeat center center; 
+	background-size: 100%; 
+	position: absolute; 
+	left: -10px; 
+	top: 434px;
+	-webkit-animation: objectBrush 1.5s linear infinite; 
+	animation: objectBrush 1.5s linear infinite; 
 }
-
-#cardSection02 .about-content .about-cover {
-	position: relative
-}
-
-#cardSection02 .about-content .about-cover::after {
-	content: '';
-	display: block;
-	width: 262px;
-	height: 65px;
-	background: url(../images/obj_yellow_crayon@2x.png) center center/100% no-repeat;
-	position: absolute;
-	right: -131px;
-	bottom: 60px
-}
+#cardSection02_2 .title-area h4 { position: relative; font-size: 72px; line-height: 1; color: #000; }
+#cardSection02_2 .about-content .about-cover { position: relative; }
+#cardSection02_2 .about-content .about-cover img { width:100%; height: 100%; object-fit: cover; box-shadow: 0px 17px 80px 0px rgba(0, 44, 81, 0.32); }
 
 
-#cardSection02 .about-content .campaign-detail {
+#cardSection02_2 .about-content .campaign-detail {
 	margin-top: 80px
 }
 
-#cardSection02 .about-content .join-process {
+#cardSection02_2 .about-content .join-process {
 	margin-top: 60px;
 	width: calc(100% + 26px);
 	margin-left: -13px
 }
 
-#cardSection02 .about-content .join-process ul::after {
+#cardSection02_2 .about-content .join-process ul::after {
 	content: '';
 	display: table;
 	clear: both
 }
 
-#cardSection02 .about-content .join-process ul li {
+#cardSection02_2 .about-content .join-process ul li {
 	float: left;
 	position: relative
 }
 
-#cardSection02 .about-content .join-process ul li .box {
+#cardSection02_2 .about-content .join-process ul li .box {
 	width: 209px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1397,11 +1381,11 @@ html.js-scroll-blocking body {
 	box-shadow: 0 2px 12px 0 rgba(238, 238, 238, .5)
 }
 
-#cardSection02 .about-content .join-process ul li+li {
+#cardSection02_2 .about-content .join-process ul li+li {
 	margin-left: 48px
 }
 
-#cardSection02 .about-content .join-process ul li+li::before {
+#cardSection02_2 .about-content .join-process ul li+li::before {
 	content: '';
 	display: block;
 	width: 22px;
@@ -1412,27 +1396,27 @@ html.js-scroll-blocking body {
 	top: 130px
 }
 
-#cardSection02 .about-content .join-process ul li .txt-step {
+#cardSection02_2 .about-content .join-process ul li .txt-step {
 	margin-bottom: 8px
 }
 
-#cardSection02 .about-content .join-process ul li .txt-step img {
+#cardSection02_2 .about-content .join-process ul li .txt-step img {
 	height: 27px
 }
 
-#cardSection02 .about-content .join-process ul li .ico-process {
+#cardSection02_2 .about-content .join-process ul li .ico-process {
 	width: 177px;
 	height: 167px;
 	margin: 0 auto 16px
 }
 
-#cardSection02 .about-content .join-process ul li p {
+#cardSection02_2 .about-content .join-process ul li p {
 	line-height: 1.5;
 	min-height: 51px;
 	font-size: 18px
 }
 
-#cardSection02 .about-content .gift-list {
+#cardSection02_2 .about-content .gift-list {
 	width: calc(100% + 48px);
 	margin: 60px 0 0 -24px;
 	border-radius: 12px;
@@ -1446,16 +1430,16 @@ html.js-scroll-blocking body {
 	font-weight: 700
 }
 
-#cardSection02 .about-content .gift-list .gift-item {
+#cardSection02_2 .about-content .gift-list .gift-item {
 	display: inline-block;
 	position: relative
 }
 
-#cardSection02 .about-content .gift-list .gift-item+.gift-item {
+#cardSection02_2 .about-content .gift-list .gift-item+.gift-item {
 	padding-left: 130px
 }
 
-#cardSection02 .about-content .gift-list .gift-item+.gift-item::before {
+#cardSection02_2 .about-content .gift-list .gift-item+.gift-item::before {
 	content: '+';
 	display: block;
 	color: #1cabe2;
@@ -1466,35 +1450,35 @@ html.js-scroll-blocking body {
 	top: 62px
 }
 
-#cardSection02 .about-content .gift-list .img {
+#cardSection02_2 .about-content .gift-list .img {
 	font-size: 0;
 	margin-bottom: 16px
 }
 
-#cardSection02 .about-content .gift-list .img span {
+#cardSection02_2 .about-content .gift-list .img span {
 	display: inline-block;
 	vertical-align: bottom
 }
 
 
-#cardSection02 .about-content .gift-list .item-1-1 {
+#cardSection02_2 .about-content .gift-list .item-1-1 {
 	width: 269px
 }
 
 
-#cardSection02 .about-content .gift-list .item-2-1 {
+#cardSection02_2 .about-content .gift-list .item-2-1 {
 	width: 174px
 }
 
 
 
-#cardSection02 .about-content .gift-list .item-2-2 {
+#cardSection02_2 .about-content .gift-list .item-2-2 {
 	width: 154px
 }
 
 
 
-#cardSection02 .about-content .gift-list .item-2-3 {
+#cardSection02_2 .about-content .gift-list .item-2-3 {
 	width: 243px
 }
 
@@ -2656,17 +2640,21 @@ table td {
 	border-radius: 20px;
 	overflow: hidden;
 	box-sizing: border-box;
+	margin-bottom: 10px
 }
 
 #modal #application table th {
-	font-size: 20px;
+	font-size: 18px;
 	background: #f9f9f9;
-	border-top: 1px solid #e8e8e8
+	border-top: 1px solid #e8e8e8;
+	padding: 26px 0
 }
 
 #modal #application table th.blue {
 	background: #07b5ff;
 	color: #fff;
+	font-size: 20px;
+	padding: 15px 0
 }
 
 #modal #application table td {
@@ -2693,6 +2681,8 @@ table td {
 #modal #application input[type="radio"] + label {
 	display: inline-block;
 	line-height: 1;
+	font-size: 18px;
+	letter-spacing: -0.9px;
 	vertical-align: middle;
 	position: relative;
 	margin-right: 50px;
@@ -2721,6 +2711,50 @@ table td {
 	bottom: 5px;
 	left: 0;
 
+}
+
+#modal #application .filebox input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}
+  
+#modal #application .filebox label {
+	display: inline-block;
+	width: 260px;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #07b5ff;
+	cursor: pointer;
+	border-radius: 20px;
+
+}
+  
+  /* named upload */
+#modal #application .filebox .upload-name {
+	display: inline-block;
+	padding: 20px 0 20px 300px;  /* label의 패딩값과 일치 */
+	font-size: inherit;
+	font-family: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #e8e8e8;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e8e8e8;
+	border-radius: 20px;
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
 }
 
 #modal #application .row {
@@ -2764,6 +2798,7 @@ table td {
 
 #modal #application .row2 {
 	padding: 15px 0 15px 40px;
+	border-bottom: 0;
 }
 
 #modal #application .row .tit, #modal #application .row .td_input {
@@ -2775,16 +2810,125 @@ table td {
 }
 
 
-#modal #application .row .td_input {
+#modal #application .row2 .td_input {
+
+	width: calc(100% - 80px)
+
+}
+
+#modal #application .row .td_input input[type="text"], #modal #application .row .td_input input[type="text"]::placeholder {
 	font-weight: 400;
 	color: #07b5ff;
-	letter-spacing: -0.9px
-
+	letter-spacing: -0.9px;
 }
 
 #modal #application table tr:nth-child(2) td {
 	padding: 0;
 	margin-left: 40px
+}
+
+#modal #application table tr:nth-last-child(2) td input[type="text"] {
+	font-family: 'NS';
+	font-weight: 200;
+	opacity: .7
+}
+
+#modal #application table tr:nth-last-child(1) td textarea {
+	font-family: 'NS';
+	font-size: 16px;
+	font-weight: 200;
+	opacity: .7;
+	padding: 0 40px 0 0
+
+}
+#modal #application .modal-body1 > span {
+	font-family: 'NS';
+	font-size: 18px;
+	opacity: .7;
+	letter-spacing: -1.08px
+}
+
+#modal #application .modal-header2::before {
+	content:'';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-image: radial-gradient( ellipse, #999 2px, #999 3px, transparent 3px);
+	background-size: 12px 5px;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	margin: 75px 0 60px
+}
+
+#modal #application .modal-header2 p {
+	font-size: 18px;
+	color: #222;
+	text-align: center;
+	line-height: 1.8;
+	margin-top: 30px
+}
+
+#modal #application .modal-body2 .round-table {
+	border-color: #999;
+}
+
+#modal #application .modal-body2 .title {
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	background: #999;
+	padding: 16px 0
+}
+
+#modal #application .modal-body2 .txt p {
+	font-size: 16px;
+	color: #555;
+	line-height: 1.625;
+	padding: 36px 40px 26px
+}
+
+#modal #application .modal-body2 .checkbox {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+	border-top: 1px solid #e8e8e8
+}
+
+#modal #application .modal-body2 input[type="radio"] + label {
+	margin-right: 180px
+}
+
+#modal #application .modal-body2 input[type="radio"] + label:last-of-type {
+	margin-right: 0
+}
+
+#modal #application .modal-body2 .txt:last-child p {
+	line-height: 2.25
+}
+
+#modal #application .modal-body2 .btn_submit {
+	text-align: center;
+	margin-top: 58px;
+	position: relative
+}
+
+#modal #application .modal-body2 .btn_submit a {
+	display: inline-block;
+	width: 368px;
+	height: 82px;
+	line-height: 82px;
+	background: #00b9ff;
+	border-radius: 30px;
+	color: #fff;
+	font-weight: 400;
+}
+
+#modal #application .modal-body2 .btn_submit img {
+	position: absolute;
+	top: 21px;
+	left: 50%;
+	transform: translateX(124px);
 }
 
 #modal #modalGuide {
@@ -3236,11 +3380,6 @@ table td {
 		-webkit-transform: scale(1);
 		transform: scale(1)
 	}
-}
-
-#cardSection02 .subject-content::before {
-	-webkit-animation: objectBrush 1.5s linear infinite;
-	animation: objectBrush 1.5s linear infinite
 }
 
 #cardSection02 .subject-content::after {
