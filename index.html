@@ -13,7 +13,10 @@
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/YTPlayer.js"></script>
 <script src="assets/js/commonUi.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/media.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 <title>‘모든 어린이가 행복한 세상’을 위한 유니세프 달력 그림 그리기 공모전</title>
 </head>
 <body>
@@ -127,16 +130,30 @@
 
                 <div class="button"><a href="javascript:;" title="유니세프 아동친화사회 만들기">유니세프 아동친화사회 만들기</a></div>
             </div>
+            <div class="swiper_wrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/images/slide01.png" alt="work01"></div>
+                        <div class="swiper-slide"><img src="assets/images/slide02.png" alt="work02"></div>
+                        <div class="swiper-slide"><img src="assets/images/slide03.png" alt="work03"></div>
+                        <div class="swiper-slide"><img src="assets/images/slide01.png" alt="work04"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-buttons swiper-button-next"></div>
+                <div class="swiper-buttons swiper-button-prev"></div>
+            </div>
         </div>
+    </section>
+
+    <section id="cardSection02_2" class="contents-section">
         <div class="inner" id="cardSection0202">
             <div class="title-area">
-                <h3 class="label-title">
-                    <img src="assets/images/txt_campaign_about@2x.png" alt="공모전 안내">
-                </h3>
+                <h4>공모전 참여</h4>
             </div>
             <div class="content-area about-content">
                 <div class="about-cover">
-                    <img src="assets/images/img_about_background.png" alt="">
+                    <img src="assets/images/sec2_bg02.png" alt="">
                 </div>
                 <div class="campaign-detail">
                     <div class="flex flex-contents">
@@ -325,6 +342,7 @@
             </div>
         </div>
     </section>
+
     <section id="cardSection03" class="contents-section">
         <div class="inner-wrap">
             <div class="inner">
@@ -633,7 +651,8 @@
     </section>
 </div>
 <div id="modal">
-    <div class="layer" id="modalGuide">
+    <!-- 작품 접수 가이드 -->
+    <!-- <div class="layer" id="modalGuide">
         <div class="modal-header">
             <h2>작품접수 가이드</h2>
             <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/ico_layer_close@2x.png" alt="모달 닫기"></button>
@@ -715,15 +734,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
-    <!-- 신청서 -->
+    <!-- 출품 신청서 -->
     <div class="layer" id="application">
         <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/modal_close.png" alt="모달 닫기"></button>
-        <div class="modal-header">
-            <h2><span>[</span> 유니세프 달력 그림 그리기 공모전 출품 신청서 <span>]</span></h2>
+        <div class="modal-header modal-header1">
+            <h2><span>[</span> 유니세프 달력 그림 그리기<br class="br_m"> 공모전 출품 신청서 <span>]</span></h2>
         </div>
-        <div class="modal-body">
+        <div class="modal-body modal-body1">
             <div class="round-table">
                 <table>
                     <colgroup>
@@ -744,29 +763,27 @@
                         <tr>
                             <th>인적사항</th>
                             <td>
-                                <!-- <div class="inner_row"> -->
-                                    <div class="row row1">
+                                <div class="row row1">
+                                    <div>
+                                        <div class="tit">성명</div>
+                                        <div class="td_input blue"><input type="text" name="name" id="name" placeholder="어린이"></div>
+                                    </div>
+                                    <div>
+                                        <div class="tit">생년월일</div>
+                                        <div class="td_input blue"><input type="text" name="birthday" id="birthday" placeholder="200701"></div>
                                         <div>
-                                            <div class="tit">성명</div>
-                                            <div class="td_input blue">어린이</div>
-                                        </div>
-                                        <div>
-                                            <div class="tit">생년월일</div>
-                                            <div class="td_input blue">200701</div>
-                                            <div>
-                                                <div class="tit">성별</div>
-                                                <ul>
-                                                    <li><input type="radio" name="gender" id="male"><label for="male">남</label></li>
-                                                    <li><input type="radio" name="gender" id="female"><label for="female">여</label></li>
-                                                </ul>
-                                            </div>
+                                            <div class="tit">성별</div>
+                                            <ul>
+                                                <li><input type="radio" name="gender" id="male"><label for="male">남</label></li>
+                                                <li><input type="radio" name="gender" id="female"><label for="female">여</label></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="row row2">
-                                        <div class="tit">주소</div>
-                                        <div class="td_input blue"><input type="text" name="adress" id="adress"></div>
-                                    </div>
-                               <!-- </div> -->
+                                </div>
+                                <div class="row row2">
+                                    <div class="tit">주소</div>
+                                    <div class="td_input blue"><input type="text" name="adress" id="adress" placeholder="서울 서초구 양재천로19길 28 4F"></div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -775,19 +792,70 @@
                         <tr>
                             <th>작품 제목</th>
                             <td>
-                                <input type="text" name="" id="">
+                                <input type="text" name="title" id="title">
                             </td>
                         </tr>
                         <tr>
                             <th>작품에 대한 설명</th>
                             <td>
-                                <textarea name="" id="" cols="30" rows="10">
-                                    
-                                </textarea>
+                                <textarea name="description" id="description" cols="30" rows="10"></textarea>
                             </td>
                         </tr>
-                 
                 </table>
+            </div>
+            <div class="filebox">
+                <input class="upload-name" value="파일선택" disabled="disabled">
+                <label for="ex_filename">업로드</label> 
+                <input type="file" id="ex_filename" class="upload-hidden"> 
+            </div>
+            <span>※ 출품 신청서 양식에 기입하는 모든 정보는 관련 공모전 이외에는 사용되지 않습니다.</span>
+        </div>
+        <div class="modal-header modal-header2">
+            <h2>개인정보 수집 · 이용 동의서 </h2>
+            <p>
+                유니세프한국위원회는 ‘유니세프 달력 그림 그리기 공모전’의 원활한 진행을 위하여<br class="br_pc">
+                공모전에 출품된 작품과 귀하의 개인정보를 아래와 같이 수집·이용합니다.<br>
+                아래의 내용을 충분히 읽어 보신 후, 동의 여부를 선택(v)하고 서명하여 주시기 바랍니다.                                
+            </p>
+        </div>
+        <div class="modal-body modal-body2">
+            <div class="round-table">
+                <div class="title">개인정보 수집 · 이용 안내</div>
+                <div class="txt">
+                    <p>
+                        1. 개인정보 수집·이용 목적<br>
+                        작품 심사, 참가자 본인 확인 및 기념품 전달 등 공모전 진행<br><br>
+                        
+                        2. 수집하는 개인정보 항목<br>
+                        성명, 생년월일, 연락처, 주소, 이메일, 본인이 제출한 작품 파일<br><br>
+                        
+                        3. 개인정보의 보유 및 이용기간<br>
+                        공모전 종료 후 1년간 보관<br><br>
+                        
+                        ※ 위 개인정보 수집·이용 동의에 거부할 수 있으며 거부할 시 공모전 참여 및 기념품발송이 취소됩니다.<br>
+                            개인정보는 공모전 진행 목적 외에 제3자에게 제공되거나 이용되지 않습니다.
+                        
+                    </p>
+                    <div class="checkbox">
+                        <input type="radio" name="consent" id="agree"><label for="agree">동의함</label>
+                        <input type="radio" name="consent" id="disagree"><label for="disagree">동의하지 않음</label>
+                    </div>
+                </div>
+                <div class="title">유의 사항</div>
+                <div class="txt">
+                    <p>
+                        1.	모든 응모작은 유니세프한국위원회에 귀속되며, 접수된 작품은 반환되지 않음 <br>
+                        2.	응모작 중 적합한 작품이 없을 경우, 수상작을 선정하지 않거나 수상작 수를 조정할 수 있음<br>
+                        3.	제출파일이 누락되어 접수되는 경우 심사가 되지 않음<br>
+                        4.	표절작품에 대한 법적 책임은 표절 당사자에게 있으며, 수상에서 제외 및 취소·환수조치<br>
+                        5.	타 공모전의 입상경력이 있거나 발표된 적이 있는 작품은 출품할 수 없음<br>
+                        6.	수상작 중에 한하여 유니세프 콘텐츠로 실제 활용할 수 있음
+                    </p>
+                </div>
+            </div>
+            <div class="btn_submit">
+                <a href="javascript:;">공모전 출품하기</a>
+                <img src="assets/images/join_pencil.png" alt="연필 이미지">
             </div>
         </div>
     </div>
