@@ -1,12 +1,37 @@
-@media only screen and (max-width:1000px) {
-    .br_pc { display: none }
-    .br_m { display: block }
-    #modal #application { width: calc(100% - 20px) }
-    #modal #application .round-table { border: 2px solid #07b5ff; border-radius: 20px; margin-bottom: 10px }
-    #modal #application .modal-header { padding-bottom: 23px; }
-    #modal #application .modal-header h2 { font-size: 25px; line-height: 1.52; }
+@media only screen and (max-width:1400px) {
+    #wrap .inner { width: 100%; }
+    #cardSection03 .score-list ol { flex-wrap: wrap; }
+    
 }
 
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:1250px) {
+    #cardSection03 .score-list ol { justify-content: initial; }
+}
 
+@media only screen and (max-width:767px) {
+    .br_pc { display: none }
+    .br_m { display: block }
+
+    #wrap .inner { padding: 0 20px; }
+    .contents-section .title-area h4 { font-size: 40px; }
+    .title-area h4:before, .title-area h4:after { width: 32px; height: 32px; background-size: contain; }
+    .title-area h4:before { top: -15px; left: -20px; }
+    .title-area h4:after { bottom: -19px; right: -20px; }
+    .contents-section .detail-title span { font-size: 33px; }
+    .contents-section .detail-list li { font-size: 17px; }
+    .contents-section .detail-list li+li { margin-top: 10px; }
+    #cardSection03 { padding-top: 90px; }
+    #cardSection03::before { display: none; }
+    #cardSection03::after { width: 215px; height: 243px; background-size: contain; top: -184px; right: -64px; }
+    #cardSection03 .flex .score-background { box-shadow: 0px 8px 40px 0px rgb(0 0 0 / 32%); }
+    #cardSection03 .score-list ol li { width: 100%; }
+    #cardSection03 .score-list ol li+li { margin-top: 34px; }
+    #cardSection03 .score-list ol .score-num { width: 97px; height: 97px; line-height: 97px; }
+    #cardSection03 .score-list ol .score-num::before { width: 40px; height: 31px; top: -5px; left: 56px; }
+    #cardSection03 .score-list ol .score-num b { font-size: 47px; }
+    #cardSection03 .score-list ol .score-num span { font-size: 16px; }
+    #cardSection03 .score-list ol .txt strong { font-size: 24px; }
+    #cardSection03 .score-list ol .txt p { font-size: 17px; }
+    #cardSection03 .detail-list li { padding-left: 24px; }
+    #cardSection03 .detail-list li::before { width: 12px; height: 12px; top: 2px; }
 }

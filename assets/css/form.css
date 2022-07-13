@@ -1,0 +1,864 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'nexon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nexon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nexon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+address,
+article,
+aside,
+blockquote,
+body,
+button,
+caption,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+input,
+label,
+legend,
+li,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+section,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+ul {
+	margin: 0;
+	padding: 0;
+	letter-spacing: -.7px
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	color: #40474b;
+	font-family: 'nexon';
+	font-weight: 200;
+	font-size: 24px
+}
+
+html {
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body {
+	width: 100%;
+	background: #fff;
+	min-width: 320px;
+	-webkit-text-size-adjust: none;
+	word-wrap: break-word;
+	word-break: break-all
+}
+
+button,
+input,
+select,
+textarea {
+	border: none;
+	font-size: 18px;
+	font-family: 'nexon'
+}
+
+
+button {
+	cursor: pointer;
+	background: 0 0
+}
+
+li,
+ol,
+ul {
+	list-style: none
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	table-layout: fixed
+}
+
+p {
+	line-height: 1.7
+}
+
+img {
+	max-width: 100%
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+address,
+cite,
+code,
+em {
+	font-style: normal;
+	font-weight: 400
+}
+
+button,
+img,
+input,
+label,
+select,
+textarea {
+	vertical-align: middle
+}
+
+.hide,
+caption,
+legend {
+	line-height: 0;
+	font-size: 1px;
+	overflow: hidden
+}
+
+hr {
+	display: none
+}
+
+article,
+aside,               
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block
+}
+
+a,
+button {
+	color: inherit;
+	text-decoration: none
+}
+
+a:focus,
+button:focus {
+	outline: 0
+}
+
+.for-a11y {
+	display: block;
+	z-index: -1;
+	height: 1px;
+	overflow: hidden;
+	font-size: 1px;
+	line-height: 1px;
+	color: transparent;
+	border: 0;
+	padding: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	background: 0 0;
+	position: absolute;
+	width: 1px;
+	margin: 0
+}
+
+caption.for-a11y {
+	display: table-caption;
+	height: 1px;
+	margin-bottom: -1px;
+	position: static
+}
+
+.clear-fix {
+	*zoom: 1
+}
+
+.clear-fix::after {
+	content: '';
+	display: table;
+	clear: both
+}
+
+textarea {
+	outline: 0;
+	width: 100%;
+	padding: 12px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	resize: none
+}
+
+input {
+	outline: 0;
+	min-width: 68px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+input.checkbox {
+	position: absolute;
+	left: -9999px;
+	opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+input .label-chk::before {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #d9d9d9;
+	vertical-align: middle;
+	margin-right: 8px
+}
+
+input .label-chk.active::before {
+	border-color: #d9d9d9
+}
+
+input[type=date],
+input[type=email],
+input[type=file],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url] {
+	/* padding: 0 12px; */
+	outline: 0
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+
+input[type=number] {
+	-moz-appearance: textfield
+}
+
+.ui-input-block {
+	width: 320px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.select-box {
+	outline: 0;
+	min-width: 120px;
+	height: 38px;
+	border: 1px solid #d9d9d9;
+	display: inline-block;
+	position: relative;
+	text-align: left
+}
+
+.select-box select.select {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	width: 100%;
+	height: 38px;
+	line-height: 41px
+}
+
+.select-box span.select {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0 30px 0 10px;
+	height: 38px;
+	line-height: 38px;
+	cursor: default;
+	z-index: 1;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.js-ui-dropdown-layer,
+.js-ui-tab-panel-content {
+	display: none
+}
+
+.js-ui-tab-panel-content.js-tabpanel-opened {
+	display: block
+}
+
+.form-flex {
+	display: table
+}
+
+.form-flex.type-full {
+	width: 100%
+}
+
+.form-flex-cell {
+	display: table-cell;
+	vertical-align: middle
+}
+
+.form-flex-cell+.form-flex-cell {
+	padding-left: 8px
+}
+
+.form-flex-cell+.btn-confirm {
+	display: table-cell
+}
+
+.hide {
+	display: none !important
+}
+
+.br_m { 
+    display: none;
+}
+
+#modal_form {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .45);
+	z-index: 51;
+	overflow-y: scroll;
+    font-family: 'nexon';
+    font-weight: 200;
+	/* display: none */
+}
+
+#modal_form .layer {
+	position: absolute;
+	left: 50%;
+	top: 120px;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	background: #fff;
+	padding: 60px 50px 140px 50px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 120px
+}
+
+#modal_form .layer .modal-close {
+	width: 36px;
+	background: 0 0;
+	position: absolute;
+	left: 50%;
+	top: -95px
+}
+
+#modal_form .modal-header {
+	/* position: relative; */
+	padding-bottom: 54px
+}
+
+#modal_form .modal-header h2 {
+	font-size: 40px;
+	text-align: center
+}
+
+#modal_form .modal-header h2 > span {
+	color: #ffe400
+}
+
+#modal_form #application {
+	width: 1000px
+}
+
+#modal_form #application .round-table {
+	border: 4px solid #07b5ff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-bottom: 29px
+}
+
+#modal_form #application table {
+    width: 100%
+}
+
+#modal_form #application table colgroup col:nth-child(1) {
+    width: 28%;
+}
+
+#modal_form #application table colgroup col:nth-child(2) {
+
+}
+
+#modal_form #application table th {
+	font-size: 18px;
+	background: #f9f9f9;
+	border-top: 1px solid #e8e8e8;
+	padding: 26px 0
+}
+
+#modal_form #application table th.blue {
+	background: #07b5ff;
+	color: #fff;
+	font-size: 20px;
+	padding: 15px 0
+}
+
+#modal_form #application table td {
+	font-size: 18px;
+	font-weight: 200;
+	letter-spacing: -0.9px;
+	padding-left: 40px;
+	border-top: 1px solid #e8e8e8
+}
+
+#modal_form #application table tr:first-child th, 
+#modal_form #application table tr:first-child td {
+	border-top: 0;
+}
+
+#modal_form #application table td ul {
+	display: flex;
+}
+
+#modal_form #application input[type="radio"] {
+	display: none;
+}
+
+#modal_form #application input[type="radio"] + label {
+	display: inline-block;
+	line-height: 1;
+	font-size: 18px;
+	letter-spacing: -0.9px;
+	vertical-align: middle;
+	position: relative;
+	margin-right: 50px;
+	cursor: pointer
+}
+
+#modal_form #application input[type="radio"] + label:before {
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	border:2px solid #222;
+	border-radius: 2px;
+	margin-right: 14px
+	
+}
+
+#modal_form #application input[type="radio"]:checked + label:after {
+	content:''; 
+	display: inline-block;
+	width: 26px;
+	height: 18px;
+	background: url(../images/modal_checked.png) no-repeat;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+
+}
+
+#modal_form #application .filebox input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0
+}
+  
+#modal_form #application .filebox label {
+	display: inline-block;
+	width: 260px;
+	height: 60px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 63px;
+    padding-left: 74px;
+    box-sizing: border-box;
+	vertical-align: middle;
+	background-color: #07b5ff;
+	cursor: pointer;
+	border-radius: 20px;
+	position: relative
+
+}
+
+#modal_form #application .filebox {
+	position: relative
+}
+
+#modal_form #application .filebox > span {
+    display: block;
+	color: #ff7007;
+    font-size: 16px;
+    margin: 18px 0 25px 300px
+}
+
+
+#modal_form #application .filebox label::after {
+	content:'';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/icon_plus.png)no-repeat;
+	position: absolute;
+	top: 50%;
+	right: 60px;
+	transform: translateY(-50%)
+}
+  
+  /* named upload */
+#modal_form #application .filebox .upload-name {
+	display: inline-block;
+    height: 60px;
+	padding-left: 300px;  /* label의 패딩값과 일치 */
+	font-size: 16px;
+	font-weight: 200;
+	color: #a6a6a6;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #e8e8e8;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e8e8e8;
+	border-radius: 20px;
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	position: absolute;
+	right: 0;
+}
+
+#modal_form #application .row {
+	text-align: left;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#modal_form #application .row1 {
+	display: flex
+}
+
+#modal_form #application .row1 > div:nth-of-type(1) {
+	width: calc(50% - 40px);
+	display: table;
+	margin-left: 40px;
+	border-right: 1px solid #e8e8e8
+}
+
+#modal_form #application .row1 > div:nth-of-type(1) > div {
+	display: table-cell;
+	vertical-align: middle
+}
+
+#modal_form #application .row1 > div:nth-of-type(2) {
+	width: 50%;
+
+}
+
+#modal_form #application .row1 > div:nth-of-type(2) .tit {
+	width: 84px;
+	padding: 15px 0 15px 20px
+}
+
+#modal_form #application .row1 > div:nth-of-type(2) > div:last-of-type {
+	border-top: 1px solid #e8e8e8
+}
+
+#modal_form #application .row1 ul {
+	display: inline-flex
+}
+
+#modal_form #application .row2 {
+	padding: 15px 0 15px 40px
+}
+
+#modal_form #application .row3 {
+	border-bottom: none;
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+#modal_form #application .row3 .tit {
+	width: 127px;
+    height: fit-content;
+    border-right: 1px solid #e8e8e8;
+    padding: 45px 15px 45px 40px
+}
+
+#modal_form #application .row3 .contact_wrap {
+    width: calc(100% - 127px)
+}
+
+#modal_form #application .row3 .contact_wrap > div {
+    padding: 16px 0 16px 27px
+}
+
+#modal_form #application .row3 .contact_wrap > div > span {
+    width: 68px;
+    display: inline-block
+}
+
+#modal_form #application .row3 .contact_wrap > div:nth-of-type(1) {
+    border-bottom: 1px solid #e8e8e8
+}
+
+#modal_form #application .row1 > div:nth-of-type(2) > div { 
+    display: flex; 
+    align-items: center;
+    width: 100%
+}
+
+#modal_form #application .row1 > div:nth-of-type(2) > div .tit {
+    flex-shrink: 0;
+}
+
+#modal_form #application .row .tit, #modal_form #application .row .td_input {
+	display: inline-block
+}
+
+#modal_form #application .row .tit {
+	width: 70px
+}
+
+#modal_form #application .row2 {
+    display: flex;
+    align-items: center
+}
+
+#modal_form #application .row2 .td_input {
+
+	width: calc(100% - 80px)
+
+}
+
+#modal_form #application .row .td_input input[type="text"], #modal_form #application .row .td_input input[type="text"]::placeholder {
+	font-weight: 400;
+	color: #07b5ff;
+	letter-spacing: -0.9px;
+    opacity: .6;
+}
+
+#modal_form #application table tr:nth-child(2) td {
+	padding: 0;
+	margin-left: 40px
+}
+
+#modal_form #application table tr:nth-last-child(2) td input[type="text"] {
+	font-family: 'NS';
+	font-weight: 200;
+	opacity: .7
+}
+
+#modal_form #application table tr:nth-last-child(1) td textarea {
+	font-family: 'NS';
+	font-size: 16px;
+	font-weight: 200;
+	opacity: .7;
+	padding: 24px 40px 24px 0
+
+}
+#modal_form #application .modal-body1 > span {
+	font-family: 'NS';
+	font-size: 18px;
+	opacity: .7;
+	letter-spacing: -1.08px
+}
+
+#modal_form #application .modal-header2::before {
+	content:'';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-image: radial-gradient( ellipse, #999 2px, #999 3px, transparent 3px);
+	background-size: 12px 5px;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	margin: 75px 0 60px
+}
+
+#modal_form #application .modal-header2 p {
+	font-size: 18px;
+	color: #222;
+	text-align: center;
+	line-height: 1.8;
+	margin-top: 30px
+}
+
+#modal_form #application .modal-body2 .round-table {
+	border-color: #999;
+}
+
+#modal_form #application .modal-body2 .title {
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	background: #999;
+	padding: 16px 0
+}
+
+#modal_form #application .modal-body2 .txt p {
+	font-size: 16px;
+	color: #555;
+	line-height: 1.625;
+	padding: 36px 40px 26px
+}
+
+#modal_form #application .modal-body2 .checkbox {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+	border-top: 1px solid #e8e8e8
+}
+
+#modal_form #application .modal-body2 input[type="radio"] + label {
+	margin-right: 180px
+}
+
+#modal_form #application .modal-body2 input[type="radio"] + label:last-of-type {
+	margin-right: 0
+}
+
+#modal_form #application .modal-body2 .txt:last-child p {
+	line-height: 2.25
+}
+
+#modal_form #application .modal-body2 .btn_submit {
+    position: relative;
+    text-align: center;
+    margin-top: 58px;
+}
+
+#modal_form #application .modal-body2 input[type="button"] {
+    display: inline-block;
+	width: 368px;
+	height: 82px;
+	line-height: 82px;
+	background: #00b9ff;
+	border-radius: 30px;
+	color: #fff;
+	font-weight: 400;
+    font-size: 24px;
+    cursor: pointer
+}
+
+#modal_form #application .modal-body2 .btn_submit img {
+    position: absolute;
+	top: 21px;
+	left: 50%;
+	transform: translateX(124px)
+}
+
+
+/* media */
+@media only screen and (max-width:1000px) {
+    .br_pc { display: none }
+    .br_m { display: block }
+    #modal_form #application { width: calc(100% - 60px); padding: 38px 20px 80px; }
+    #modal_form #application input[type="radio"] + label { margin-right: 15px; }
+    #modal_form #application table td ul {flex-wrap: wrap;}
+
+
+
+}
+
+@media only screen and (max-width:640px) {
+    #modal_form #application { width: calc(100% - 20px); padding: 38px 10px 80px; }
+    #modal_form #application .round-table { border: 2px solid #07b5ff; border-radius: 10px; margin-bottom: 10px; }
+    #modal_form #application .modal-header { padding-bottom: 23px; }
+    #modal_form #application .modal-header h2 { font-size: 25px; line-height: 1.52; }
+    #modal_form #application table colgroup col:nth-child(1) { width: 25% }
+    #modal_form #application table tr:first-child td {padding: 10px 0 10px 15px;}
+    #modal_form #application table th { font-size: 14px; padding: 15px 0; }
+    #modal_form #application table th.blue { font-size: 15px; }
+    #modal_form #application table td { font-size: 14px; padding-left: 15px; }
+    
+    #modal_form #application table tr:nth-child(1) td ul li { width: 50%; }
+    #modal_form #application table tr:nth-child(1) td ul li:nth-child(n+1):nth-child(-n+2) {margin-bottom: 20px;}
+    #modal_form #application table tr:nth-child(1) td ul input[type="radio"] + label {margin-right: 0;}
+    #modal_form #application .row1 { flex-direction: column; }
+    #modal_form #application .row1 > div:nth-of-type(1) { width: 100%; margin-left: 0px; border-right: none; border-bottom: 1px solid #e8e8e8; padding: 15px 0; }
+    #modal_form #application .row1 > div:nth-of-type(2) { width: 100%; }
+    #modal_form #application .row .tit { width: 25%; max-width: 85px; min-width: 70px; padding: 15px 15px 15px 15px; box-sizing: border-box; }
+    #modal_form #application .row1 > div:nth-of-type(2) .tit { width: 25%; max-width: 85px; min-width: 70px; padding: 15px 0 15px 15px; }
+    #modal_form #application .row2 { padding: 0; }
+    #modal_form #application .row2 .td_input { width: calc(100% - 85px); }
+    #modal_form #application .row3 .contact_wrap { width: calc(100% - 68px); }
+    #modal_form #application .row3 .contact_wrap > div { padding: 8px 0 8px 16px; }
+    #modal_form #application .row3 .tit { width: 68px; padding: 30px 0 30px 15px; }
+
+    #modal_form #application input[type="radio"] + label { font-size: 14px; margin-right: 40px; }
+    #modal_form #application tr:nth-child(2) .row1 ul li:last-child input[type="radio"] + label:last-child { margin-right: 0; }
+    #modal_form #application input[type="radio"] + label:before { width: 13px; height: 13px; border-radius: 1px; margin-right: 10px; }
+    #modal_form #application .row .td_input input[type="text"], #modal_form #application .row .td_input input[type="text"]::placeholder { font-size: 14px; }
+    #modal_form #application table tr:nth-last-child(2) td input[type="text"] { font-size: 14px; }
+    #modal_form #application table tr:nth-last-child(1) td textarea { font-size: 13px; }
+    #modal_form #application .filebox label { font-size: 14px; width: 126px; height: 45px; line-height: 47px; padding-left: 20px; }
+    #modal_form #application .filebox label::after { right: 20px; }
+    #modal_form #application .filebox .upload-name {font-size: 14px; padding-left: 130px; height: 45px; }
+    #modal_form #application .filebox > span { font-size: 14px; margin: 10px 0 15px 10px; }
+    #modal_form #application .modal-body1 > span { font-size: 14px; line-height: 1.42; }
+    #modal_form #application .modal-header2::before { margin: 45px 0 36px; }
+    #modal_form #application .modal-header2 h2 { font-size: 24px; }
+    #modal_form #application .modal-header2 p { font-size: 14px; line-height: 1.64; margin-top: 20px; }
+    #modal_form #application .modal-body2 .title { font-size: 15px; padding: 10px 0; }
+    #modal_form #application .modal-body2 .txt p { padding: 20px; font-size: 13px; line-height: 1.6; letter-spacing: -1.3px; }
+    #modal_form #application .modal-body2 .txt:last-child p { line-height: 1.6; }
+    #modal_form #application .modal-body2 .checkbox { justify-content: space-between; padding: 20px 37px; }
+    #modal_form #application .modal-body2 input[type="radio"] + label { margin-right: 0; }
+    #modal_form #application .modal-body2 .btn_submit { margin-top: 29px; }
+    #modal_form #application .modal-body2 input[type="submit"] { width: 100%; max-width: 260px; height: 58px; line-height: 60px; font-size: 17px; border-radius: 15px; }
+    #modal_form #application .modal-body2 .btn_submit img { width: 73px; transform: translateX(85px); top: 15px; }
+
+
+    
+
+}
+@media only screen and (max-width:477px) {
+    #modal_form #application .row3 .tit { padding: 45px 0 45px 15px; }
+}

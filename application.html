@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+<meta property="og:title" content="유니세프 설립 75주년 기념 유니세프 카드그림 그리기 공모전"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:description" content="모든 어린이가 행복한 세상을 위해 우리 모두가 해야 할 일을 그려주세요!"/>
+<script src="assets/js/jquery-3.6.0.min.js"></script>		
+<link rel="stylesheet" href="assets/css/form.css">
+
+<title>‘모든 어린이가 행복한 세상’을 위한 유니세프 달력 그림 그리기 공모전</title>
+</head>
+<body>
+<!-- 출품 신청서 -->
+<div id="modal_form">
+    <form action="">
+    <div class="layer" id="application">
+        <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/modal_close.png" alt="모달 닫기"></button>
+        <div class="modal-header modal-header1">
+            <h2><span>[</span> 유니세프 달력 그림 그리기<br class="br_m"> 공모전 출품 신청서 <span>]</span></h2>
+        </div>
+        <div class="modal-body modal-body1">
+            <div class="round-table">
+                <table>
+                    <colgroup>
+                        <col>
+                        <col>
+                    </colgroup>
+                        <tr>
+                            <th>참가분야</th>
+                            <td>
+                                <ul>
+                                    <li><input type="radio" name="age" id="check1"><label for="check1">유치부</label></li>
+                                    <li><input type="radio" name="age" id="check2"><label for="check2">초등부</label></li>
+                                    <li><input type="radio" name="age" id="check3"><label for="check3">중등부</label></li>
+                                    <li><input type="radio" name="age" id="check4"><label for="check4">고등부</label></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>인적사항</th>
+                            <td>
+                                <div class="row row1">
+                                    <div>
+                                        <div class="tit">성명</div>
+                                        <div class="td_input blue"><input type="text" name="name" id="name" placeholder="어린이"></div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="tit">생년월일</div>
+                                            <div class="td_input blue"><input type="text" name="birthday" id="birthday" placeholder="200701"></div>
+                                        </div>
+                                        <div>
+                                            <div class="tit">성별</div>
+                                            <ul>
+                                                <li><input type="radio" name="gender" id="male"><label for="male">남</label></li>
+                                                <li><input type="radio" name="gender" id="female"><label for="female">여</label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row2">
+                                    <div class="tit">주소</div>
+                                    <div class="td_input blue"><input type="text" name="adress" id="adress" placeholder="서울 서초구 양재천로19길 28 4F"></div>
+                                </div>
+                                <div class="row row3">
+                                    <div class="tit"><span>연락처</span></div>
+                                    <div class="contact_wrap">
+                                        <div>
+                                            <span>휴대폰</span>
+                                            <div class="td_input blue"><input type="text" name="phone" id="phone" placeholder="010-0000-0000"></div>
+                                        </div>
+                                        <div>
+                                            <span>E-mail</span>
+                                            <div class="td_input blue"><input type="text" name="email" id="email" placeholder="abcd@naver.com"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="blue">출품 작품 설명</th>
+                        </tr>
+                        <tr>
+                            <th>작품 제목</th>
+                            <td>
+                                <input type="text" name="title" id="title">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>작품에<br class="br_m"> 대한 설명</th>
+                            <td>
+                                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+            <div class="filebox">
+                <input class="upload-name" value="선택된 파일 없음" disabled="disabled">
+                <label for="ex_filename">파일첨부</label> 
+                <input type="file" id="ex_filename" class="upload-hidden"> 
+                <span>*1개만 등록이며  용량 3MB이상 10MB이하</span>
+            </div>
+            <span>※ 출품 신청서 양식에 기입하는 모든 정보는 관련 공모전 이외에는 사용되지 않습니다.</span>
+        </div>
+        <div class="modal-header modal-header2">
+            <h2>개인정보 수집 · 이용 동의서 </h2>
+            <p>
+                유니세프한국위원회는 ‘유니세프 달력 그림 그리기 공모전’의 원활한 진행을 위하여<br class="br_pc">
+                공모전에 출품된 작품과 귀하의 개인정보를 아래와 같이 수집·이용합니다.<br>
+                아래의 내용을 충분히 읽어 보신 후, 동의 여부를 선택(v)하고 서명하여 주시기 바랍니다.                                
+            </p>
+        </div>
+        <div class="modal-body modal-body2">
+            <div class="round-table">
+                <div class="title">개인정보 수집 · 이용 안내</div>
+                <div class="txt">
+                    <p>
+                        1. 개인정보 수집·이용 목적<br>
+                        작품 심사, 참가자 본인 확인 및 기념품 전달 등 공모전 진행<br><br>
+                        
+                        2. 수집하는 개인정보 항목<br>
+                        성명, 생년월일, 연락처, 주소, 이메일, 본인이 제출한 작품 파일<br><br>
+                        
+                        3. 개인정보의 보유 및 이용기간<br>
+                        공모전 종료 후 1년간 보관<br><br>
+                        
+                        ※ 위 개인정보 수집·이용 동의에 거부할 수 있으며 거부할 시 공모전 참여 및 기념품발송이 취소됩니다.<br>
+                            개인정보는 공모전 진행 목적 외에 제3자에게 제공되거나 이용되지 않습니다.
+                        
+                    </p>
+                    <div class="checkbox">
+                        <input type="radio" name="consent" id="agree"><label for="agree">동의함</label>
+                        <input type="radio" name="consent" id="disagree"><label for="disagree">동의하지 않음</label>
+                    </div>
+                </div>
+                <div class="title">유의 사항</div>
+                <div class="txt">
+                    <p>
+                        1.	모든 응모작은 유니세프한국위원회에 귀속되며, 접수된 작품은 반환되지 않음 <br>
+                        2.	응모작 중 적합한 작품이 없을 경우, 수상작을 선정하지 않거나 수상작 수를 조정할 수 있음<br>
+                        3.	제출파일이 누락되어 접수되는 경우 심사가 되지 않음<br>
+                        4.	표절작품에 대한 법적 책임은 표절 당사자에게 있으며, 수상에서 제외 및 취소·환수조치<br>
+                        5.	타 공모전의 입상경력이 있거나 발표된 적이 있는 작품은 출품할 수 없음<br>
+                        6.	수상작 중에 한하여 유니세프 콘텐츠로 실제 활용할 수 있음
+                    </p>
+                </div>
+            </div>
+            
+            <div class="btn_submit">
+                <input type="button" value="공모전 출품하기">
+                <img src="assets/images/join_pencil.png" alt="연필 이미지">
+            </div>
+        </div>
+    </div>
+    </form>
+</div> 
+<script>
+    fileupload();
+    function fileupload (){
+        var fileTarget = $('.filebox .upload-hidden');
+
+        fileTarget.on('change', function(){  // 값이 변경되면
+        if(window.FileReader){  // modern browser
+            var filename = $(this)[0].files[0].name;
+        } 
+        else {  // old IE
+            var filename = $(this).val().split('/').pop().split('\\').pop();  // 파일명만 추출
+        }
+        
+        // 추출한 파일명 삽입
+        $(this).siblings('.upload-name').val(filename);
+        });
+    }
+
+    function acceptModal(){
+        var wTop = $(window).scrollTop();
+        if($('#modal_form').css('display')=='none') {
+            $('#modal_form').show();
+            $('html, body').scrollTop(wTop);
+            $('html').addClass('js-scroll-blocking');
+        } else {
+            $('#modal_form').hide();
+            $('html').removeClass('js-scroll-blocking').scrollTop(wTop);
+        }
+    }
+</script>
+</body>
+</html>
