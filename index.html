@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<!--[if IE]><script type="text/javascript">
+        // Fix for IE ignoring relative base tags.
+        (function() {
+            var baseTag = document.getElementsByTagName('base')[0];
+            baseTag.href = baseTag.href;
+        })();
+</script><![endif]-->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
@@ -25,32 +32,35 @@
 </script>
 <div id="wrap">
     <header id="header">
-        <h1>
-            <a href="/">
-                <img src="assets/images/logo@2x.png" alt="유니세프">
-            </a>
-        </h1>
-        <button type="button" class="btn-mobile-menu" onclick="javascript:mobileMenuToggle()">
-            <img src="assets/images/ico_mobile_menu@2x.png" alt="모바일 메뉴 열기">
-        </button>
-        <div class="global-menu">
-            <ul>
-                <li class="menu-01">
-                    <button type="button">공모전 안내</button>
-                </li>
-                <li class="menu-02">
-                    <button type="button">공모전 참여</button>
-                </li>
-                <li class="menu-03">
-                    <button type="button">시상 및 심사기준</button>
-                </li>
-                <li class="menu-04">
-                    <button type="button">FAQ</button>
-                </li>
-                <li class="menu-05">
-                    <button type="button">수상작 갤러리</button>
-                </li>
-            </ul>
+        <div class="inner">
+            <h1>
+                <a href="/">
+                    <!-- <img src="assets/images/logo@2x.png" alt="유니세프" class="img_pc">
+                    <img src="assets/images/logo@2x_m.png" alt="유니세프" class="img_m"> -->
+                </a>
+            </h1>
+            <button type="button" class="btn-mobile-menu" onclick="javascript:mobileMenuToggle()">
+                <img src="assets/images/ico_mobile_menu@2x.png" alt="모바일 메뉴 열기">
+            </button>
+            <div class="global-menu">
+                <ul>
+                    <li class="menu-01">
+                        <button type="button">공모전 안내</button>
+                    </li>
+                    <li class="menu-02">
+                        <button type="button">공모전 참여</button>
+                    </li>
+                    <li class="menu-03">
+                        <button type="button">시상 및 심사기준</button>
+                    </li>
+                    <li class="menu-04">
+                        <button type="button">FAQ</button>
+                    </li>
+                    <li class="menu-05">
+                        <button type="button">수상작 갤러리</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <section id="cardSection01" class="main-section">
@@ -76,22 +86,22 @@
                     <p>내가 살고 싶은 우리 동네를 그려 주세요!</p>
                     <div class="share-sns-list">
                         <ul>
-                            <li class="type-link">
+                            <li class="sns type-link">
                                 <a href="#">
                                     <img src="assets/images/ico_share_link@2x.png" alt="링크주소로 공유하기">
                                 </a>
                             </li>
-                            <li class="type-fb">
+                            <li class="sns type-fb">
                                 <a href="#">
                                     <img src="assets/images/ico_share_fb@2x.png" alt="페이스북으로 공유하기">
                                 </a>
                             </li>
-                            <li class="type-insta">
+                            <li class="sns type-insta">
                                 <a href="#">
                                     <img src="assets/images/ico_share_tw@2x.png" alt="트위터로 공유하기">
                                 </a>
                             </li>
-                            <li class="type-kakao">
+                            <li class="sns type-kakao">
                                 <a href="#">
                                     <img src="assets/images/ico_share_kakao@2x.png" alt="카카오톡으로 공유하기">
                                 </a>
@@ -114,18 +124,18 @@
 
                 <div class="txt-emphasis">
                     내가 살고 싶은 <br>
-                    <b>우리 동네를 그려 주세요<i>!</i></b>
+                    <b>우리 동네를 <br class="br_m">그려 주세요<i>!</i></b>
                 </div>
 
                 <div class="txt-empsub">
-                    <b>*우리동네는</b> 우리 어린이들이 생활하고 있는 우리집, 학교, 공원, 놀이터, 학원 등 모든 공간을 말합니다! <br>
-                    <p>Ex) 내가 다니고 싶은 학교, 내가 놀고 싶은 놀이터, 웃음이 가득한 우리집 ~ 내가 바라는 우리 동네 모습을 마음껏 자유롭게 표현해 주세요!</p>
+                    <b>*우리동네는</b> 우리 어린이들이 생활하고 있는 우리집, <br class="br_m">학교, 공원, 놀이터, 학원 등 모든 공간을 말합니다! <br>
+                    <p>예) 내가 다니고 싶은 학교, 내가 놀고 싶은 놀이터, <br class="br_m">웃음이 가득한 우리집 ~ 내가 바라는 우리 동네 모습을 <br class="br_m">마음껏 자유롭게 표현해 주세요!</p>
                 </div>
 
                 <div class="button">
                     <p>
-                        유니세프한국위원회는 어린이와 부모가 생활하는 공간 모두를 어린이에게 친화적인 환경을 만들기 위해 <br>
-                        <span>아동친화도시,</span> 아동친화기업, <span>아동친화학교,</span> 아동친화사법 등을 추진하고 있습니다.
+                        유니세프한국위원회는 어린이와 <br class="br_m">부모가 생활하는 공간 모두를 <br class="br_m">어린이에게 친화적인 환경을 만들기 <br class="br_m">위해 <br class="br_1400">
+                        <span>아동친화도시,</span> 아동친화기업, <br class="br_m"><span>아동친화학교,</span> 아동친화사법 등을 <br class="br_m">추진하고 있습니다.
                     </p>
                     <a href="javascript:;" title="유니세프아동친화사회 만들기">유니세프아동친화사회 만들기</a>
                 </div>
@@ -133,18 +143,17 @@
         </div>
         <div class="swiper_wrap">
             <h2>
-                <b>미얀마 어린이들이 꿈꾸는 행복한 지구촌 마을을 그린 그림</b>입니다. <br>
-                유니세프는 모든 어린이가 행복한 세상을 위해, 지금 이 순간에도 전 세계 어린이를 지킵니다.
+                <b>미얀마 어린이들이 꿈꾸는 행복한 지구촌 마을을 <br class="br_m">그린 그림</b>입니다. <br>
+                유니세프는 모든 어린이가 행복한 세상을 위해, <br class="br_m">지금 이 순간에도 전 세계 어린이를 지킵니다.
             </h2>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="assets/images/slide01.png" alt="work01"></div>
                     <div class="swiper-slide"><img src="assets/images/slide02.png" alt="work02"></div>
                     <div class="swiper-slide"><img src="assets/images/slide03.png" alt="work03"></div>
-                    <div class="swiper-slide"><img src="assets/images/slide01.png" alt="work04"></div>
                 </div>
             </div>
-
+            <div class="swiper-pagination"></div>
             <div class="swiper-buttons swiper-button-next"></div>
             <div class="swiper-buttons swiper-button-prev"></div>
         </div>
@@ -187,7 +196,8 @@
                                     <p>국내외 모든 어린이 (만 18세 미만)</p>
                                     <p class="attention">
                                         * 1명이 여러 개의 작품 출품 가능합니다. <br>
-                                        *  학교, 학원 등 단체 접수 가능합니다.                                        
+                                        *  학교, 학원 등 단체 접수 가능합니다. <br>   
+                                        <span>전화문의 02-737-1004 (평일 09:00 ~ 18:00) </span>                                  
                                     </p>
                                 </li>
                             </ul>
@@ -195,7 +205,10 @@
                     </div>
                     <div class="flex" id="joinSection">
                         <div>
-                            <p class="detail-title"><span>[</span> 접수 방법 <span>]</span></p>
+                            <p class="detail-title">
+                                <span>[</span> 접수 방법 <span>]</span>
+                                <em>공모전 참여는 유니세프 웹페이지 가입 후 접수 가능합니다.</em>
+                            </p>
                             <ul class="detail-list type-dots">
                                 <li><span>1</span>
                                     ‘내가 살고 싶은 우리 동네를 그려 주세요!’ 에 대해 상상한 다음, 그림을 그려주세요. <br>
@@ -210,9 +223,6 @@
                                 <li><span>4</span>
                                     본 페이지의 <b class="emphasis">“공모전 참여하기”</b> 버튼을 클릭하여 <b class="emphasis">온라인 접수</b>를 해 주세요.
                                 </li>
-                                <li><span>5</span>
-                                    <b class="emphasis">공모전 참여는 유니세프 웹페이지 가입 후 접수 가능합니다.</b>
-                                </li>
                             </ul>
                             <div class="join-process">
                                 <ul>
@@ -223,7 +233,7 @@
                                                 <img src="assets/images/ico_arr_step1.png" alt="">
                                             </li>
                                             <li class="txt-desc">
-                                                내가 살고 싶은 우리 동네를 <br>
+                                                내가 살고 싶은 우리 동네를 
                                                 그려 주세요!
                                                 <p>주제 떠올리며 상상하기</p>
                                             </li>
@@ -248,7 +258,10 @@
                                             <li class="ico-process">
                                                 <img src="assets/images/ico_arr_step3.png" alt="">
                                             </li>
-                                            <li class="txt-desc">그림 사진촬영 또는 스캔</li>
+                                            <li class="txt-desc">
+                                                그림 사진촬영 또는 스캔
+                                                <p>온라인에서 그린 그림은 파일(GIF, JPG, PNG)로 저장하여 등록</p>
+                                            </li>
                                             <li class="btn-group">
                                                 <button type="button" class="btn btn-primary">
                                                     <span>작품 접수 가이드</span>
@@ -373,7 +386,7 @@
                             <span><em>[</em> 시상 내역 <em>]</em></span>
                         </div>
                         <div class="round-top">
-                            수상한 모든 작품들은 <span>2023년 유니세프 탁상용 달력으로</span> 만들어질 예정입니다!
+                            수상한 모든 작품들은 <span>2023년<br class="br_m"> 유니세프 탁상용 달력</span>으로 만들어질 예정입니다!
                         </div>
                         <span>유치부, 초등부, 중등부, 고등부 각 금상 1명, 은상 2명, 장려상 10명 (총 52명)</span>
                         <div class="round-table">
@@ -382,7 +395,7 @@
                                     <col>
                                     <col>
                                     <col>
-                                    <col class="mobile-col">
+                                    <col>
                                 </colgroup>
                                 <thead>
                                     <tr>

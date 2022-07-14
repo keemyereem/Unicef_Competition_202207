@@ -1,29 +1,374 @@
-@media only screen and (max-width:1400px) {
-    #wrap .inner { width: 100%; }
-    #cardSection03 .score-list ol { flex-wrap: wrap; }
+
+@media only screen and (max-height:860px) and (min-width:1401px) {
+    #header { height: 120px; }
+    #header h1 a { width: 159px; height: 120px; }
+    #header .global-menu ul { padding-left: 75px; }
+    #header .global-menu ul li button { font-size: 24px; padding: 46px 45px; }
+    #cardSection01 .title-area { padding-bottom: 60px; }
+    #cardSection01 .title-area h2 { font-size: 66px; }
+    #cardSection01 .title-area h2 span { padding: 10px 20px 5px; }
+    #cardSection01 .title-area p { font-size: 28px; margin-top: 25px; }
+    #cardSection01 .title-area .share-sns-list { bottom: -40px; }
+    #cardSection01 .title-area .share-sns-list ul li { width: 49px; height:49px; border-radius: 15px; line-height: 53px; }
+    #cardSection01 .title-area .share-sns-list ul li+li { margin-left: 17px; }
+    #cardSection01 .arrow { width: 44px; bottom: 60px; }
+    #cardSection01 .btn-join button span { font-size: 28px; left: 41%; }
+    #cardSection01 .btn-join { width: 240px; }
+    #cardSection01 .btn-join button img:last-child { width: 80px; bottom: 22%; right: 18%; }
+    #cardSection01 .btn-join button:hover:after { width: 86px; }
+    #cardSection01 .btn-join button:after { height: 20px; background-size: cover; left: 24%; bottom: 54%; background: url(/assets/images/join_pencil_yellow_1400.png) 0 50%/cover no-repeat; }
+    #cardSection01 .btn-join button:hover img:last-child { right: 18%; }
+    @keyframes main_arrow {
+        0% {
+            bottom: 60px;
+        }
+        50% {
+            bottom: 40px;
+        }
+        100% {
+            bottom: 60px;
+        }
+    }
+
+    @keyframes pencil {
+        0% {
+            right:60%;
+            bottom:15%; 
+        }
+        80% {
+            right:18%; 
+            bottom:15%;
+        }
+        100% {
+            right:18%; 
+        }
     
+    }
 }
 
-@media only screen and (max-width:1250px) {
-    #cardSection03 .score-list ol { justify-content: initial; }
+@media only screen /* and (min-width:768) */ and (max-width:1400px) {
+    .br_1400 { display: none }
+    #wrap .inner { width: 100%; padding: 0 20px; }
+
+    #header .inner { width: 100%; padding: 0; }
+    #header .global-menu { width: calc(100% - 200px); }
+    #header .global-menu ul { display: flex; justify-content: space-evenly; }
+    #header .global-menu ul li button { padding: 60px 0; }
+
+    .contents-section .flex+.flex { padding: 8.57vw 0; }
+    .contents-section .title-area h4 { font-size: 5.14vw; }
+    .title-area h4:before, .title-area h4:after { width: 3.57vw; height: 3.57vw; background-size: contain; }
+    .title-area h4:before { top: -1.92vw; left: -2.57vw; }
+    .title-area h4:after { bottom: -2vw; right: -2vw; }
+    .contents-section .detail-title span { font-size: 4vw; }
+    .contents-section .detail-list li+li { margin-top: 1.57vw; }
+
+    #header { height: 120px; }
+    #cardSection01 .title-area { padding-bottom: 60px; }
+    #cardSection01 .title-area h2 { font-size: 66px; }
+    #cardSection01 .title-area h2 span { padding: 10px 20px 5px; }
+    #cardSection01 .title-area p { font-size: 28px; margin-top: 25px; }
+    #cardSection01 .title-area .share-sns-list { bottom: -40px; }
+    #cardSection01 .title-area .share-sns-list ul li { width: 49px; height:49px; border-radius: 15px; line-height: 53px; }
+    #cardSection01 .title-area .share-sns-list ul li+li { margin-left: 17px; }
+    #cardSection01 .arrow { width: 44px; bottom: 60px; }
+    #cardSection01 .btn-join button span { font-size: 28px; left: 41%; }
+    #cardSection01 .btn-join { width: 240px; }
+    #cardSection01 .btn-join button img:last-child { width: 80px; bottom: 22%; right: 18%; }
+    #cardSection01 .btn-join button:hover:after { width: 86px; }
+    #cardSection01 .btn-join button:after { height: 20px; background-size: cover; left: 24%; bottom: 54%; background: url(/assets/images/join_pencil_yellow_1400.png) 0 50%/cover no-repeat; }
+    #cardSection01 .btn-join button:hover img:last-child { right: 18%; }
+    @keyframes main_arrow {
+        0% {
+            bottom: 60px;
+        }
+        50% {
+            bottom: 40px;
+        }
+        100% {
+            bottom: 60px;
+        }
+    }
+
+    @keyframes pencil {
+        0% {
+            right:60%;
+            bottom:15%; 
+        }
+        80% {
+            right:18%; 
+            bottom:15%;
+        }
+        100% {
+            right:18%; 
+        }
+    
+    }
+
+    
+    #cardSection02 .title-area { margin-bottom: 15vw; }
+    #cardSection02 .inner::before { content: ''; width: 100%; height: 100%; background: url(../images/sec2_bg01.png) top center no-repeat; background-size: contain; transform: unset; left:0; top: 19vw; }
+    #cardSection02 .subject-content { padding: 3vw 0; }
+    #cardSection02 .subject-content:after { content: ''; width: 17vw; height: 16vw; right: -5vw; bottom: 4vw; background: url(../images/sec2_bg01_sticky_right.png) center center no-repeat; background-size: contain; }
+    #cardSection02 .subject-content:before { content: ''; width: 17vw; height: 16vw; left: -5vw; bottom: 4vw; background: url(../images/sec2_bg01_sticky_left.png) center center no-repeat; background-size: contain; }
+    #cardSection02 .subject-content > p { font-size: 2.5vw; line-height: 2.5vw; }
+    #cardSection02 .subject-content > p b:before { height: 2vw; margin: 0 2vw; }
+    #cardSection02 .subject-content .txt-emphasis { font-size: 6vw; margin-top: 3vw; }
+    #cardSection02 .subject-content .txt-emphasis:before { content: ''; width: 6vw; height: 6vw; left: -6vw; bottom: 7vw; background: url(../images/sec2_title_pencil2.png) center center no-repeat; background-size: contain; }
+    #cardSection02 .subject-content .txt-emphasis b:before { content: ''; width: 6vw; height: 6vw; left: -6vw; bottom: 0; background: url(../images/sec2_title_pencil.png) center center no-repeat; background-size: contain; }
+    #cardSection02 .subject-content .txt-emphasis b:after { content: ''; width: 25vw; height: 6vw; bottom: -3vw; background: url(../images/sec2_title_underline.png) center center no-repeat; background-size: contain; }
+    #cardSection02 .subject-content .txt-empsub { font-size: 1.8vw; margin-top: 2vw; }
+    #cardSection02 .subject-content .txt-empsub p { font-size: 1.5vw; }
+    #cardSection02 .subject-content .button { margin: 3vw auto 0; padding: 2vw 2vw; }
+    #cardSection02 .subject-content .button p { font-size: 2vw; padding-bottom: 2vw; }
+    #cardSection02 .subject-content .button a { font-size: 2vw; padding: 2vw 0; width: 33vw; }
+    #cardSection02 .subject-content .button a:after { width: 2vw; height: 2vw; background-size: auto; }
+    
+    #cardSection02_2 { padding-top: 13.35vw; background: linear-gradient(to bottom, #fff 67.85vw, #07b5ff 7.14vw); }
+    #cardSection02_2::after { width: 21.92vw; height: 29.78vw; }
+    #cardSection02_2 .about-content .campaign-detail { margin-top: 8.57vw; }
+    #cardSection02_2 .about-content .campaign-detail .txt-lgray { font-size: 1.28vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex { padding: 0 0 8.57vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-title { font-size: 4vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-title em { font-size: 1.71vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-yellow, 
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-normal { padding: 0 1vw; height: 2.28vw; line-height: 2.28vw; font-size: 1.57vw; border-radius: 1.14vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-yellow +p .emphasis,
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-normal +p { font-size: 1.71vw; line-height: 2.28vw; padding-left: 1.42vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list.second li p { font-size: 1.71vw; line-height: 2.85vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list.second li .attention { font-size: 1.28vw; margin-top: 1.57vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex+.flex { padding-top: 8.57vw; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li { padding-left: 4.42vw; font-size: 1.71vw; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li span { line-height: 3.21vw; font-size: 1.57vw; width: 3vw; height: 3vw; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li p { font-size: 1.28vw; margin-top: 1.07vw; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li:first-child { margin-bottom: 1.42vw; }
+    #cardSection02_2 .about-content .join-process { margin-top: 4.28vw; width: 100%; }
+    #cardSection02_2 .about-content .join-process > ul { width: 100%; }
+    #cardSection02_2 .about-content .join-process > ul > li { width: calc(100% / 4 - 2.21vw); height: 46.42vw; }
+    #cardSection02_2 .about-content .join-process > ul > li .box { border-radius: 0.71vw; padding: 2.14vw .71vw; }
+    #cardSection02_2 .about-content .join-process > ul > li+li { margin-left: 2.85vw; }
+    #cardSection02_2 .about-content .join-process > ul > li::after { width: 1.57vw; height: 3.07vw; }
+    #cardSection02_2 .about-content .join-process > ul > li:nth-child(1)::after { width: 8vw; height: 7.71vw; right: -2.14vw; top: 6.85vw; }
+    #cardSection02_2 .about-content .join-process > ul > li:nth-child(2)::after { width: 9.07vw; height: 3.28vw; right: -6.42vw; top: 23.21vw; }
+    #cardSection02_2 .about-content .join-process > ul > li:nth-child(3)::after { width: 8.07vw; height: 4.07vw; right: -6.14vw; top: 6.64vw; }
+    #cardSection02_2 .about-content .join-process ul li .txt-step { margin: 1.85vw 0 2.5vw; font-size: 2.14vw; }
+    #cardSection02_2 .about-content .join-process ul li .ico-process { margin: 0 auto 3.21vw; }
+    #cardSection02_2 .about-content .join-process ul li .txt-desc { font-size: 1.71vw; }
+    #cardSection02_2 .about-content .join-process ul li .txt-desc p { font-size: 1.28vw; padding-top: .35vw; }
+    #cardSection02_2 .about-content .join-process ul li .btn-group { bottom: 2.14vw; }
+    #cardSection02_2 .about-content .join-process ul li .btn-group .btn-primary { font-size: 1.71vw; height: 4.14vw; border-radius: 1.42vw; width: calc(100% - 3.71vw); }
+    #cardSection02_2 .about-content .gift-list { padding: 2.14vw 0 7.57vw; font-size: 2.28vw; }
+    #cardSection02_2 .about-content .gift-list:after { width: 4.85vw; height: 4.85vw; transform: translateY(1.78vw); }
+    #cardSection02_2 .about-content .gift-list .gift-item { width: calc(50% - 4.28vw); }
+    #cardSection02_2 .about-content .gift-list .gift-item:before { height: 31.78vw; border-radius: .35vw; top: 4.64vw; }
+    #cardSection02_2 .about-content .gift-list .img { margin-bottom: 1.07vw; }
+    #cardSection02_2 .about-content .gift-list .item-1-1 { right: 1.78vw; }
+    #cardSection02_2 .about-content .gift-list .item-1-1:after { width: 5.28vw; height: 5.14vw; top: 12.5vw; right: -2.14vw; }
+    #cardSection02_2 .about-content .gift-list .item-2-1 { top: -1.78vw; }
+    #cardSection02_2 .about-content .gift-list .item-2-1:before { width: 3vw; height: 4.07vw; left: 3.64vw; top: 21.28vw; }
+    #cardSection02_2 .about-content .gift-list .item-2-1:after { width: 3.21vw; height: 3.64vw; right: 9.14vw; top: 4.42vw; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots:last-child li:before { width: 1.28vw; height: 1.28vw; margin-top: 1vw; }
+    #cardSection02_2 .about-content .campaign-detail .flex:last-of-type { padding: 8.57vw 0 10.71vw; }
+
+    #cardSection03::after { width: 37.14vw; height: 41.85vw; top: -37.07vw; right: -11vw; }
+    #cardSection03::before { width: 11.42vw; height: 8.28vw; top: 9.78vw; left: 6.14vw; }
+    #cardSection03 .inner::before { width: 24.21vw; height: 24.21vw; top: -12.64vw; right: -16.64vw; }
+    #cardSection03 .detail-title { margin-bottom: 4.28vw; }
+    #cardSection03 .score-list { margin-top: 8.92vw; }
+    #cardSection03 .score-list ol { margin-bottom: 4.28vw; }
+    #cardSection03 .score-list ol .score-num { width: 12.14vw; height: 12.14vw; line-height: 12.14vw; }
+    #cardSection03 .score-list ol .score-num::before { width: 4.92vw; height: 3.92vw; top: -.7vw; left: 7.14vw; }
+    #cardSection03 .score-list ol .score-num b { font-size: 5.85vw; }
+    #cardSection03 .score-list ol .score-num span { font-size: 2vw; }
+    #cardSection03 .score-list ol .txt strong { font-size: 2.71vw; }
+    #cardSection03 .score-list ol .txt p { font-size: 1.71vw; }
+    #cardSection03 .detail-list li { padding-left: 2.42vw; font-size: 1.71vw; }
+    #cardSection03 .score-list::after { margin-top: 8.57vw; }
+    #cardSection03 .round-top { padding: 2.58vw; margin-bottom: 3.57vw; font-size: 2vw; border-radius: 1.42vw; }
+    #cardSection03 .round-top + span { padding-left: 2.42vw; font-size: 1.71vw; }
+    #cardSection03 .round-top + span::before { width: 1.28vw; height: 1.28vw; }
+    #cardSection03 .round-table { margin-top: 2.5vw; border-radius: 1.42vw; }
+    #cardSection03 .round-table table thead th { font-size: 2.42vw; }
+    #cardSection03 .round-table table tbody th { font-size: 2vw; }
+    #cardSection03 .round-table table td { font-size: 1.85vw; }
+    #cardSection03 .txt-lgray { font-size: 1.28vw; margin-top: 2.5vw; }
+
+    #cardSection04 { padding: 17vw 0 14.28vw; }
+    #cardSection04::before { width: 6vw; height: 6vw; left: 8.14vw; top: 3.57vw; }
+    #cardSection04::after { width: 42.92vw; height: 29.5vw; right: -4.28vw; top: 14.28vw; }
+    #cardSection04 .title-area { margin-bottom: 7.14vw; }
+    .faq-accordion .ui-accordion-item { margin-bottom: .71vw; }
+    .faq-accordion .ui-accordion-header { padding: 1.71vw 0 1.71vw 8.14vw; }
+    .faq-accordion .ui-accordion-header::before { width: 3.57vw; height: 3.57vw; line-height: 3.67vw; left: .5vw; font-size: 2vw; }
+    .faq-accordion .ui-accordion-subject { padding: 0 3.42vw; line-height: 2.85vw; font-size: 2.28vw;  }
+    .faq-accordion .ui-accordion-subject::before { font-size: 2.42vw; }
+    .faq-accordion .ui-accordion-contents { font-size: 1.85vw; padding: 2.35vw 3.57vw 2.35vw 11.21vw; }
+    .faq-accordion .ui-accordion-contents::before { font-size: 2.42vw; top: 1.42vw; left: 8vw; }
+
+}
+
+@media only screen and (max-width:1000px) {
+    #header .global-menu ul { height: 150px; align-items: center; }
+    #header .global-menu ul li button { padding: 0; }
+    #header .global-menu ul li .br_m {display: block;}
 }
 
 @media only screen and (max-width:767px) {
-    .br_pc { display: none }
-    .br_m { display: block }
+    .br_1400 { display: none }
+    .br_pc, .img_pc { display: none }
+    .br_m, .img_m { display: block }
 
-    #wrap .inner { padding: 0 20px; }
+    table td { padding: 5px 0; }
+    table th { padding: 15px 0; }
+
+    #header { height: 55px; }
+    #header h1 a { width: 74px; height: 55px; background: url(../images/logo@2x_m.png) no-repeat; background-size: contain; }
+    #header.fixed h1 a { background: url(../images/logo@2x_w.png) no-repeat; background-size: contain; }
+    #header .inner { justify-content: space-between; padding: 0 20px; }
+    #header .global-menu { display: none; }
+    #header .btn-mobile-menu { display: block; width: 24px; height: 24px; margin-top: -12px; top:50%; right: 16px; position: absolute; }
+	#header .global-menu { position: absolute; width: 100%; left:0; background: #fff; box-shadow: 0 0 14px 0 rgb(221 221 221 / 50%); border-top:1px solid #f6f6f6; top:55px; padding: 50px 0; }
+    #header .global-menu ul { flex-direction: column; }
+    #header .global-menu ul li { color: #000; width: 100%; }
+    #header .global-menu ul li button { font-size: 20px; padding: 10px 0; width: 100%; }
+    
     .contents-section .title-area h4 { font-size: 40px; }
     .title-area h4:before, .title-area h4:after { width: 32px; height: 32px; background-size: contain; }
     .title-area h4:before { top: -15px; left: -20px; }
-    .title-area h4:after { bottom: -19px; right: -20px; }
+    .title-area h4:after { bottom: -15px; right: -20px; }
     .contents-section .detail-title span { font-size: 33px; }
     .contents-section .detail-list li { font-size: 17px; }
     .contents-section .detail-list li+li { margin-top: 10px; }
+
+    #cardSection01 .btn-join { width: 125px; height: 96px; }
+    #cardSection01 .btn-join button span { font-size: 17px; line-height: 1.37; top: 50%; }
+    #cardSection01 .btn-join button:after { height: 11px; left: 20%; }
+    #cardSection01 .btn-join button:hover:after { width: 54px; }
+    #cardSection01 .btn-join button img:last-child { width: 48px; bottom: 15%; }
+
+    #cardSection01 .bg { background: url(../images/bg_main_card_m.png) center center no-repeat; background-size: cover; }
+    #cardSection01 .bg img { display: none; }
+    #cardSection01 .flex { top:0; }
+    #cardSection01 .title-area { padding:0 20px 0; transform: translateY(104.5px); }
+    #cardSection01 .title-area { width: 100%; align-items: flex-start; }
+    #cardSection01 .title-area h2 span { padding: 7px 12px 5px; }
+    #cardSection01.is-active .title-area p { width: 100%; font-size: 19px; }
+    #cardSection01.is-active .title-area h2 { font-size: 44px; width: 100%; white-space: nowrap; }
+    #cardSection01 .title-area .share-sns-list { top:-35vh; bottom: auto; width: auto; right: 20px; }
+    #cardSection01 .title-area .share-sns-list ul { display: flex; flex-direction: column; overflow: hidden; position: relative; max-height: 45px; }
+    #cardSection01 .title-area .share-sns-list ul.on { max-height: 500px; background: transparent; border-radius: 0; }
+    #cardSection01 .title-area .share-sns-list ul li { border-radius: 0; background: #07b5ff; width: 45px; height: 45px; line-height: 45px; }
+    #cardSection01 .title-area .share-sns-list ul li+li { margin-left: 0; margin-top: 0px; }
+    #cardSection01 .title-area .share-sns-list ul.on li+li {  margin-top: -1px; }
+    #cardSection01 .title-area .share-sns-list ul li:last-child { border-radius: 0 0 50% 50%; }
+    #cardSection01 .title-area .share-sns-list ul li img { margin-left: 0; transform: scale(0.55); vertical-align: middle; aspect-ratio:1280 / 1080; }
+    #cardSection01 .title-area .share-sns-list ul li+li img { opacity: .7; }
+    #cardSection01 .title-area .share-sns-list ul li+li.on img { opacity: 1; }
+    #cardSection01 .title-area .share-sns-list ul .type-share { border-radius: 100%; }
+    #cardSection01 .arrow { bottom: 24px; width:38px; }
+    #cardSection01 .arrow img { width: 100%; }
+
+    @keyframes main_arrow {
+        0% {
+            bottom: 24px;
+        }
+        50% {
+            bottom: 10px;
+        }
+        100% {
+            bottom: 24px;
+        }
+    }
+
+    #cardSection02 { padding: 130px 0 115px; background: linear-gradient(to bottom, #fff 629px, #f1f9ff 100px); }
+    #cardSection02 .title-area { margin-bottom: 87px; }
+    #cardSection02 .inner::before { content: ''; width: 100%; height: 800px; background: url(../images/sec2_bg01_m.png) top center no-repeat; background-size: contain; left:0; top: 125px; }
+    #cardSection02 .subject-content { padding: 60px 0; }
+    #cardSection02 .subject-content:after { content: ''; width: 69px; height: 69px; right: 50%; transform: translateX(195px); bottom: 0; top: -23px; background: url(../images/sec2_bg01_sticky_right_m.png) center center no-repeat; background-size: contain; }
+    #cardSection02 .subject-content:before { content: ''; width: 69px; height: 69px; left: 50%; transform: translateX(-195px); bottom: 0; top: -23px; background: url(../images/sec2_bg01_sticky_left_m.png) center center no-repeat; background-size: contain; }
+    #cardSection02 .subject-content > p { font-size: 16px; line-height: 1; border: 2px solid #00b9ff; padding: 8.5px 12.5px; }
+    #cardSection02 .subject-content > p b:before { height: 14px; margin: 0 10px; }
+    #cardSection02 .subject-content .txt-emphasis { font-size: 40px; margin-top: 30px; }
+    #cardSection02 .subject-content .txt-emphasis:before { content: ''; width: 46px; height: 35px; left: -30px; bottom: 80px; }
+    #cardSection02 .subject-content .txt-emphasis b:before { content: ''; width: 42.5px; height: 40px; left: -40px; bottom: 47px; }
+    #cardSection02 .subject-content .txt-emphasis b:after { content: ''; width: 160px; height: 16px; bottom: 44px; left: 0; }
+    #cardSection02 .subject-content .txt-empsub { font-size: 15px; margin-top: 10px; line-height: 1.3; }
+    #cardSection02 .subject-content .txt-empsub p { font-size: 14px; line-height: 1.43; padding-top: 5px; }
+    #cardSection02 .subject-content .button { margin: 30px auto 0; padding: 30px 25px; width: 305px; }
+    #cardSection02 .subject-content .button p { font-size: 17px; padding-bottom: 30px; }
+    #cardSection02 .subject-content .button a { font-size: 16px; padding: 10px 0; width: 100%; border-radius: 10px; }
+    #cardSection02 .subject-content .button a:after { width: 16px; height: 16px; background-size: 30%; margin-left: 10px; }
+    #cardSection02 .subject-content .button a:hover:after { margin-left: 15px; }
+
+    #cardSection02 .swiper_wrap { margin-top: 60px; }
+    #cardSection02 .swiper_wrap h2 { padding: 0 20px; font-size: 17px; line-height: 1.47; }
+    #cardSection02 .swiper_wrap .swiper { padding: 0 37px; margin: 35px auto 0; }
+    #cardSection02 .swiper_wrap .swiper-buttons { display: none; }
+    #cardSection02 .swiper_wrap .swiper-pagination { display: block; bottom: -45px; }
+    #cardSection02 .swiper_wrap .swiper-pagination .swiper-pagination-bullet { background: transparent; border: 2px solid #fee300; opacity: 1; margin: 5.5px; width: 10px; height: 10px; box-sizing: border-box; }
+    #cardSection02 .swiper_wrap .swiper-pagination .swiper-pagination-bullet-active { background: #fee300; }
+
+    #cardSection02_2 { padding-top: 94px; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-title em { display: block; }
+    #cardSection02_2 .about-content .about-cover img { box-shadow: 0px 8px 40px 0px rgba(0, 44, 81, 0.32); border-radius: 5px; }
+    #cardSection02_2 .about-content .campaign-detail .txt-lgray { font-size: 14px; }
+    #cardSection02_2 .about-content .campaign-detail .flex { padding: 0 0 70px; }
+    #cardSection02_2 .about-content .campaign-detail .flex+.flex { padding-top: 70px; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div { width: 100%; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div+div { margin-top: 40px; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-title { font-size: 33px; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-title em { font-size: 17px; margin-top: 30px; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-yellow, 
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-normal { width: 76px; padding: 0 9px; height: 22px; line-height: 24px; font-size: 16px; border-radius: 10px; margin-bottom: 17px; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-yellow +p .emphasis, 
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-normal +p { line-height: 1; font-size: 17px; padding-left: 0; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list.second li p { font-size: 17px; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list.second li .attention { font-size: 16px; margin-top: 10px; line-height: 1.43; }
+    #cardSection02_2 .about-content .campaign-detail > div:nth-child(1) > div:first-child .detail-list li { flex-direction: column; align-items: initial; }
+    #cardSection02_2 .about-content .campaign-detail > div:nth-child(1) { flex-direction: column; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li { font-size: 17px; padding-left: 0; line-height: 1.29; margin-top: 22px; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li:first-child { line-height: 1.29; margin-top: 0; margin-bottom: 0; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li span { display: block; position: initial; margin: 0; width: 28px; height: 28px; line-height: 28px; font-size: 16px; margin-bottom: 15px; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li p { font-size: 15px; line-height: 1.66; }
+    #cardSection02_2 .about-content .join-process { margin-top: 82px; }
+    #cardSection02_2 .about-content .join-process > ul > li { width: calc(50% - 7px); height: auto; min-height: 350px; }
+    #cardSection02_2 .about-content .join-process > ul > li+li { margin-left: 0 } 
+    #cardSection02_2 .about-content .join-process > ul > li:nth-child(odd) { margin-right: 14px; }
+    #cardSection02_2 .about-content .join-process > ul > li:nth-child(n+3):nth-child(-n+4) { margin-top: 14px; }
+    #cardSection02_2 .about-content .join-process > ul > li::after { display: none; }
+    #cardSection02_2 .about-content .join-process > ul > li .box { border: 2px solid #fff; min-height: 350px; }
+    #cardSection02_2 .about-content .join-process ul li .txt-step { font-size: 18px; margin: 17px auto 15px; }
+    #cardSection02_2 .about-content .join-process ul li .ico-process { margin: 0 auto 20px; }
+    #cardSection02_2 .about-content .join-process ul li .ico-process img { width: 123px; }
+    #cardSection02_2 .about-content .join-process ul li .txt-desc { font-size: 16px; }
+    #cardSection02_2 .about-content .join-process ul li .txt-desc p { font-size: 13px; }
+    #cardSection02_2 .about-content .join-process ul li .btn-group .btn-primary { font-size: 16px; height: 32px; }
+    #cardSection02_2 .about-content .gift-list { flex-direction: column;  }
+    #cardSection02_2 .about-content .gift-list .gift-item { width: 100%; }
+    #cardSection02_2 .about-content .gift-list:after { width: 33px; height: 33px; background-size: contain; }
+    #cardSection02_2 .about-content .gift-list .gift-item:before { height: 69vw; max-height: 450px; border-radius: 5px; box-shadow: 0px 2px 17px 0px rgb(0 44 81 / 8%); top: 34px; }
+    #cardSection02_2 .about-content .gift-list .item-1-1 { right: initial; }
+    #cardSection02_2 .about-content .gift-list .gift-item.item2 { margin-top: 90px; }
+    #cardSection02_2 .about-content .gift-list .item-2-1:before { width: 20px; height: 28px; top: 50px; left: 20vw; }
+    #cardSection02_2 .about-content .gift-list .item-2-1:after { width: 22px; height: 25px; top: 38px; right: initial; left: 15vw; }
+    #cardSection02_2 .about-content .gift-list p { font-size: 20px; }
+    #cardSection02_2 .about-content .gift-list .img span { margin-bottom: 20px; }
+    #cardSection02_2 .about-content .campaign-detail > div:nth-child(3) .detail-list { margin-top: 35px; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li { margin-top: 10px; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots:last-child li { padding-left: 17px; }
+    #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots:last-child li:before { width: 12px; height: 12px; position: absolute; top: 0; left: 0; }
+
+
     #cardSection03 { padding-top: 90px; }
     #cardSection03::before { display: none; }
-    #cardSection03::after { width: 215px; height: 243px; background-size: contain; top: -184px; right: -64px; }
+    #cardSection03::after { width: 215px; height: 243px; background-size: contain; top: -184px; right: -77px; }
+    #cardSection03 .inner::before { width: 47px; height: 102px; right: -20px; }
     #cardSection03 .flex .score-background { box-shadow: 0px 8px 40px 0px rgb(0 0 0 / 32%); }
+    #cardSection03 .title-area { margin-bottom: 60px; }
+    #cardSection03 .detail-title { margin-bottom: 45px; }
+    #cardSection03 .score-list { margin-top: 55px; }
+    #cardSection03 .score-list::after { margin-top: 65px; }
+    #cardSection03 .score-list ol { flex-wrap: wrap; }
     #cardSection03 .score-list ol li { width: 100%; }
     #cardSection03 .score-list ol li+li { margin-top: 34px; }
     #cardSection03 .score-list ol .score-num { width: 97px; height: 97px; line-height: 97px; }
@@ -32,6 +377,34 @@
     #cardSection03 .score-list ol .score-num span { font-size: 16px; }
     #cardSection03 .score-list ol .txt strong { font-size: 24px; }
     #cardSection03 .score-list ol .txt p { font-size: 17px; }
-    #cardSection03 .detail-list li { padding-left: 24px; }
+    #cardSection03 .detail-list li { padding-left: 24px; font-size: 17px; }
     #cardSection03 .detail-list li::before { width: 12px; height: 12px; top: 2px; }
+    #cardSection03 .round-top { border-radius: 10px; padding: 20px 15px; margin-bottom: 30px; font-size: 18px; }
+    #cardSection03 .round-top + span { font-size: 17px; padding-left: 24px; }
+    #cardSection03 .round-top + span::before { width: 12px; height: 12px; }
+    #cardSection03 .round-table { margin-top: 20px; border: 2px solid #07b5ff; }
+    #cardSection03 .round-table table thead th { font-size: 18px; }
+    #cardSection03 .round-table table tbody th { font-size: 18px; font-weight: 200; }
+    #cardSection03 .round-table table td { font-size: 16px; }
+    #cardSection03 .round-table table .row > td { padding: 12px 0; }
+    #cardSection03 .round-table table .row > td tr { border-bottom: 1px solid #e5eef6; }
+    #cardSection03 .txt-lgray { font-size: 14px; line-height: 1.35; margin-top: 14px; }
+
+    #cardSection04 { background: #f3f8fe url(../images/faq_bg_m.png) no-repeat 30% 0; padding: 200px 0 90px; }
+    #cardSection04::before { display: none; }
+    #cardSection04::after { width: 254px; height: 174px; right: -60px; top: 38px; }
+    #cardSection03 .inner::before { width: 140px; height: 141px; top: -35px; right: -92px; }
+    #cardSection04 .title-area { margin-bottom: 65px; }
+    .faq-accordion { padding: 0; }
+    .faq-accordion .ui-accordion-header { padding: 10px 0 10px 43px; }
+    .faq-accordion .ui-accordion-header::before { width: 28px; height: 28px; font-size: 16px; line-height: 30px; top: 5px; left: 0; transform: translateY(0); }
+    .faq-accordion .ui-accordion-subject { font-size: 20px; padding: 0 15px 0 22px; line-height: 1.26; }
+    .faq-accordion .ui-accordion-subject::before { font-size: 20px; top: 0px; }
+    .faq-accordion .ui-accordion-contents { font-size: 16px; line-height: 1.43; padding: 20px 15px 20px 70px; }
+    .faq-accordion .ui-accordion-contents::before { top: 13px; left: 42px; font-size: 20px; }
+    #cardSection03 .round-table table colgroup col:nth-child(4) { width: 20%; }
+    #cardSection03 .round-table table .row > td tr td:nth-child(3) { width: 26%; }
+
+
+
 }

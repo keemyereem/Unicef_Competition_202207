@@ -187,6 +187,13 @@ function gnbScroll(){
 }
 $(window).scroll(function(){
     gnbScroll();
+
+    const st = $(window).scrollTop();
+    if (st>=100){
+        $('#header').addClass('fixed'); 
+    }else{
+        $('#header').removeClass('fixed');
+    };
 })
 function joinSection(){
     var headerHeight = $('#header').outerHeight();
@@ -213,38 +220,67 @@ $tabButton.on('click', function(){
 
 
 function section01_Swiper() {
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: '3',
-        speed: 800,
-        spaceBetween: 43,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints : {
-            768 : { //브라우저가 768보다 클 때
+    if ($('.swiper').length) {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: '1',
+            speed: 800,
+            spaceBetween: 17,
+            loop: true,
+            centeredSlides : true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints : {
+                768 : { //브라우저가 768보다 클 때
+                    slidesPerView: '3',
+                    centeredSlides : false,
+                    spaceBetween: 43,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                },
               
             },
-          
-        },
-    });
+        });
+    }
 }
 section01_Swiper();
 
-fileupload();
-function fileupload (){
-    var fileTarget = $('.filebox .upload-hidden');
 
-    fileTarget.on('change', function(){  // 값이 변경되면
-      if(window.FileReader){  // modern browser
-        var filename = $(this)[0].files[0].name;
-      } 
-      else {  // old IE
-        var filename = $(this).val().split('/').pop().split('\\').pop();  // 파일명만 추출
-      }
-      
-      // 추출한 파일명 삽입
-      $(this).siblings('.upload-name').val(filename);
+function logo_info() {
+    if ($(window).width() < 768) {
+        $('.share-sns-list ul').prepend('<li class="type-share"><a href="javascript:;"><img src="assets/images/ico_share_m.png" alt="share_button"></a></li>');
+        $(document).ready(function () {
+            var user_area = $('.sns');
+
+            for(var i=0; i<user_area.length; i++) {
+                let src = user_area.eq(i).find('img').attr('src');
+                let scrup = src.replace('@2x.png', '_m.png');
+                user_area.eq(i).find('img').attr('src', scrup);
+            };
+        })
+        
+    } else {
+        $('.type-share').remove();
+    }
+
+    $('.type-share').on('click', function() {
+        $(this).parent().toggleClass('on');
+
+        if (!$(this).parent().hasClass('on')) {
+            $('.type-share').css('border-radius', '100%');
+        } else {
+            $('.type-share').css('border-radius', '50% 50% 0 0')
+        }
     });
-}
 
+    $('.sns').on('click', function() {
+        $(this).toggleClass('on');
+        $(this).siblings().removeClass('on');
+    })
+    
+}
+logo_info();
