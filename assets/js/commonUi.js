@@ -88,7 +88,7 @@ function uiAccordion(){
             var _ = $(this);
             var $contents = _.parent('.ui-accordion-header').next('.ui-accordion-body');
             var $header = _.parent($accordion).find($item);
-            console.log($header);
+            // console.log($header);
             $contents.css('display')=='block' 
             ? (
                 $contents.slideUp(),
@@ -126,65 +126,83 @@ function acceptModal(){
     }
 }
 $('#wrap').addClass('is-active');
-$('.subject-content .btn-primary-arrow').on('click', function(){
-    var _ = $(this);
-    var layer = _.parent('.btn-group').next('.terms-layer');
-    if(layer.css('display')=='none') {
-        _.addClass('is-active');
-        layer.slideDown();
-    } else {
-        _.removeClass('is-active');
-        layer.slideUp();
-    }
-})
+$('.btn-primary').on('click', function(){
+    $('#modal').fadeIn();
+});
+
+$('.btn-primary2').on('click', function(){
+    alert('신청서 출력')
+});
+
 function gnbClick(){
     var headerHeight = $('#header').outerHeight();
-    $('.global-menu li.menu-00 button').on('click', function(){
-        $('html, body').stop().animate({scrollTop: $('#cardGallery').offset().top }, 500);
-    })
     $('.global-menu li.menu-01 button').on('click', function(){
-        $('html, body').stop().animate({scrollTop: $('#cardSection02').offset().top }, 500);
+        $('html, body').stop().animate({scrollTop: $('#cardSection02').offset().top + 60 }, 500);
     })
     $('.global-menu li.menu-02 button').on('click', function(){
-        $('html, body').stop().animate({scrollTop: $('#cardSection0202').offset().top }, 500);
+        $('html, body').stop().animate({scrollTop: $('#cardSection02_2').offset().top }, 500);
     })
     $('.global-menu li.menu-03 button').on('click', function(){
-        $('html, body').stop().animate({scrollTop: $('#cardSection04').offset().top }, 500);
+        $('html, body').stop().animate({scrollTop: $('#cardSection03').offset().top - 10 }, 500);
     })
+    $('.global-menu li.menu-04 button').on('click', function(){
+        $('html, body').stop().animate({scrollTop: $('#cardSection04').offset().top + 50 }, 500);
+        
+    })
+    if ($(window).width() < 768) {
+        $('.global-menu li button').on('click', function(){
+            $('.global-menu').css('display', 'none');
+        });
+        $('.global-menu li.menu-01 button').on('click', function(){
+            $('html, body').stop().animate({scrollTop: $('#cardSection02').offset().top + 40 }, 500);
+            
+        });
+        $('.global-menu li.menu-03 button').on('click', function(){
+            $('html, body').stop().animate({scrollTop: $('#cardSection03').offset().top - 10 }, 500);
+            
+        });
+        $('.global-menu li.menu-04 button').on('click', function(){
+            $('html, body').stop().animate({scrollTop: $('#cardSection04').offset().top + 100 }, 500);
+            
+        });
+    }
 }
 gnbClick();
+
 function gnbScroll(){
     var headerHeight = $('#header').outerHeight();
-    var gallerySection = $('#cardGallery').length && $('#cardGallery').offset().top - headerHeight;
+    // var gallerySection = $('#cardGallery').length && $('#cardGallery').offset().top - headerHeight;
     var section1 = $('#cardSection01').length && $('#cardSection01').offset().top - headerHeight;
     var section2 = $('#cardSection02').length && $('#cardSection02').offset().top - headerHeight;
-    var section22 = $('#cardSection0202').length && $('#cardSection0202').offset().top - headerHeight;
-    var section3 = $('#cardSection03').length && $('#cardSection03').offset().top - headerHeight;
-    var section4 = $('#cardSection04').length && $('#cardSection04').offset().top - headerHeight;
+    var section3 = $('#cardSection02_2').length && $('#cardSection02_2').offset().top - headerHeight;
+    var section4 = $('#cardSection03').length && $('#cardSection03').offset().top - headerHeight;
+    var section5 = $('#cardSection04').length && $('#cardSection04').offset().top - headerHeight;
     var windowTop = $(window).scrollTop()+headerHeight;
     if(windowTop >= 0) {
         $('.global-menu li button').removeClass('is-active');
     }
-    if(windowTop >= gallerySection) {
+    if(windowTop >= section1) {
         $('.global-menu li button').removeClass('is-active');
-        $('.global-menu li.menu-00 button').addClass('is-active');
     }
     if(windowTop >= section2) {
         $('.global-menu li button').removeClass('is-active');
         $('.global-menu li.menu-01 button').addClass('is-active');
     }
-    if(windowTop >= section22) {
+    if(windowTop >= section3) {
         $('.global-menu li button').removeClass('is-active');
         $('.global-menu li.menu-02 button').addClass('is-active');
-    }
-    if(windowTop >= section3) {
-        $('#cardSection03').addClass('is-active');
     }
     if(windowTop >= section4) {
         $('.global-menu li button').removeClass('is-active');
         $('.global-menu li.menu-03 button').addClass('is-active');
     }
+    if(windowTop >= section5) {
+        $('.global-menu li button').removeClass('is-active');
+        $('.global-menu li.menu-04 button').addClass('is-active');
+    }
 }
+
+
 $(window).scroll(function(){
     gnbScroll();
 
@@ -194,7 +212,13 @@ $(window).scroll(function(){
     }else{
         $('#header').removeClass('fixed');
     };
-})
+});
+
+$('#header .btn-mobile-menu').on('click', function() {
+    $('#header').toggleClass('white'); 
+});
+
+
 function joinSection(){
     var headerHeight = $('#header').outerHeight();
     $('html, body').animate({scrollTop: $('#joinSection').offset().top - headerHeight}, 500)
