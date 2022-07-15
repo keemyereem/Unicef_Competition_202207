@@ -26,8 +26,6 @@
 <link rel="stylesheet" href="assets/css/media.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 <title>유니세프 달력 그림 그리기 공모전</title>
-</head>
-<body>
 <script>
     function shareTwitter() {
         var sendText = "유니세프 달력 그림 그리기 공모전"; // 전달할 텍스트
@@ -42,7 +40,7 @@
 
     // Kakao 공유 동작 function
     function shareKakao() {
-        Kakao.init('');    
+        Kakao.init('04bfa4a2dd54e4f2301e6ebce0b90851');    
 
         var sendUrl = window.document.location.href; // 전달할 URL
         // Kakao 버튼 생성
@@ -57,10 +55,17 @@
                     mobileWebUrl : sendUrl,
                     webUrl : sendUrl
                 }
-            }
+            },
+            
         });
     }
+    $(function() {
+			shareKakao();  
+	});
+
 </script>
+</head>
+<body>
 <div id="wrap">
     <header id="header">
         <div class="inner">

@@ -340,9 +340,7 @@ function observeResizing() {
 }
 observeResizing();
 
-
 function clip(){
-
 	var url = '';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
@@ -353,5 +351,4 @@ function clip(){
 	document.body.removeChild(textarea);
 	alert("URL이 복사되었습니다.");
 }
-
 
