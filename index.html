@@ -11,11 +11,12 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
-<meta property="og:title" content="유니세프 설립 75주년 기념 유니세프 카드그림 그리기 공모전"/>
+<meta property="og:title" content="유니세프 달력 그림 그리기 공모전"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content=""/>
 <meta property="og:image" content=""/>
-<meta property="og:description" content="모든 어린이가 행복한 세상을 위해 우리 모두가 해야 할 일을 그려주세요!"/>
+<meta property="og:description" content="유니세프아동친화사회 만들기 '내가 살고 싶은 우리 동네를 그려 주세요!'"/>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script src="assets/js/jquery-3.6.0.min.js"></script>		
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/YTPlayer.js"></script>
@@ -24,11 +25,41 @@
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/media.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-<title>‘모든 어린이가 행복한 세상’을 위한 유니세프 달력 그림 그리기 공모전</title>
+<title>유니세프 달력 그림 그리기 공모전</title>
 </head>
 <body>
 <script>
+    function shareTwitter() {
+        var sendText = "유니세프 달력 그림 그리기 공모전"; // 전달할 텍스트
+        var sendUrl = window.document.location.href; // 전달할 URL
+        window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
+    }
 
+    function shareFacebook() {
+        var sendUrl = window.document.location.href; // 전달할 URL
+        window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+    }
+
+    // Kakao 공유 동작 function
+    function shareKakao() {
+        Kakao.init('');    
+
+        var sendUrl = window.document.location.href; // 전달할 URL
+        // Kakao 버튼 생성
+        Kakao.Link.createDefaultButton({
+            container : '#btnKakao',            // kakao button
+            objectType : 'feed',
+            content : {
+                title : "유니세프 달력 그림 그리기 공모전",        
+                description : "유니세프 달력 그림 그리기 공모전",
+                imageUrl : "",
+                link : {
+                    mobileWebUrl : sendUrl,
+                    webUrl : sendUrl
+                }
+            }
+        });
+    }
 </script>
 <div id="wrap">
     <header id="header">
@@ -36,8 +67,6 @@
             <h1>
                 <a href="/">
                     <span style="display:none;">로고</span>
-                    <!-- <img src="assets/images/logo@2x.png" alt="유니세프" class="img_pc">
-                    <img src="assets/images/logo@2x_m.png" alt="유니세프" class="img_m"> -->
                 </a>
             </h1>
             <button type="button" class="btn-mobile-menu" onclick="javascript:mobileMenuToggle()">
@@ -59,9 +88,9 @@
                     <li class="menu-04">
                         <button type="button">FAQ</button>
                     </li>
-                    <li class="menu-05">
+                    <!-- <li class="menu-05">
                         <button type="button">수상작 갤러리</button>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -90,22 +119,22 @@
                     <div class="share-sns-list">
                         <ul>
                             <li class="sns type-link">
-                                <a href="#">
+                                <a href="#" onclick="clip(); return false;">
                                     <img src="assets/images/ico_share_link@2x.png" alt="링크주소로 공유하기">
                                 </a>
                             </li>
                             <li class="sns type-fb">
-                                <a href="#">
+                                <a href="#" onclick="shareFacebook();">
                                     <img src="assets/images/ico_share_fb@2x.png" alt="페이스북으로 공유하기">
                                 </a>
                             </li>
                             <li class="sns type-insta">
-                                <a href="#">
+                                <a href="#" onclick="shareTwitter();">
                                     <img src="assets/images/ico_share_tw@2x.png" alt="트위터로 공유하기">
                                 </a>
                             </li>
                             <li class="sns type-kakao">
-                                <a href="#">
+                                <a href="#" id="btnKakao">
                                     <img src="assets/images/ico_share_kakao@2x.png" alt="카카오톡으로 공유하기">
                                 </a>
                             </li>
@@ -140,7 +169,7 @@
                         유니세프한국위원회는 어린이와 <br class="br_m">부모가 생활하는 공간 모두를 <br class="br_m">어린이에게 친화적인 환경을 만들기 <br class="br_m">위해 <br class="br_1400">
                         <span>아동친화도시,</span> 아동친화기업, <br class="br_m"><span>아동친화학교,</span> 아동친화사법 등을 <br class="br_m">추진하고 있습니다.
                     </p>
-                    <a href="javascript:;" title="유니세프아동친화사회 만들기">유니세프아동친화사회 만들기</a>
+                    <a href="https://www.unicef.or.kr/what-we-do/advocacy-for-children/public-private-partnership/child-friendly-cities" target="_blank" title="유니세프아동친화사회 만들기">유니세프아동친화사회 만들기</a>
                 </div>
             </div>
         </div>
@@ -636,11 +665,13 @@
     </section>
 </div>
 <div id="modal">
+    <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/ico_layer_close@2x_white.png" alt="모달 닫기"></button>
+    
+    <iframe src="application.html"></iframe>
     <!-- 작품 접수 가이드 -->
     <div class="layer" id="modalGuide">
         <div class="modal-header">
             <h2>작품접수 가이드</h2>
-            <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/ico_layer_close@2x_white.png" alt="모달 닫기"></button>
         </div>
         <div class="modal-body">
             <h4 class="accept-title">

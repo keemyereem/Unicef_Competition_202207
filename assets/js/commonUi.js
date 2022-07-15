@@ -127,11 +127,17 @@ function acceptModal(){
 }
 $('#wrap').addClass('is-active');
 $('.btn-primary').on('click', function(){
+    $('#modal iframe').hide();
+    $('#modal #modalGuide').show();
     $('#modal').fadeIn();
+    $('#modal').css('overflow', 'auto');
 });
 
 $('.btn-primary2').on('click', function(){
-    alert('신청서 출력')
+    $('#modal #modalGuide').hide();
+    $('#modal iframe').show();
+    $('#modal').fadeIn();
+    $('#modal').css('overflow', 'hidden');
 });
 
 function gnbClick(){
@@ -261,6 +267,7 @@ function section01_Swiper() {
                     slidesPerView: '3',
                     centeredSlides : false,
                     spaceBetween: 43,
+                    // loop: false,
                     navigation: {
                         nextEl: ".swiper-button-next",
                         prevEl: ".swiper-button-prev",
@@ -272,7 +279,6 @@ function section01_Swiper() {
     }
 }
 section01_Swiper();
-
 
 function logo_info() {
     if ($(window).width() < 768) {
@@ -301,10 +307,51 @@ function logo_info() {
         }
     });
 
-    $('.sns').on('click', function() {
+    $('.sns').on('mousedown', function() {
         $(this).toggleClass('on');
         $(this).siblings().removeClass('on');
     })
+
     
 }
 logo_info();
+
+function observeResizing() {
+    var delta = 500;
+    var timer = null;
+    var windowWidth = $(window).width();
+
+    $('#wrap').prepend("<div class='resizeAlert'><span>화면사이즈 변경이 감지되었습니다. 잠시 후 새로고침 됩니다.</span></div>");
+    
+    $(window).on('resize', function() {
+        if(windowWidth != $(window).width()) {
+            clearTimeout(timer);
+            var timer = setTimeout(resizeDone, delta);
+        }
+    });
+
+    function resizeDone() {
+        $('.resizeAlert').css('top', '0');
+
+        setTimeout(function () {
+            location.reload();
+        }, 1000);
+    };
+}
+observeResizing();
+
+
+function clip(){
+
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+
+

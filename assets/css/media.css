@@ -1,3 +1,8 @@
+@media only screen /* and (min-width:768) */ and (max-width:1600px) {
+    #cardSection02 .swiper_wrap .swiper-button-next { transform: translateX(47vw); }
+    #cardSection02 .swiper_wrap .swiper-button-prev { transform: translateX(-47vw); }
+    .resizeAlert { height: 120px; }
+}
 
 @media only screen and (max-height:860px) and (min-width:1401px) {
     #header { height: 120px; }
@@ -49,7 +54,7 @@
 @media only screen /* and (min-width:768) */ and (max-width:1400px) {
     .br_1400 { display: none }
     #wrap .inner { width: 100%; padding: 0 20px; }
-
+    .resizeAlert { height: 150px; }
     #header .inner { width: 100%; padding: 0; }
     #header .global-menu { width: calc(100% - 200px); }
     #header .global-menu ul { display: flex; justify-content: space-evenly; }
@@ -104,10 +109,10 @@
     
     }
 
-    
-    #cardSection02 .title-area { margin-bottom: 15vw; }
-    #cardSection02 .inner::before { content: ''; width: 100%; height: 100%; background: url(../images/sec2_bg01.png) top center no-repeat; background-size: contain; transform: unset; left:0; top: 19vw; }
-    #cardSection02 .subject-content { padding: 3vw 0; }
+    #cardSection02 { background:linear-gradient(to bottom, #fff 80vw, #f1f9ff 100px); padding: 15vw 0 10vw; }
+    #cardSection02 .title-area { margin-bottom: 10vw; }
+    #cardSection02 .inner::before { content: ''; width: 100%; height: 100%; background: url(../images/sec2_bg01.png) top center no-repeat; background-size: contain; transform: unset; left:0; top: 14vw; }
+    #cardSection02 .subject-content { padding: 5vw 0; }
     #cardSection02 .subject-content:after { content: ''; width: 17vw; height: 16vw; right: -5vw; bottom: 4vw; background: url(../images/sec2_bg01_sticky_right.png) center center no-repeat; background-size: contain; }
     #cardSection02 .subject-content:before { content: ''; width: 17vw; height: 16vw; left: -5vw; bottom: 4vw; background: url(../images/sec2_bg01_sticky_left.png) center center no-repeat; background-size: contain; }
     #cardSection02 .subject-content > p { font-size: 2.5vw; line-height: 2.5vw; }
@@ -122,9 +127,12 @@
     #cardSection02 .subject-content .button p { font-size: 2vw; padding-bottom: 2vw; }
     #cardSection02 .subject-content .button a { font-size: 2vw; padding: 2vw 0; width: 33vw; }
     #cardSection02 .subject-content .button a:after { width: 2vw; height: 2vw; background-size: auto; }
-    
+    #cardSection02 .swiper_wrap { margin-top: 6vw; }
+    #cardSection02 .swiper_wrap h2 { font-size: 2.3vw; }
+    #cardSection02 .swiper_wrap .swiper { margin: 5vw auto 0; }
+
     #cardSection02_2 { padding-top: 13.35vw; background: linear-gradient(to bottom, #fff 67.85vw, #07b5ff 7.14vw); }
-    #cardSection02_2::after { width: 21.92vw; height: 29.78vw; }
+    #cardSection02_2::after { width: 15.92vw; height: 21.78vw; top: -4vw; }
     #cardSection02_2 .about-content .campaign-detail { margin-top: 8.57vw; }
     #cardSection02_2 .about-content .campaign-detail .txt-lgray { font-size: 1.28vw; }
     #cardSection02_2 .about-content .campaign-detail .flex { padding: 0 0 8.57vw; }
@@ -211,6 +219,13 @@
     #header .global-menu ul { height: 150px; align-items: center; }
     #header .global-menu ul li button { padding: 0; }
     #header .global-menu ul li .br_m {display: block;}
+    #header .global-menu ul { padding-left: 0; }
+}
+
+@media only screen and (max-width:881px) {
+    #modal #modalGuide,
+    #modal iframe { width: calc(100% - 20px); }
+    
 }
 
 @media only screen and (max-width:767px) {
@@ -220,6 +235,10 @@
 
     table td { padding: 5px 0; }
     table th { padding: 15px 0; }
+    #modal .modal-close { top: 25px; }
+    #modal iframe { height: calc(100% - 80px); }
+    
+    .resizeAlert { height: 55px; font-size: 12px; }
     #header { height: 55px; }
     #header h1 a { width: 74px; height: 55px; background: url(../images/logo@2x_m.png) no-repeat; background-size: contain; }
     #header.white { background: #fff; }
@@ -233,7 +252,7 @@
     #header.fixed .btn-mobile-menu span,
     #header.white .btn-mobile-menu span { background: #000; }
 	#header .global-menu { position: absolute; width: 100%; left:0; background: #fff; box-shadow: 0 0 14px 0 rgb(221 221 221 / 50%); border-top:1px solid #f6f6f6; top:55px; padding: 50px 0; }
-    #header .global-menu ul { flex-direction: column; }
+    #header .global-menu ul { flex-direction: column; padding-left: 0; }
     #header .global-menu ul li { color: #000; width: 100%; }
     #header .global-menu ul li button { font-size: 20px; padding: 10px 0; width: 100%; }
     
@@ -257,8 +276,8 @@
     #cardSection01 .title-area { padding:0 20px 0; transform: translateY(104.5px); }
     #cardSection01 .title-area { width: 100%; align-items: flex-start; }
     #cardSection01 .title-area h2 span { padding: 7px 12px 5px; }
-    #cardSection01.is-active .title-area p { width: 100%; font-size: 19px; }
-    #cardSection01.is-active .title-area h2 { font-size: 44px; width: 100%; white-space: nowrap; }
+    #cardSection01 .title-area p { width: 100%; font-size: 19px; }
+    #cardSection01 .title-area h2 { font-size: 44px; width: 100%; white-space: nowrap; }
     #cardSection01 .title-area .share-sns-list { top:-35vh; bottom: auto; width: auto; right: 20px; }
     #cardSection01 .title-area .share-sns-list ul { display: flex; flex-direction: column; overflow: hidden; position: relative; max-height: 45px; }
     #cardSection01 .title-area .share-sns-list ul.on { max-height: 500px; background: transparent; border-radius: 0; }

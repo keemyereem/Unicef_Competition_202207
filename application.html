@@ -17,9 +17,9 @@
 <body>
 <!-- 출품 신청서 -->
 <div id="modal_form">
-    <form action="">
+    <form action="#">
     <div class="layer" id="application">
-        <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/modal_close.png" alt="모달 닫기"></button>
+        <!-- <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/modal_close.png" alt="모달 닫기"></button> -->
         <div class="modal-header modal-header1">
             <h2><span>[</span> 유니세프 달력 그림 그리기<br class="br_m"> 공모전 출품 신청서 <span>]</span></h2>
         </div>
@@ -184,6 +184,7 @@
             $('html, body').scrollTop(wTop);
             $('html').addClass('js-scroll-blocking');
         } else {
+            $('iframe').hide();
             $('#modal_form').hide();
             $('html').removeClass('js-scroll-blocking').scrollTop(wTop);
         }

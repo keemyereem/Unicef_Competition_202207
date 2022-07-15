@@ -371,16 +371,11 @@ input[type=number] {
 }
 
 #modal_form .layer {
-	position: absolute;
-	left: 50%;
-	top: 120px;
-	-webkit-transform: translate(-50%, 0);
-	transform: translate(-50%, 0);
+	position: relative;
 	background: #fff;
 	padding: 60px 50px 140px 50px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	margin-bottom: 120px
 }
 
 #modal_form .layer .modal-close {
@@ -388,7 +383,8 @@ input[type=number] {
 	background: 0 0;
 	position: absolute;
 	left: 50%;
-	top: -95px
+	transform: translateX(-50%);
+	top: -60px
 }
 
 #modal_form .modal-header {
@@ -799,7 +795,7 @@ input[type=number] {
 @media only screen and (max-width:1000px) {
     .br_pc { display: none }
     .br_m { display: block }
-    #modal_form #application { width: calc(100% - 60px); padding: 38px 20px 80px; }
+    #modal_form #application { width:100%; padding: 38px 15px 80px; }
     #modal_form #application input[type="radio"] + label { margin-right: 15px; }
     #modal_form #application table td ul {flex-wrap: wrap;}
 
@@ -808,7 +804,7 @@ input[type=number] {
 }
 
 @media only screen and (max-width:640px) {
-    #modal_form #application { width: calc(100% - 20px); padding: 38px 10px 80px; }
+    #modal_form #application { width: 100%; margin: 0; }
     #modal_form #application .round-table { border: 2px solid #07b5ff; border-radius: 10px; margin-bottom: 10px; }
     #modal_form #application .modal-header { padding-bottom: 23px; }
     #modal_form #application .modal-header h2 { font-size: 25px; line-height: 1.52; }
@@ -855,10 +851,8 @@ input[type=number] {
     #modal_form #application .modal-body2 input[type="submit"] { width: 100%; max-width: 260px; height: 58px; line-height: 60px; font-size: 17px; border-radius: 15px; }
     #modal_form #application .modal-body2 .btn_submit img { width: 73px; transform: translateX(85px); top: 15px; }
 
-
-    
-
 }
 @media only screen and (max-width:477px) {
     #modal_form #application .row3 .tit { padding: 45px 0 45px 15px; }
+	#modal_form #application .modal-body2 input[type="button"] { width: 100%; }
 }
