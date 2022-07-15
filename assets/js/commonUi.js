@@ -133,7 +133,7 @@ $('.btn-primary').on('click', function(){
     $('#modal').css('overflow', 'auto');
 });
 
-$('.btn-primary2').on('click', function(){
+$('.btn-primary2, .btn-join').on('click', function(){
     $('#modal #modalGuide').hide();
     $('#modal iframe').show();
     $('#modal').fadeIn();

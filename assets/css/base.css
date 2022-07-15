@@ -1397,8 +1397,9 @@ html.js-scroll-blocking body {
 #cardSection02 .subject-content .button { width: calc(100% - 144px); margin:55px auto 0; background: #f1f9ff; border-radius: 30px; padding: 45px 0 50px; text-align: center; }
 #cardSection02 .subject-content .button p { font-size: 28px; line-height: 1.6; color: #666666; letter-spacing: -.08rem; padding-bottom: 45px; }
 #cardSection02 .subject-content .button p span { color: #00b9ff; }
-#cardSection02 .subject-content .button a { position: relative; font-size: 26px; color: #fff; font-weight: 400; background: #00b9ff; padding: 23px 0; margin: auto; text-align: center; width: 432px; display: block; border-radius: 22px; }
-#cardSection02 .subject-content .button a:after { content: ''; width: 28px; height: 28px; background: #fff url(../images/sec2_button_arrow.png) 50% 50% no-repeat; display: inline-block; border-radius: 100%; margin-left: 20px; vertical-align: text-top; transition: all ease .3s; }
+#cardSection02 .subject-content .button a { position: relative; font-size: 26px; color: #fff; font-weight: 400; background: #00b9ff; padding: 23px 0; margin: auto; text-align: center; width: 460px; display: block; border-radius: 22px; }
+/* #cardSection02 .subject-content .button a:after { content: ''; width: 28px; height: 28px; background: #fff url(../images/sec2_button_arrow.png) 50% 50% no-repeat; display: inline-block; border-radius: 100%; margin-left: 20px; vertical-align: text-top; transition: all ease .3s; } */
+#cardSection02 .subject-content .button a span { font-size: 18px; vertical-align: middle; font-weight: 200; }
 #cardSection02 .subject-content .button a:hover:after { margin-left: 30px; }
 
 #cardSection02 .swiper_wrap { position: relative; margin-top: 80px; }
@@ -1440,6 +1441,7 @@ html.js-scroll-blocking body {
 #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list.second li .attention { display: block; font-size: 18px; line-height: 1.7; color: #0d4e67; margin-top: 22px; font-family: 'NS'; }
 #cardSection02_2 .about-content .campaign-detail .flex+.flex { background: url(../images/sec2_dotted_line.png) top center no-repeat; border-top: none; padding-top: 120px; }
 #cardSection02_2 .about-content .campaign-detail .flex+.flex > div { width: 100%; }
+#cardSection02_2 .about-content .campaign-detail .flex+.flex > div .irrelevant { font-size: 20px; font-weight: 400; color: #ffe400; text-decoration: underline; text-underline-position : under; padding-left: 62px; }
 #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li { position: relative; padding-left: 62px; font-size: 24px; font-weight: 200; color: #fff; line-height: 2.3; margin-top: 0; }
 #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li span { background: #fff; color: #00b9ff; text-align: center; line-height: 45px; font-size: 22px; font-weight: 400; border-radius: 100%; width: 42px; height: 42px; display: inline-block; position: absolute; left: 0; top: 0; bottom: 0; margin: auto; }
 #cardSection02_2 .about-content .campaign-detail .detail-list.type-dots li p { font-family: 'NS'; font-size: 18px; padding-left: 0; line-height: 1; margin-top: 15px; }
@@ -2348,9 +2350,6 @@ table td {
 	#modal #modalGuide {
 		border-radius: 10px;
 		margin: 80px auto 20px;
-	}
-	#modal iframe {
-		margin: 80px auto;
 	}
 }
 

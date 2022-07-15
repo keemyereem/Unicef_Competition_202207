@@ -431,6 +431,15 @@ input[type=number] {
 	border-top: 1px solid #e8e8e8;
 	padding: 26px 0
 }
+#modal_form #application table th span{
+	font-size: 14px;
+	color: #07b5ff;
+	display: block;
+	font-weight: 200;
+	padding-top: 15px;
+	line-height: 1.4;
+	letter-spacing: 0;
+}
 
 #modal_form #application table th.blue {
 	background: #07b5ff;
@@ -598,6 +607,11 @@ input[type=number] {
 #modal_form #application .row1 > div:nth-of-type(2) .tit {
 	width: 84px;
 	padding: 15px 0 15px 20px
+}
+
+#modal_form #application .row1 > div:nth-of-type(2) div:last-child .tit {
+	width: 84px;
+	padding: 15px 0 15px 0
 }
 
 #modal_form #application .row1 > div:nth-of-type(2) > div:last-of-type {
@@ -794,16 +808,17 @@ input[type=number] {
 /* media */
 @media only screen and (max-width:1000px) {
     .br_pc { display: none }
-    .br_m { display: block }
     #modal_form #application { width:100%; padding: 38px 15px 80px; }
     #modal_form #application input[type="radio"] + label { margin-right: 15px; }
     #modal_form #application table td ul {flex-wrap: wrap;}
+}
 
-
-
+@media only screen and (max-width:860px) {
+	.br_m { display: block }
 }
 
 @media only screen and (max-width:640px) {
+	
     #modal_form #application { width: 100%; margin: 0; }
     #modal_form #application .round-table { border: 2px solid #07b5ff; border-radius: 10px; margin-bottom: 10px; }
     #modal_form #application .modal-header { padding-bottom: 23px; }
@@ -811,6 +826,7 @@ input[type=number] {
     #modal_form #application table colgroup col:nth-child(1) { width: 25% }
     #modal_form #application table tr:first-child td {padding: 10px 0 10px 15px;}
     #modal_form #application table th { font-size: 14px; padding: 15px 0; }
+	#modal_form #application table th span{ font-size: 12px; padding-top: 15px; word-break: keep-all; }
     #modal_form #application table th.blue { font-size: 15px; }
     #modal_form #application table td { font-size: 14px; padding-left: 15px; }
     
@@ -822,6 +838,7 @@ input[type=number] {
     #modal_form #application .row1 > div:nth-of-type(2) { width: 100%; }
     #modal_form #application .row .tit { width: 25%; max-width: 85px; min-width: 70px; padding: 15px 15px 15px 15px; box-sizing: border-box; }
     #modal_form #application .row1 > div:nth-of-type(2) .tit { width: 25%; max-width: 85px; min-width: 70px; padding: 15px 0 15px 15px; }
+	#modal_form #application .row1 > div:nth-of-type(2) div:last-child .tit { max-width: 0; min-width: 15vw; }
     #modal_form #application .row2 { padding: 0; }
     #modal_form #application .row2 .td_input { width: calc(100% - 85px); }
     #modal_form #application .row3 .contact_wrap { width: calc(100% - 68px); }
