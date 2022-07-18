@@ -611,12 +611,10 @@ input[type=number] {
 
 #modal_form #application .row1 > div:nth-of-type(2) div:last-child .tit {
 	width: 84px;
-	padding: 15px 0 15px 0
+	
 }
 
-#modal_form #application .row1 > div:nth-of-type(2) > div:last-of-type {
-	border-top: 1px solid #e8e8e8
-}
+
 
 #modal_form #application .row1 ul {
 	display: inline-flex
@@ -838,7 +836,6 @@ input[type=number] {
     #modal_form #application .row1 > div:nth-of-type(2) { width: 100%; }
     #modal_form #application .row .tit { width: 25%; max-width: 85px; min-width: 70px; padding: 15px 15px 15px 15px; box-sizing: border-box; }
     #modal_form #application .row1 > div:nth-of-type(2) .tit { width: 25%; max-width: 85px; min-width: 70px; padding: 15px 0 15px 15px; }
-	#modal_form #application .row1 > div:nth-of-type(2) div:last-child .tit { max-width: 0; min-width: 15vw; }
     #modal_form #application .row2 { padding: 0; }
     #modal_form #application .row2 .td_input { width: calc(100% - 85px); }
     #modal_form #application .row3 .contact_wrap { width: calc(100% - 68px); }
