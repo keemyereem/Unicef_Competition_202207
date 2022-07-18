@@ -679,9 +679,18 @@ input[type=number] {
 }
 
 #modal_form #application .row2 .td_input {
-
+	display: flex;
+	align-items: center;
 	width: calc(100% - 80px)
 
+}
+
+#modal_form #application .row2 .td_input button {
+	width: 80px;
+	height: 35px;
+	background: #07b5ff;
+	color: #fff;
+	border-radius: 5px;
 }
 
 #modal_form #application .row .td_input input[type="text"], #modal_form #application .row .td_input input[type="text"]::placeholder {
