@@ -2131,7 +2131,7 @@ table td {
 }
 
 .faq-accordion .ui-accordion-subject::before {
-	content: 'F.';
+	content: 'Q.';
 	display: block;
 	font-family: 'jalnan';
 	font-size: 34px;
