@@ -153,7 +153,7 @@
             </div>
             
             <div class="btn_submit">
-                <input type="button" value="공모전 출품하기">
+                <input type="button" value="공모전 출품하기" onclick="parent.closeModal();">
                 <img src="assets/images/join_pencil.png" alt="연필 이미지">
             </div>
         </div>
@@ -163,7 +163,7 @@
 <script>
     fileupload();
     function fileupload (){
-        var fileTarget = $('.filebox .upload-hidden');
+        var fileTarget = $('.filebox .upload-hidden'); 
 
         fileTarget.on('change', function(){  // 값이 변경되면
         if(window.FileReader){  // modern browser
@@ -176,19 +176,6 @@
         // 추출한 파일명 삽입
         $(this).siblings('.upload-name').val(filename);
         });
-    }
-
-    function acceptModal(){
-        var wTop = $(window).scrollTop();
-        if($('#modal_form').css('display')=='none') {
-            $('#modal_form').show();
-            $('html, body').scrollTop(wTop);
-            $('html').addClass('js-scroll-blocking');
-        } else {
-            $('iframe').hide();
-            $('#modal_form').hide();
-            $('html').removeClass('js-scroll-blocking').scrollTop(wTop);
-        }
     }
 </script>
 </body>
