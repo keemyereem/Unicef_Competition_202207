@@ -81,7 +81,7 @@
     #cardSection01 .btn-join { width: 240px; }
     #cardSection01 .btn-join button img:last-child { width: 80px; bottom: 22%; right: 18%; }
     #cardSection01 .btn-join button:hover:after { width: 86px; }
-    #cardSection01 .btn-join button:after { height: 20px; background-size: cover; left: 24%; bottom: 54%; background: url(/assets/images/join_pencil_yellow_1400.png) 0 50%/cover no-repeat; }
+    #cardSection01 .btn-join button:after { height: 20px; background-size: cover; left: 24%; bottom: 54%; background: url(../images/join_pencil_yellow_1400.png) 0 50%/cover no-repeat; }
     #cardSection01 .btn-join button:hover img:last-child { right: 18%; }
     @keyframes main_arrow {
         0% {
@@ -126,7 +126,8 @@
     #cardSection02 .subject-content .txt-empsub p { font-size: 1.5vw; }
     #cardSection02 .subject-content .button { margin: 3vw auto 0; padding: 2vw 2vw; }
     #cardSection02 .subject-content .button p { font-size: 2vw; padding-bottom: 2vw; }
-    #cardSection02 .subject-content .button a { font-size: 2vw; padding: 2vw 0; width: 35vw; }
+    #cardSection02 .subject-content .button a { font-size: 2vw; padding: 2vw 0; width: 37vw; }
+    #cardSection02 .subject-content .button a span { font-size: 1.8vw; }
     /* #cardSection02 .subject-content .button a:after { width: 2vw; height: 2vw; background-size: auto; } */
     #cardSection02 .swiper_wrap { margin-top: 6vw; }
     #cardSection02 .swiper_wrap h2 { font-size: 2.3vw; }
@@ -325,7 +326,6 @@
     #cardSection02 .subject-content .button a { font-size: 16px; padding: 10px 0; width: 100%; border-radius: 10px; }
     #cardSection02 .subject-content .button a span { display: block; font-size: 14px; margin-top: 5px; }
     /* #cardSection02 .subject-content .button a:after { width: 16px; height: 16px; background-size: 30%; margin-left: 10px; } */
-    #cardSection02 .subject-content .button a:hover:after { margin-left: 15px; }
 
     #cardSection02 .swiper_wrap { margin-top: 60px; }
     #cardSection02 .swiper_wrap h2 { padding: 0 20px; font-size: 17px; line-height: 1.47; }
@@ -341,12 +341,12 @@
     #cardSection02_2 .about-content .campaign-detail .txt-lgray { font-size: 14px; }
     #cardSection02_2 .about-content .campaign-detail .flex { padding: 0 0 70px; }
     #cardSection02_2 .about-content .campaign-detail .flex+.flex { padding-top: 70px; }
-    #cardSection02_2 .about-content .campaign-detail .flex+.flex > div .irrelevant { font-size: 18px; padding-left: 0; padding-top: 10px; }
+    #cardSection02_2 .about-content .campaign-detail .flex+.flex > div .irrelevant { font-size: 17px; padding-left: 0; margin-top: 10px; }
 
     #cardSection02_2 .about-content .campaign-detail .flex > div { width: 100%; }
     #cardSection02_2 .about-content .campaign-detail .flex > div+div { margin-top: 40px; }
     #cardSection02_2 .about-content .campaign-detail .flex > div .detail-title { font-size: 33px; }
-    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-title em { font-size: 17px; margin-top: 30px; }
+    #cardSection02_2 .about-content .campaign-detail .flex > div .detail-title em { font-size: 17px; margin-top: 30px; line-height: 1.4; }
     #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-yellow, 
     #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-normal { width: 76px; padding: 0 9px; height: 22px; line-height: 24px; font-size: 16px; border-radius: 10px; margin-bottom: 17px; }
     #cardSection02_2 .about-content .campaign-detail .flex > div .detail-list .ico-yellow +p .emphasis, 
