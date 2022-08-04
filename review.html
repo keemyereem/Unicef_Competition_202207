@@ -18,22 +18,344 @@
 <meta property="og:description" content="유니세프아동친화사회 만들기 '내가 살고 싶은 우리 동네를 그려 주세요!'"/>
 <title>유니세프 공모전 심사리스트</title>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="assets/css/base.css">
+<!-- <link rel="stylesheet" href="assets/css/base.css"> -->
 
 <style>
-    
+    @font-face {
+        font-family: 'nexon';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+        font-weight: 200;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'nexon';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+    /* ------------------------------------noto-sans kr----------------------------------- */
+
+    @font-face {
+        font-family: 'NS';
+        font-style: normal;
+        font-display: fallback;
+        font-weight: 200;
+        src: local(※),
+        url(../font/NotoSansCJKkr-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../font/NotoSansCJKkr-Regular.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'NS';
+        font-weight: 300;
+        src: local(※),
+        url(../font/NotoSansCJKkr-Medium.eot?#iefix) format('embedded-opentype'),
+        url(../font/NotoSansCJKkr-Medium.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'NS';
+        font-weight: 400;
+        src: local(※),
+        url(../font/NotoSansCJKkr-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../font/NotoSansCJKkr-Bold.ttf) format('truetype');
+    }
+
+    address,article,aside,blockquote,body,button,caption,code,dd,div,dl,dt,fieldset,figcaption,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,label,legend,li,menu,nav,object,ol,p,pre,section,table,tbody,td,textarea,tfoot,th,thead,ul {margin: 0;padding: 0;letter-spacing: -.7px;box-sizing: border-box;}
+    body,html {width: 100%;height: 100%;color: #000;font-family: 'nexon';font-weight: 200;font-size: 16px}
+    html {-webkit-touch-callout: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
+    body {width: 100%;background: #fff;min-width: 320px;-webkit-text-size-adjust: none;word-wrap: break-word;word-break: break-all}
+    button,input,select,textarea {border: none;font-size: 18px;font-family: 'nexon'}
+    button {cursor: pointer;background: 0 0}
+    li,ol,ul {list-style: none}
+    table {border-spacing: 0;border-collapse: collapse;table-layout: fixed}
+    fieldset,img {border: 0}
+    address,cite,code,em {font-style: normal;font-weight: 400}
+    button,img,input,label,select,textarea {vertical-align: middle}
+    .hide,caption,legend {line-height: 0;font-size: 1px;overflow: hidden}
+    hr {display: none}
+    article,aside,figure,footer,header,main,nav,section {display: block}
+    a, button {color: inherit;text-decoration: none}
+    a:focus, button:focus {outline: 0}
+    textarea {outline: 0;width: 100%;padding: 12px;-webkit-box-sizing: border-box;box-sizing: border-box;resize: none}
+    input {outline: 0;min-width: 68px;width: 100%;-webkit-box-sizing: border-box;box-sizing: border-box}
+
+    .top { max-width: 1400px; margin: 0 auto; background: #fff; padding: 20px 0; font-size: 18px; }
+    .title_box { border: 4px solid #01B9FF; border-radius: 20px; background: #fff; max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+    .select_box select { border: 2px solid #eee; height: 40px; outline: 0; padding-left: 10px; font-weight: 200; font-size: 18px; }
+    .select_box select option { font-weight: 200; color: #666; }
+    .title_box .select_box select { width: 200px; }
+    .title_box .select_box button { background: #01B9FF; height: 40px; padding: 0 20px; border-radius: 5px; color: #fff; font-weight: 200; }
+    .contents { max-width: 1400px; margin: 0 auto; }
+    .contents .cont_top { display: flex; justify-content: space-between; padding: 50px 0 20px; }
+    .contents .cont_top .total { font-size: 20px; line-height: 40px; }
+    .contents .cont_top .total b { font-weight: 400; color: #01B9FF; margin-right: 2px; }
+    .contents .cont_top .select_box select { width: 120px; }
+    .contents > ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+    .contents > ul > li { width: calc(20% - 10px); margin-right: 10px; margin-bottom: 50px; border: 1px solid #000; }
+    .contents > ul > li:nth-child(5n){ margin-right: 0; }
+    .contents > ul > li:nth-last-child(n+1):nth-last-child(-n+5) { margin-bottom: 0; }
+    .contents > ul > li > a { width: 100%; height: 100%; }
+    .contents > ul > li .img { width: 100%; height: 175px; background: #ddd; }
+    .contents > ul > li .img > img { width: 100%; height: 100%; object-fit: cover; }
+    .contents > ul > li .decription { background: #fff; font-size: 16px; text-align: center; padding: 20px 10px; height: 106px; }
+    .contents > ul > li .decription span { font-weight: 400; }
+    .contents > ul > li .decription > p { width: 100%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.2; max-height: 3.6em; margin-top: 10px; }
+
+    .contents .paging {margin-top: 60px;padding-bottom: 30px;position: relative;text-align: center;}
+    .contents .paging > a {display: inline-block;vertical-align: middle;}
+    .contents .paging .front {width: 12px;height: 11px;background: url(assets/images/arrow_front.png) 0 0 no-repeat;background-size: 100% 100%;}
+    .contents .paging .prev {margin-left: 15px;width: 6px;height: 11px;background: url(assets/images/arrow_prev.png) 0 0 no-repeat;background-size: 100% 100%;}
+    .contents .paging .next {margin-right: 15px;width: 6px;height: 11px;background: url(assets/images/arrow_next.png) 0 0 no-repeat;background-size: 100% 100%;}
+    .contents .paging .last {width: 12px;height: 11px;background: url(assets/images/arrow_last.png) 0 0 no-repeat;background-size: 100% 100%;}
+    .contents .paging ul {margin: 0 30px;display: inline-block;vertical-align: middle;}
+    .contents .paging ul:after {content: "";display: block;clear: both;}
+    .contents .paging ul li {position: relative;float: left;margin: 0 10px;}
+    .contents .paging ul li.active {border: .1rem solid #01B9FF;border-radius: 5px;}
+    .contents .paging ul li.active a {color: #01B9FF; font-weight: 400;}
+    .contents .paging ul li a {display: block;width: 24px;height: 24px;line-height: 24px;font-size: 14px;text-align: center;}
+
+    #modal {position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, .7);z-index: 51;overflow-y: auto;display: none}
+    #modal .layer {position: relative;margin:120px auto 60px;background: #fff;padding: 60px 50px 140px 50px;-webkit-box-sizing: border-box;box-sizing: border-box;border-radius: 20px;}
+    #modal .modal-close {width: 36px;background: 0 0;position: absolute;left: 50%;transform: translateX(-50%);top: 40px;}
+    #modal .layer .modal-header {margin-bottom: 20px;}
+    #modal .layer table {border: 1px solid #000;width: 100%;}
+    #modal .layer table tr th {width: 200px;background: #eee;font-weight: 300;}
+    #modal .layer table tr td {padding: 15px 20px;}
+
+
 </style>
 </head>
 <body>
     <div class="wrap">
         <section>
-            
+            <div class="top">
+                home &gt; 참가자 목록
+            </div>
+            <div class="title_box">
+                <div class="select_box">
+                    <select name="participation_class" id="participation_class">
+                        <option value="">참가 구분</option>
+                        <option value="유치부">유치부</option>
+                        <option value="초등부">초등부</option>
+                        <option value="중등부">중등부</option>
+                        <option value="고등부">고등부</option>
+                        <option value="단체">단체</option>
+                    </select>
+                    <button type="button">검색</button>
+                </div>
+                <h1>
+                    유니세프 달력그림 공모전<br>
+                    1차 심사(유니세프 내부)  대상작
+                </h1>
+            </div>
+            <div class="contents">
+                <div class="cont_top">
+                    <div class="total">
+                        <b>700</b>건
+                    </div>
+                    <div class="select_box">
+                        <select name="list_num" id="list_num">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">유치부</span> <em>/</em>
+                                <span class="name">성*남</span>
+                                <p>우리는 모두 친구</p>
+                            </div>                              
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">고등부</span> <em>/</em>
+                                <span class="name">김*아</span>
+                                <p>평등의 손</p>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">초등부</span> <em>/</em>
+                                <span class="name">임*정</span>
+                                <p>어린이들의 세상으로<br>어쩌구저쩌구 2줄 이야이야 랄랄라유후우우</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">유치부</span> <em>/</em>
+                                <span class="name">성*남</span>
+                                <p>우리는 모두 친구<br>하나하나 맞춰가는 행복</p>
+                            </div>                              
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">고등부</span> <em>/</em>
+                                <span class="name">김*아</span>
+                                <p>평등의 손</p>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">초등부</span> <em>/</em>
+                                <span class="name">임*정</span>
+                                <p>어린이들의 세상으로</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">유치부</span> <em>/</em>
+                                <span class="name">성*남</span>
+                                <p>우리는 모두 친구</p>
+                            </div>                              
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">고등부</span> <em>/</em>
+                                <span class="name">김*아</span>
+                                <p>평등의 손</p>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">초등부</span> <em>/</em>
+                                <span class="name">임*정</span>
+                                <p>어린이들의 세상으로</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="img"></div>
+                            <div class="decription">
+                                <span class="class">유치부</span> <em>/</em>
+                                <span class="name">성*남</span>
+                                <p>우리는 모두 친구</p>
+                            </div>                              
+                        </a>
+                    </li>
+                </ul>
+                <div class="paging">
+                    <a href="javascript:;" class="front" title="맨 앞"></a>
+                    <a href="javascript:;" class="prev" title="이 전"></a>
+                    <ul>
+                        <li class="active"><a href="javascript:;">1</a></li>
+                        <li><a href="javascript:;">2</a></li>
+                        <li><a href="javascript:;">3</a></li>
+                        <li><a href="javascript:;">4</a></li>
+                        <li><a href="javascript:;">5</a></li>
+                    </ul>
+                    <a href="javascript:;" class="next" title="다음"></a>
+                    <a href="javascript:;" class="last" title="맨끝"></a>
+                </div>
+            </div>
         </section>
     </div>
+    <div id="modal">
+        <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/ico_layer_close@2x_white.png" alt="모달 닫기"></button>
+    
+        <!-- 상세보기 -->
+        <div class="layer" id="modalDetail">
+            <div class="modal-header">
+                <h2>상세보기</h2>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <tr>
+                        <th>등록일시</th>
+                        <td>
+                            2022-08-20 17:09:55.703 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>접수번호</th>
+                        <td>
+                            20220820_00012
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td>
+                            성*남
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>구분</th>
+                        <td>
+                            유치부
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>제목</th>
+                        <td>
+                            우리는 모두 친구
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>
+                            지구에 있는 모든 나라 친구들이 사는 곳, 언어, 종교, 생각, 외모, 성별, 장애 여부, 경제적 상황, 부모나 가족의 배경에 관계없이 이유 불문하고 잘사는 나라가 되어 행복했으면 하는 생각으로 그려봤음
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>참가작</th>
+                        <td>
+                            <img src="assets/images/sec2_bg02.png" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 <script>
-    $(document).ready(() => {
-        console.log('ready');
-    })
+    function acceptModal(){
+        var wTop = $(window).scrollTop();
+        if($('#modal').css('display')=='none') {
+            $('#modal').show();
+            $('html, body').scrollTop(wTop);
+            $('html').addClass('js-scroll-blocking');
+        } else {
+            $('#modal').hide();
+            $('html').removeClass('js-scroll-blocking').scrollTop(wTop);
+        }
+    }
+    $('.contents > ul > li > a').on('click', function(){
+        $('#modal #modalDetail').show();
+        $('#modal').fadeIn();
+        $('#modal').css('overflow', 'auto');
+    });    
 </script>
 </body>
 </html>
