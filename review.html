@@ -17,7 +17,8 @@
 <meta property="og:image" content=""/>
 <meta property="og:description" content="유니세프아동친화사회 만들기 '내가 살고 싶은 우리 동네를 그려 주세요!'"/>
 <title>유니세프 공모전 심사리스트</title>
-<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- <link rel="stylesheet" href="assets/css/base.css"> -->
 
 <style>
@@ -81,19 +82,20 @@
     textarea {outline: 0;width: 100%;padding: 12px;-webkit-box-sizing: border-box;box-sizing: border-box;resize: none}
     input {outline: 0;min-width: 68px;width: 100%;-webkit-box-sizing: border-box;box-sizing: border-box}
 
-    .top { max-width: 1400px; margin: 0 auto; background: #fff; padding: 20px 0; font-size: 18px; }
+    .wrap {padding: 50px 0 0;}
+    /* .top { max-width: 1400px; margin: 0 auto; background: #fff; padding: 20px 0; font-size: 18px; } */
     .title_box { border: 4px solid #01B9FF; border-radius: 20px; background: #fff; max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
     .select_box select { border: 2px solid #eee; height: 40px; outline: 0; padding-left: 10px; font-weight: 200; font-size: 18px; }
     .select_box select option { font-weight: 200; color: #666; }
     .title_box .select_box select { width: 200px; }
     .title_box .select_box button { background: #01B9FF; height: 40px; padding: 0 20px; border-radius: 5px; color: #fff; font-weight: 200; }
     .contents { max-width: 1400px; margin: 0 auto; }
-    .contents .cont_top { display: flex; justify-content: space-between; padding: 50px 0 20px; }
+    .contents .cont_top { display: flex; justify-content: space-between; padding: 30px 0 20px; }
     .contents .cont_top .total { font-size: 20px; line-height: 40px; }
     .contents .cont_top .total b { font-weight: 400; color: #01B9FF; margin-right: 2px; }
     .contents .cont_top .select_box select { width: 120px; }
     .contents > ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
-    .contents > ul > li { width: calc(20% - 10px); margin-right: 10px; margin-bottom: 50px; border: 1px solid #000; }
+    .contents > ul > li { width: calc(20% - 10px); margin-right: 10px; margin-bottom: 30px; border: 1px solid #ddd; }
     .contents > ul > li:nth-child(5n){ margin-right: 0; }
     .contents > ul > li:nth-last-child(n+1):nth-last-child(-n+5) { margin-bottom: 0; }
     .contents > ul > li > a { width: 100%; height: 100%; }
@@ -103,7 +105,7 @@
     .contents > ul > li .decription span { font-weight: 400; }
     .contents > ul > li .decription > p { width: 100%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.2; max-height: 3.6em; margin-top: 10px; }
 
-    .contents .paging {margin-top: 60px;padding-bottom: 30px;position: relative;text-align: center;}
+    .contents .paging {margin-top: 40px;/* padding-bottom: 30px; */position: relative;text-align: center;}
     .contents .paging > a {display: inline-block;vertical-align: middle;}
     .contents .paging .front {width: 12px;height: 11px;background: url(assets/images/arrow_front.png) 0 0 no-repeat;background-size: 100% 100%;}
     .contents .paging .prev {margin-left: 15px;width: 6px;height: 11px;background: url(assets/images/arrow_prev.png) 0 0 no-repeat;background-size: 100% 100%;}
@@ -116,13 +118,23 @@
     .contents .paging ul li.active a {color: #01B9FF; font-weight: 400;}
     .contents .paging ul li a {display: block;width: 24px;height: 24px;line-height: 24px;font-size: 14px;text-align: center;}
 
-    #modal {position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, .7);z-index: 51;overflow-y: auto;display: none}
-    #modal .layer {position: relative;margin:120px auto 60px;background: #fff;padding: 60px 50px 140px 50px;-webkit-box-sizing: border-box;box-sizing: border-box;border-radius: 20px;}
-    #modal .modal-close {width: 36px;background: 0 0;position: absolute;left: 50%;transform: translateX(-50%);top: 40px;}
-    #modal .layer .modal-header {margin-bottom: 20px;}
-    #modal .layer table {border: 1px solid #000;width: 100%;}
-    #modal .layer table tr th {width: 200px;background: #eee;font-weight: 300;}
-    #modal .layer table tr td {padding: 15px 20px;}
+    html.js-scroll-blocking body {overflow: hidden;height: 100%}
+    #modal {position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, .8);z-index: 10;overflow-y: auto;display: none}
+    #modal .layer {width: 100%;height: auto;position: relative; /* background: #fff; */ padding: 80px 0 100px;-webkit-box-sizing: border-box;box-sizing: border-box;}
+    #modal .modal-close {background: 0 0;position: absolute;top: 15px;right: 40px;z-index: 11;}
+    #modal .layer .modal-header { max-width: 1400px; margin: 0 auto 20px; color:#fff; }
+    #modal .layer .modal-body { max-width: 1400px; margin: 0 auto;}
+    #modal .layer .modal-body > a {display: block;width: 200px;height: 50px;line-height: 50px;margin: 50px auto 0;background: #01B9FF;color: #fff;font-size: 20px;text-align: center;border-radius: 10px;}
+    #modal .layer table {width: 100%;border: 1px solid #ddd; background: #fff; }
+    #modal .layer table tr th {max-width: 200px;width: 15%; background: #eee;font-weight: 300;}
+    #modal .layer table tr td {padding: 15px 20px; word-break: keep-all; line-height: 1.5; }
+    #modal .layer table tr td img {width: 100%;object-fit: contain;}
+
+    @media only screen and (max-width:1400px) {
+        .wrap {width: 1400px; padding: 50px 20px 0;}
+        #modal { padding: 0 20px;}
+
+    }
 
 
 </style>
@@ -130,9 +142,9 @@
 <body>
     <div class="wrap">
         <section>
-            <div class="top">
+            <!-- <div class="top">
                 home &gt; 참가자 목록
-            </div>
+            </div> -->
             <div class="title_box">
                 <div class="select_box">
                     <select name="participation_class" id="participation_class">
@@ -141,9 +153,8 @@
                         <option value="초등부">초등부</option>
                         <option value="중등부">중등부</option>
                         <option value="고등부">고등부</option>
-                        <option value="단체">단체</option>
                     </select>
-                    <button type="button">검색</button>
+                    <!-- <button type="button">검색</button> -->
                 </div>
                 <h1>
                     유니세프 달력그림 공모전<br>
@@ -284,7 +295,7 @@
         </section>
     </div>
     <div id="modal">
-        <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/ico_layer_close@2x_white.png" alt="모달 닫기"></button>
+        <button type="button" class="modal-close" onClick="javascript: acceptModal();"><img src="assets/images/ico_layer_close@2x.png" alt="모달 닫기"></button>
     
         <!-- 상세보기 -->
         <div class="layer" id="modalDetail">
@@ -336,6 +347,8 @@
                         </td>
                     </tr>
                 </table>
+
+                <a href="javascript:;" onClick="javascript: acceptModal();">닫기</a>
             </div>
         </div>
     </div>
@@ -346,15 +359,20 @@
             $('#modal').show();
             $('html, body').scrollTop(wTop);
             $('html').addClass('js-scroll-blocking');
+            console.log(wTop)
         } else {
             $('#modal').hide();
             $('html').removeClass('js-scroll-blocking').scrollTop(wTop);
+            setTimeout(function () {
+                location.reload();
+            }, 300);
         }
     }
     $('.contents > ul > li > a').on('click', function(){
         $('#modal #modalDetail').show();
         $('#modal').fadeIn();
-        $('#modal').css('overflow', 'auto');
+        $('#modal').css('overflow-y', 'auto');
+        $('html').addClass('js-scroll-blocking');
     });    
 </script>
 </body>
