@@ -1221,10 +1221,11 @@ html.js-scroll-blocking body {
 	position: fixed;
 	right: 10px;
 	z-index: 10;
-	text-align: right
+	text-align: right;
+	cursor: initial;
 }
 
-#cardSection01 .btn-join button span {
+/* #cardSection01 .btn-join button span {
 	position: absolute;
 	font-size: 38px;
 	line-height: 1.4;
@@ -1265,7 +1266,7 @@ html.js-scroll-blocking body {
 
 #cardSection01 .btn-join button:hover:after {
 	width:115px
-}
+} */
 
 @keyframes pencil {
 	0% {
@@ -1466,8 +1467,8 @@ html.js-scroll-blocking body {
 #cardSection02_2 .about-content .join-process ul li .btn-group { position: absolute; width: 100%; bottom: 30px; left:0; }
 #cardSection02_2 .about-content .join-process ul li .btn-group .btn-primary,
 #cardSection02_2 .about-content .join-process ul li .btn-group .btn-primary2 { transition: all ease .3s; font-size: 24px; color: #fff; background: #00b9ff; height: 58px; border-radius: 20px; font-weight: 400; text-align: center; width: calc(100% - 52px); }
-#cardSection02_2 .about-content .join-process ul li .btn-group .btn-primary:hover,
-#cardSection02_2 .about-content .join-process ul li .btn-group .btn-primary2:hover { transform: scale(.95); }
+/* #cardSection02_2 .about-content .join-process ul li .btn-group .btn-primary:hover, */
+/* #cardSection02_2 .about-content .join-process ul li .btn-group .btn-primary2:hover { transform: scale(.95); } */
 #cardSection02_2 .about-content .gift-list { padding: 30px 0 106px; font-size: 32px; color: #000; font-weight: 400; display: flex; justify-content: space-between; position: relative; }
 #cardSection02_2 .about-content .gift-list:after { content: ''; width: 68px; height: 68px; background: url(../images/gift_plus.png) center center no-repeat; background-size: contain; display: block; position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; transform: translateY(25px); }
 #cardSection02_2 .about-content .gift-list .gift-item { position: relative; width: calc(50% - 60px); text-align: center; }
