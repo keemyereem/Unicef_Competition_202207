@@ -841,7 +841,7 @@ input[type=number] {
 #header .global-menu ul {
 	font-size: 0;
 	text-align: center;
-	padding-left: 10vw;
+	padding-left: 8vw;
 }
 
 #header .global-menu ul li {
@@ -855,7 +855,7 @@ input[type=number] {
 }
 
 #header .global-menu ul li button {
-	padding: 60px 50px;
+	padding: 60px 40px;
 	font-weight: 200;
 	font-size: 26px
 }
@@ -1375,6 +1375,43 @@ html.js-scroll-blocking body {
 		bottom: 60px;
 	}
 }
+
+/* 수상작 갤러리 */
+#awardSection { background: url(../images/award_bg.png) no-repeat 0 0; background-size: cover; padding-bottom: 160px; }
+#awardSection .title-area { padding: 176px 0 200px; margin-bottom: 0; }
+#awardSection .title-area h4 { color: #fff; }
+#awardSection .title-area h4:before,#awardSection .title-area h4:after { width: 114px; height: 242px; }
+#awardSection .title-area h4:before { background: url(../images/award_tit_deco_l.png) no-repeat 0 0; top: -60px; left: -110px; }
+#awardSection .title-area h4:after { background: url(../images/award_tit_deco_r.png) no-repeat 0 0; right: -110px; bottom: initial; top: -60px; }
+#awardSection .content-area > div { width: 100%; height: auto; padding: 100px; background: url(../images/award_bg_box.png) no-repeat 0 0; background-size: 100% 100%; }
+#awardSection .content-area > div+div { margin-top: 120px; }
+#awardSection .content-area .con_tit { font-size: 54px; font-weight: 400; color: #ffcb00; text-align: center; }
+#awardSection .content-area .award_icon { padding: 40px 0 60px; display: flex; align-items: center; justify-content: space-between; }
+#awardSection .content-area .award_icon::before { border-radius: 5px 0 0 5px; }
+#awardSection .content-area .award_icon::after { border-radius: 0 5px 5px 0; }
+#awardSection .content-area .award_icon::before,
+#awardSection .content-area .award_icon::after { display: inline-block; content:''; width: calc(50% - 130px); height: 10px; background: #f1db62; }
+#awardSection .content-area .award_icon.silver::before,
+#awardSection .content-area .award_icon.silver::after { background: #cad3e7; }
+#awardSection .content-area .award_icon.participate::before,
+#awardSection .content-area .award_icon.participate::after { background: #cd8571; }
+#awardSection .content-area .award_icon.participate { padding-top: 120px; }
+#awardSection .content-area ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+#awardSection .content-area ul li { width: calc(50% - 30px); margin-bottom: 100px; }
+#awardSection .content-area ul li:nth-last-child(n+1):nth-last-child(-n+2) { margin-bottom: 0; }
+#awardSection .content-area ul li .img { width: 100%; }
+#awardSection .content-area ul li .img img { width: 100%; object-fit: contain; }
+#awardSection .content-area ul li .class { display: inline-block; height: 52px; line-height: 54px; border-radius: 26px; padding: 0 25px; margin: 50px 0 30px; background: #0cb2ff; color: #fff; font-size: 26px; font-weight: 400; }
+#awardSection .content-area ul li .pic_tit { color: #0cb2ff; font-size: 32px; font-weight: 400; }
+#awardSection .content-area ul li .name { font-size: 28px; color: #999; margin: 20px 0; }
+#awardSection .content-area ul li .pic_des { font-size: 26px; color: #666; word-wrap: break-word; word-break: keep-all; }
+
+#awardSection .content-area .tab_box { margin-bottom: 60px; }
+#awardSection .content-area .tab_box ol { display: flex; width: 100%; height: 80px; background: #f0faff; border-radius: 40px; }
+#awardSection .content-area .tab_box ol li { flex:1; line-height: 80px; text-align: center; font-size: 34px; }
+#awardSection .content-area .tab_box ol li.on { height: 100%; background: #0cb2ff; border-radius: 40px; color: #fff; font-weight: 400; }
+
+
 
 #cardSection02 { padding: 250px 0 160px; position:relative; background: linear-gradient(to bottom, #fff 992px, #f1f9ff 100px); }
 #cardSection02 .inner { position: relative; }

@@ -179,6 +179,7 @@ function gnbScroll(){
     var headerHeight = $('#header').outerHeight();
     // var gallerySection = $('#cardGallery').length && $('#cardGallery').offset().top - headerHeight;
     var section1 = $('#cardSection01').length && $('#cardSection01').offset().top - headerHeight;
+    var secAward = $('#awardSection').length && $('#awardSection').offset().top - headerHeight;
     var section2 = $('#cardSection02').length && $('#cardSection02').offset().top - headerHeight;
     var section3 = $('#cardSection02_2').length && $('#cardSection02_2').offset().top - headerHeight;
     var section4 = $('#cardSection03').length && $('#cardSection03').offset().top - headerHeight;
@@ -189,6 +190,10 @@ function gnbScroll(){
     }
     if(windowTop >= section1) {
         $('.global-menu li button').removeClass('is-active');
+    }
+    if(windowTop >= secAward) {
+        $('.global-menu li button').removeClass('is-active');
+        $('.global-menu li.menu-00 button').addClass('is-active');
     }
     if(windowTop >= section2) {
         $('.global-menu li button').removeClass('is-active');
@@ -350,4 +355,31 @@ function clip(){
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
 	alert("URL이 복사되었습니다.");
+}
+
+awardSlide();
+function awardSlide (){
+    var swiper = new Swiper(".award_slide", {
+        slidesPerView: '2',
+        speed: 800,
+        // spaceBetween: 17,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        breakpoints : {
+            768 : { //브라우저가 768보다 클 때
+                slidesPerView: '3',
+                centeredSlides : false,
+                spaceBetween: 43,
+                // loop: false,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            },
+          
+        },
+    });
 }
