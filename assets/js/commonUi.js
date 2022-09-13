@@ -142,6 +142,9 @@ $('.btn-primary2, .btn-join').on('click', function(){
 
 function gnbClick(){
     var headerHeight = $('#header').outerHeight();
+    $('.global-menu li.menu-00 button').on('click', function(){
+        $('html, body').stop().animate({scrollTop: $('#awardSection').offset().top - 100 }, 500);
+    })
     $('.global-menu li.menu-01 button').on('click', function(){
         $('html, body').stop().animate({scrollTop: $('#cardSection02').offset().top + 60 }, 500);
     })
@@ -158,6 +161,10 @@ function gnbClick(){
     if ($(window).width() < 768) {
         $('.global-menu li button').on('click', function(){
             $('.global-menu').css('display', 'none');
+        });
+        $('.global-menu li.menu-00 button').on('click', function(){
+            $('html, body').stop().animate({scrollTop: $('#awardSection').offset().top }, 500);
+            
         });
         $('.global-menu li.menu-01 button').on('click', function(){
             $('html, body').stop().animate({scrollTop: $('#cardSection02').offset().top + 40 }, 500);
@@ -359,27 +366,61 @@ function clip(){
 
 awardSlide();
 function awardSlide (){
-    var swiper = new Swiper(".award_slide", {
-        slidesPerView: '2',
-        speed: 800,
-        // spaceBetween: 17,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-
-        breakpoints : {
-            768 : { //브라우저가 768보다 클 때
-                slidesPerView: '3',
-                centeredSlides : false,
-                spaceBetween: 43,
-                // loop: false,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+    $('#awardSection .swiper-container').each(function(index,){
+        var idx = index+1;
+        swiper = new Swiper(".award_slide0" + idx, {
+            slidesPerView: 1,
+            slidesPerGroup : 1,
+            spaceBetween: 10,
+            initialSlide: 0,
+            speed: 800,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+                formatFractionCurrent: function (number) {
+                    return ('0' + number).slice(-2);
                 },
+                formatFractionTotal: function (number) {
+                    return ('0' + number).slice(-2);
+                },
+                renderFraction: function (currentClass, totalClass) {
+                    return '<span class="' + currentClass + '"></span>' +
+                           ' / ' +
+                           '<span class="' + totalClass + '"></span>';
+                }
             },
-          
-        },
+            navigation: {
+                nextEl: '.swiper-button.next',
+                prevEl: '.swiper-button.prev'
+            },
+            breakpoints: {
+
+                768: {
+                    slidesPerView: 2, 
+                    slidesPerGroup : 2,
+                    spaceBetween: 60,
+                  },
+
+              },            
+    
+        });
+    });
+
+}
+
+awardTab();
+function awardTab (){
+    var awardTab = $('#awardSection .tab_box ol li');
+    awardTab.on('click', function(){
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+        tabIdx = awardTab.index(this)+1;
+        console.log(tabIdx)
+        $('.tab_contents > div').removeClass('on');
+        $('.tab_content0'+tabIdx).addClass('on');
+        console.log('swiper: '+ swiper)
+        setTimeout(function() {
+            awardSlide();
+        }, 0);
     });
 }

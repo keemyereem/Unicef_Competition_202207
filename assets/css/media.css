@@ -110,6 +110,33 @@
     
     }
 
+    /* 수상작 갤러리 */
+    #awardSection::before { width: 26.64vw; height: 33vw; top: 7.85vw; }
+    #awardSection .title-area { padding: 12.57vw 0 14.28vw; }
+    #awardSection .title-area h4:before,#awardSection .title-area h4:after { width: 8.14vw; height: 17.28vw; }
+    #awardSection .content-area .con_tit { font-size: 3.85vw; }
+    #awardSection .content-area .award_icon { padding: 2.85vw 0 4.28vw; }
+    #awardSection .content-area .award_icon img { width: 10.35vw; }
+    #awardSection .content-area > div { padding: 7.14vw; }
+    #awardSection .content-area ul li { margin-bottom: 7.14vw; }
+    #awardSection .content-area ul li .class { height: 3.71vw; line-height: 3.71vw; padding: 0 1.78vw; margin: 3.57vw 0 2.14vw; font-size: 1.85vw; }
+    #awardSection .content-area ul li .pic_tit { font-size: 2.28vw; }
+    #awardSection .content-area ul li .name { font-size: 2vw; margin: 1.42vw 0; }
+    #awardSection .content-area ul li .pic_des { font-size: 1.85vw; }
+
+    #awardSection .content-area .swiper-container .swiper-nav { width: 12.85vw; padding-bottom: 1.14vw; }
+    #awardSection .content-area .swiper-container .swiper-pagination { font-size: 1.71vw; }
+    #awardSection .content-area .swiper-container .swiper-pagination-current { font-size: 2vw; }
+    #awardSection .content-area .swiper-container .swiper-button::after { width: 1.21vw; height: 1.21vw; }
+
+    #awardSection .content-area .tab_box { margin-bottom: 4.28vw; }
+    #awardSection .content-area .tab_box ol { height: 5.71vw; border-radius: 2.85vw; }
+    #awardSection .content-area .tab_box ol li { line-height: 5.71vw; font-size: 2.42vw; border-radius: 2.85vw; }
+
+
+
+
+
     #cardSection02 { background:linear-gradient(to bottom, #fff 80vw, #f1f9ff 100px); padding: 15vw 0 10vw; }
     #cardSection02 .title-area { margin-bottom: 10vw; }
     #cardSection02 .inner::before { content: ''; width: 100%; height: 100%; background: url(../images/sec2_bg01.png) top center no-repeat; background-size: contain; transform: unset; left:0; top: 14vw; }
@@ -306,6 +333,42 @@
             bottom: 24px;
         }
     }
+
+
+    /* 수상작 갤러리 */
+    #awardSection { background: url(../images/award_bg_m.png) no-repeat 0 0; background-size: 100%; } 
+    #awardSection::before { width: 54px; height: 67px; top: 215px; left: 7px; }
+    #awardSection .title-area { padding: 110px 0; }
+    #awardSection .title-area h4:before,#awardSection .title-area h4:after { width: 57px; height: 121px; background-size: contain; }
+    #awardSection .title-area h4:before { top: -30px; left: -50px; }
+    #awardSection .title-area h4:after { top: -30px; right: -50px; }
+    #awardSection .content-area .con_tit { font-size: 25px; }
+    #awardSection .content-area > div { padding: 60px 15px 55px; background: url(../images/award_bg_box_m.png) no-repeat 0 0; background-size: 100% 100%; }
+    #awardSection .content-area > div+div { margin-top: 70px; }
+    #awardSection .content-area .award_icon { padding: 25px 0 35px; }
+    #awardSection .content-area .award_icon.participate { padding-top: 65px; }
+    #awardSection .content-area .award_icon img { width: 72px; }
+    #awardSection .content-area .award_icon::before,
+    #awardSection .content-area .award_icon::after { width: calc(50% - 39px); height: 5px; }
+    #awardSection .content-area .award_icon::before { border-radius: 2px 0 0 2px; }
+    #awardSection .content-area .award_icon::after { border-radius: 0 2px 2px 0; }
+
+    #awardSection .content-area .tab_box { margin-bottom: 35px; }
+    #awardSection .content-area .tab_box ol { height: 40px; }
+    #awardSection .content-area .tab_box ol li { line-height: 40px; border-radius: 20px; font-size: 17px; }
+
+    #awardSection .content-area ul li { width: 100%; margin-bottom: 55px; }
+    #awardSection .content-area ul li:nth-last-child(n+1):nth-last-child(-n+2) { margin-bottom: 55px; }
+    #awardSection .content-area ul li:last-child { margin-bottom: 0!important; }
+    #awardSection .content-area ul li .class { height: 31px; line-height: 33px; font-size: 16px; padding: 0 13px; margin: 30px 0 20px; border-radius: 15px; }
+    #awardSection .content-area ul li .pic_tit { font-size: 19px; }
+    #awardSection .content-area ul li .name { font-size: 19px; margin: 15px 0; }
+    #awardSection .content-area ul li .pic_des { font-size: 16px; }
+    #awardSection .content-area .swiper-container .swiper-nav { width: 130px; padding-bottom: 5px; }
+    #awardSection .content-area .swiper-container .swiper-pagination { font-size: 15px; }
+    #awardSection .content-area .swiper-container .swiper-pagination-current { font-size: 17px; }
+    #awardSection .content-area .swiper-container .swiper-button::after { width: 10px; height: 10px; border-top: 2px solid #666; border-right: 2px solid #666;}
+
 
     #cardSection02 { padding: 130px 0 115px; background: linear-gradient(to bottom, #fff 629px, #f1f9ff 100px); }
     #cardSection02 .title-area { margin-bottom: 87px; }

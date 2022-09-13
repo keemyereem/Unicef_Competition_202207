@@ -1377,15 +1377,26 @@ html.js-scroll-blocking body {
 }
 
 /* 수상작 갤러리 */
-#awardSection { background: url(../images/award_bg.png) no-repeat 0 0; background-size: cover; padding-bottom: 160px; }
+#awardSection { background: url(../images/award_bg.png) no-repeat 0 0; background-size: cover; padding-bottom: 160px; position: relative; }
+#awardSection::before { content:''; display: inline-block; width: 373px; height: 462px; background: url(../images/award_balloon.png) no-repeat; background-size: contain; position: absolute; top: 110px; left: 40px; animation: objectPalette 2s ease-in-out infinite; }
 #awardSection .title-area { padding: 176px 0 200px; margin-bottom: 0; }
 #awardSection .title-area h4 { color: #fff; }
 #awardSection .title-area h4:before,#awardSection .title-area h4:after { width: 114px; height: 242px; }
-#awardSection .title-area h4:before { background: url(../images/award_tit_deco_l.png) no-repeat 0 0; top: -60px; left: -110px; }
-#awardSection .title-area h4:after { background: url(../images/award_tit_deco_r.png) no-repeat 0 0; right: -110px; bottom: initial; top: -60px; }
-#awardSection .content-area > div { width: 100%; height: auto; padding: 100px; background: url(../images/award_bg_box.png) no-repeat 0 0; background-size: 100% 100%; }
+#awardSection .title-area h4:before { background: url(../images/award_tit_deco_l.png) no-repeat 0 0; background-size: contain; top: -60px; left: -110px; z-index: 1; }
+#awardSection .title-area h4:after { background: url(../images/award_tit_deco_r.png) no-repeat 0 0; background-size: contain; right: -110px; bottom: initial; top: -60px; }
+#awardSection .content-area > div { width: 100%; height: auto; padding: 100px; background: url(../images/award_bg_box.png) no-repeat 0 0; background-size: 100% 100%; position: relative; z-index: 2; }
 #awardSection .content-area > div+div { margin-top: 120px; }
 #awardSection .content-area .con_tit { font-size: 54px; font-weight: 400; color: #ffcb00; text-align: center; }
+
+#awardSection .content-area .tab_box { margin-bottom: 60px; }
+#awardSection .content-area .tab_box ol { display: flex; width: 100%; height: 80px; background: #f0faff; border-radius: 40px; }
+#awardSection .content-area .tab_box ol li { cursor: pointer; flex:1; height: 100%; line-height: 80px; text-align: center; font-size: 34px; border-radius: 40px; background: #f0faff; transition: background .3s; }
+#awardSection .content-area .tab_box ol li.on { background: #0cb2ff; color: #fff; font-weight: 400; }
+
+#awardSection .content-area .tab_contents { position: relative; }
+#awardSection .content-area .tab_contents > div { position: absolute; z-index: -10; opacity: 0; transition: opacity .8s; }
+#awardSection .content-area .tab_contents > div.on { position: relative; z-index: 1; opacity: 1; }
+
 #awardSection .content-area .award_icon { padding: 40px 0 60px; display: flex; align-items: center; justify-content: space-between; }
 #awardSection .content-area .award_icon::before { border-radius: 5px 0 0 5px; }
 #awardSection .content-area .award_icon::after { border-radius: 0 5px 5px 0; }
@@ -1396,7 +1407,17 @@ html.js-scroll-blocking body {
 #awardSection .content-area .award_icon.participate::before,
 #awardSection .content-area .award_icon.participate::after { background: #cd8571; }
 #awardSection .content-area .award_icon.participate { padding-top: 120px; }
-#awardSection .content-area ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+#awardSection .content-area ul:not(.swiper-wrapper) { display: flex; flex-wrap: wrap; justify-content: space-between; }
+#awardSection .content-area .swiper-container { overflow: hidden; position: relative; }
+#awardSection .content-area .swiper-container .swiper-nav { display: flex; align-items: center; width: 180px; margin: 0 auto; padding-bottom: 16px; }
+#awardSection .content-area .swiper-container .swiper-pagination { font-size: 24px; color: #999; display: inline-block; position: relative; }
+#awardSection .content-area .swiper-container .swiper-pagination-fraction { bottom: 0; }
+#awardSection .content-area .swiper-container .swiper-pagination-current { font-size: 28px; color: #0cb2ff; }
+#awardSection .content-area .swiper-container .swiper-button { position: relative; cursor: pointer; }
+#awardSection .content-area .swiper-container .swiper-button::after { content:''; display: inline-block; width: 17px; height: 17px; border-top: 3px solid #666; border-right: 3px solid #666; }
+#awardSection .content-area .swiper-container .swiper-button.prev::after { transform: rotate(225deg); }
+#awardSection .content-area .swiper-container .swiper-button.next::after { transform: rotate(45deg); }
+#awardSection .content-area .swiper-container .swiper-button.swiper-button-disabled::after { border-color: #f0f0f0; }
 #awardSection .content-area ul li { width: calc(50% - 30px); margin-bottom: 100px; }
 #awardSection .content-area ul li:nth-last-child(n+1):nth-last-child(-n+2) { margin-bottom: 0; }
 #awardSection .content-area ul li .img { width: 100%; }
@@ -1405,13 +1426,6 @@ html.js-scroll-blocking body {
 #awardSection .content-area ul li .pic_tit { color: #0cb2ff; font-size: 32px; font-weight: 400; }
 #awardSection .content-area ul li .name { font-size: 28px; color: #999; margin: 20px 0; }
 #awardSection .content-area ul li .pic_des { font-size: 26px; color: #666; word-wrap: break-word; word-break: keep-all; }
-
-#awardSection .content-area .tab_box { margin-bottom: 60px; }
-#awardSection .content-area .tab_box ol { display: flex; width: 100%; height: 80px; background: #f0faff; border-radius: 40px; }
-#awardSection .content-area .tab_box ol li { flex:1; line-height: 80px; text-align: center; font-size: 34px; }
-#awardSection .content-area .tab_box ol li.on { height: 100%; background: #0cb2ff; border-radius: 40px; color: #fff; font-weight: 400; }
-
-
 
 #cardSection02 { padding: 250px 0 160px; position:relative; background: linear-gradient(to bottom, #fff 992px, #f1f9ff 100px); }
 #cardSection02 .inner { position: relative; }
