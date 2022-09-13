@@ -133,10 +133,6 @@
     #awardSection .content-area .tab_box ol { height: 5.71vw; border-radius: 2.85vw; }
     #awardSection .content-area .tab_box ol li { line-height: 5.71vw; font-size: 2.42vw; border-radius: 2.85vw; }
 
-
-
-
-
     #cardSection02 { background:linear-gradient(to bottom, #fff 80vw, #f1f9ff 100px); padding: 15vw 0 10vw; }
     #cardSection02 .title-area { margin-bottom: 10vw; }
     #cardSection02 .inner::before { content: ''; width: 100%; height: 100%; background: url(../images/sec2_bg01.png) top center no-repeat; background-size: contain; transform: unset; left:0; top: 14vw; }
@@ -354,7 +350,7 @@
     #awardSection .content-area .award_icon::after { border-radius: 0 2px 2px 0; }
 
     #awardSection .content-area .tab_box { margin-bottom: 35px; }
-    #awardSection .content-area .tab_box ol { height: 40px; }
+    #awardSection .content-area .tab_box ol { height: 40px; border-radius: 20px; }
     #awardSection .content-area .tab_box ol li { line-height: 40px; border-radius: 20px; font-size: 17px; }
 
     #awardSection .content-area ul li { width: 100%; margin-bottom: 55px; }
