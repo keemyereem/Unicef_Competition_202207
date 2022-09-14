@@ -1394,8 +1394,8 @@ html.js-scroll-blocking body {
 #awardSection .content-area .tab_box ol li.on { background: #0cb2ff; color: #fff; font-weight: 400; }
 
 #awardSection .content-area .tab_contents { position: relative; }
-#awardSection .content-area .tab_contents > div { position: absolute; z-index: -10; opacity: 0; transition: opacity .8s; }
-#awardSection .content-area .tab_contents > div.on { position: relative; z-index: 1; opacity: 1; }
+#awardSection .content-area .tab_contents > div { position: absolute; z-index: -10; opacity: 0; display: none;  }
+#awardSection .content-area .tab_contents > div.on { position: relative; z-index: 1; opacity: 1; display: block; }
 
 #awardSection .content-area .award_icon { padding: 40px 0 60px; display: flex; align-items: center; justify-content: space-between; }
 #awardSection .content-area .award_icon::before { border-radius: 5px 0 0 5px; }
