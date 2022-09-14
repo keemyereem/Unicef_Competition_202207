@@ -371,6 +371,7 @@ function awardSlide (){
         swiper = new Swiper(".award_slide0" + idx, {
             slidesPerView: 1,
             slidesPerGroup : 1,
+            loopFillGroupWithBlank : true,
             spaceBetween: 10,
             initialSlide: 0,
             speed: 800,

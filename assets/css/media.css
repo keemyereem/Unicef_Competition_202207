@@ -57,9 +57,9 @@
     #wrap .inner { width: 100%; padding: 0 20px; }
     .resizeAlert { height: 150px; }
     #header .inner { width: 100%; padding: 0; }
-    #header .global-menu { width: calc(100% - 200px); }
-    #header .global-menu ul { display: flex; justify-content: space-evenly; }
-    #header .global-menu ul li button { padding: 60px 0; }
+    #header .global-menu { width: calc(100% - 200px); height: 150px; }
+    #header .global-menu ul { display: flex; justify-content: space-evenly; align-items: center; height: 100%; }
+    #header .global-menu ul li button { padding: 60px 0; font-size: 1.85vw; }
 
     .contents-section .flex+.flex { padding: 8.57vw 0; }
     .contents-section .title-area h4 { font-size: 5.14vw; }
@@ -122,7 +122,7 @@
     #awardSection .content-area ul li .class { height: 3.71vw; line-height: 3.71vw; padding: 0 1.78vw; margin: 3.57vw 0 2.14vw; font-size: 1.85vw; }
     #awardSection .content-area ul li .pic_tit { font-size: 2.28vw; }
     #awardSection .content-area ul li .name { font-size: 2vw; margin: 1.42vw 0; }
-    #awardSection .content-area ul li .pic_des { font-size: 1.85vw; }
+    #awardSection .content-area ul li .pic_des { font-size: 1.85vw; height: 15.85vw; }
 
     #awardSection .content-area .swiper-container .swiper-nav { width: 12.85vw; padding-bottom: 1.14vw; }
     #awardSection .content-area .swiper-container .swiper-pagination { font-size: 1.71vw; }
@@ -360,7 +360,7 @@
     #awardSection .content-area ul li .class { height: 31px; line-height: 33px; font-size: 16px; padding: 0 13px; margin: 30px 0 20px; border-radius: 15px; }
     #awardSection .content-area ul li .pic_tit { font-size: 19px; }
     #awardSection .content-area ul li .name { font-size: 19px; margin: 15px 0; }
-    #awardSection .content-area ul li .pic_des { font-size: 16px; }
+    #awardSection .content-area ul li .pic_des { font-size: 16px; height: 140px; }
     #awardSection .content-area .swiper-container .swiper-nav { width: 130px; padding-bottom: 5px; }
     #awardSection .content-area .swiper-container .swiper-pagination { font-size: 15px; }
     #awardSection .content-area .swiper-container .swiper-pagination-current { font-size: 17px; }

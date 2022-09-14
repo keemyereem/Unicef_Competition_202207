@@ -1420,12 +1420,13 @@ html.js-scroll-blocking body {
 #awardSection .content-area .swiper-container .swiper-button.swiper-button-disabled::after { border-color: #f0f0f0; }
 #awardSection .content-area ul li { width: calc(50% - 30px); margin-bottom: 100px; }
 #awardSection .content-area ul li:nth-last-child(n+1):nth-last-child(-n+2) { margin-bottom: 0; }
+
 #awardSection .content-area ul li .img { width: 100%; }
 #awardSection .content-area ul li .img img { width: 100%; object-fit: contain; }
 #awardSection .content-area ul li .class { display: inline-block; height: 52px; line-height: 54px; border-radius: 26px; padding: 0 25px; margin: 50px 0 30px; background: #0cb2ff; color: #fff; font-size: 26px; font-weight: 400; }
-#awardSection .content-area ul li .pic_tit { color: #0cb2ff; font-size: 32px; font-weight: 400; }
+#awardSection .content-area ul li .pic_tit { color: #0cb2ff; font-size: 32px; font-weight: 400; word-wrap: break-word; word-break: keep-all; /* line-height: 1.3; height: 2.6em; */ }
 #awardSection .content-area ul li .name { font-size: 28px; color: #999; margin: 20px 0; }
-#awardSection .content-area ul li .pic_des { font-size: 26px; color: #666; word-wrap: break-word; word-break: keep-all; }
+#awardSection .content-area ul li .pic_des { font-size: 26px; color: #666; word-wrap: break-word; word-break: keep-all; height: 222px; overflow-y: auto; }
 
 #cardSection02 { padding: 250px 0 160px; position:relative; background: linear-gradient(to bottom, #fff 992px, #f1f9ff 100px); }
 #cardSection02 .inner { position: relative; }
